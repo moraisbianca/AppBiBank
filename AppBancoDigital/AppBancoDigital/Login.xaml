@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behaviorPack="clr-namespace:Xamarin.Forms.BehaviorValidationPack;assembly=Xamarin.Forms.BehaviorValidationPack"
+             x:Class="AppBancoDigital.Login">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="#341933" Offset="0.3"/>
+            <GradientStop Color="#993399" Offset="1.1"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="bibank" Style="{StaticResource FonteLogo}"
+                   FontSize="55"
+                   Margin="0,150,0,0"
+                   TextColor="#FFF"
+                   />
+
+            <Frame CornerRadius="15"
+                   x:Name="frm_login"
+                   Margin="30,0,30,30"
+                   Padding="30,30,30,30"
+                   HasShadow="True"
+                   VerticalOptions="Center">
+
+                <StackLayout>
+
+                    <Label Text="CPF:" Style="{StaticResource LabelTituloCampo}"/>
+                    <Entry x:Name="txt_cpf"
+                           Margin="0,0,0,10">
+                        <Entry.Behaviors>
+                            <behaviorPack:CPFValidationBehavior />
+                            <behaviorPack:MaskedBehavior Mask="XXX.XXX.XXX-XX" />
+                        </Entry.Behaviors>
+                    </Entry>
+
+                    <Label Text="SENHA:" Style="{StaticResource LabelTituloCampo}"/>
+                    <StackLayout>
+                        <Entry x:Name="txt_senha" 
+                           IsPassword="True" 
+                           Margin="0,0,0,10" />
+                        
+                    </StackLayout>
+                   
+                    
+
+                    <Button Text="Entrar" Style="{StaticResource BotaoVazado}" Clicked="Button_Clicked" />
+
+                    
+                    <Label Text="Não possui conta? Cadastre-se aqui!" 
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center"/>
+                    
+                    <Button Text="Registrar" Style="{StaticResource BotaoRoxo}" Clicked="Registrar" />
+                    
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBancoDigital.App">
+    <Application.Resources>
+
+        <ResourceDictionary>
+
+            <Style x:Key="FonteLogo" TargetType="Label">
+                <Setter Property="FontFamily" Value="{OnPlatform Android='ethnocentric-it.otf#ethnocentric-it'}" />
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+
+            <Style x:Key="LabelTituloCampo" TargetType="Label">
+                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
+            </Style>
+
+            <Style x:Key="BotaoVazado" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="FontFamily" Value="{OnPlatform Android='ethnocentric.otf#ethnocentric-it'}" />
+                <Setter Property="TextColor" Value="#ac58aa" />
+                <Setter Property="BorderColor" Value="#ac58aa" />
+                <Setter Property="BorderWidth" Value="2" />
+                <Setter Property="Margin" Value="0,0,0,20" />
+                <Setter Property="CornerRadius" Value="10" />
+            </Style>
+
+            <Style x:Key="BotaoRoxo" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#642764" />
+                <Setter Property="FontFamily" Value="{OnPlatform Android='ethnocentric.otf#ethnocentric-it'}" />
+                <Setter Property="TextColor" Value="#FFF" />
+                <Setter Property="CornerRadius" Value="10" />
+            </Style>
+            
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

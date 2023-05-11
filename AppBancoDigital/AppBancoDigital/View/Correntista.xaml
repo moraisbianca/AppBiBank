@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behaviorPack="clr-namespace:Xamarin.Forms.BehaviorValidationPack;assembly=Xamarin.Forms.BehaviorValidationPack"
+             x:Class="AppBancoDigital.View.Correntista">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="#341933" Offset="0.3"/>
+            <GradientStop Color="#993399" Offset="1.1"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="bibank" Style="{StaticResource FonteLogo}"
+                   FontSize="30"
+                   Margin="0,30,0,0"
+                   TextColor="#FFF"
+                   />
+            <Label Text="Por favor, cadastre-se para continuar"
+                   HorizontalTextAlignment="Center"
+                   TextColor="#FFF"
+                   FontSize="Small"
+                   Margin="0,0,0,30"
+                   Style="{StaticResource LabelTituloCampo}"/>
+
+            <Frame CornerRadius="15"
+                   x:Name="frm_login"
+                   Margin="30,0,30,30"
+                   Padding="30,30,30,30"
+                   HasShadow="True"
+                   VerticalOptions="Center">
+
+                <StackLayout>
+
+                    <Label Text="NOME COMPLETO:" Style="{StaticResource LabelTituloCampo}" />
+                    <Entry x:Name="txt_nome"
+                           Placeholder="Bianca Morais"
+                           Margin="0,0,0,10"/>
+
+                    <Label Text="CPF:" Style="{StaticResource LabelTituloCampo}"/>
+                    <Entry x:Name="txt_cpf"
+                           Margin="0,0,0,10">
+                        <Entry.Behaviors>
+                            <behaviorPack:CPFValidationBehavior />
+                            <behaviorPack:MaskedBehavior Mask="XXX.XXX.XXX-XX" />
+                        </Entry.Behaviors>
+                    </Entry>
+
+                    <Label Text="DATA DE NASCIMENTO:" Style="{StaticResource LabelTituloCampo}"/>
+                    <DatePicker x:Name="dtpck_datanasc"
+                                Margin="0,0,0,10"
+                                Format="dd/MM/yyyy"
+                                DateSelected="dtpck_checkin_DateSelected" />
+
+
+                    <Label Text="SENHA:" Style="{StaticResource LabelTituloCampo}"/>
+                    <Entry x:Name="txtpassword" 
+                           IsPassword="True" 
+                           Margin="0,0,0,10">
+                        <Entry.Behaviors>
+                            <behaviorPack:PasswordValidationBehavior />
+                        </Entry.Behaviors>
+                    </Entry>
+
+                    <Label Text="CONFIRME SENHA:" Style="{StaticResource LabelTituloCampo}"/>
+                    <Entry x:Name="txtconfirmpassword" 
+                           IsPassword="True" 
+                           Margin="0,0,0,10">
+                        <Entry.Behaviors>
+                            <behaviorPack:PasswordValidationBehavior />
+                            <behaviorPack:CompareValidationBehavior BindingContext="{x:Reference txtpassword}" Text="{Binding Text}"/>
+                        </Entry.Behaviors>
+                    </Entry>
+
+                    <Button Text="Continuar" Style="{StaticResource BotaoRoxo}" Clicked="Button_Clicked" />
+
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
