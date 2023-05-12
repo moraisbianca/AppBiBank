@@ -16,16 +16,31 @@ namespace AppBancoDigital
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
+            btn_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
         }
-
-        private void Button_Clicked(object sender, EventArgs e)
+        private void ver_senha(object sender, EventArgs e)
         {
-
+            if (txt_senha.IsPassword == true)
+            {
+                txt_senha.IsPassword = false;
+                btn_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.invisivel.png");
+            }
+            else
+            {
+                txt_senha.IsPassword = true;
+                btn_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
+            }
         }
 
-        private void Registrar(object sender, EventArgs e)
+        private void btn_entrar(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Home());
+        }
+
+        private void btn_registrar(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Correntista());
         }
+
     }
 }

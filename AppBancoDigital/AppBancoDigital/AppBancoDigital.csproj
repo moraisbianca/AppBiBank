@@ -17,19 +17,24 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Images\logobibank.png" />
+    <None Remove="Images\invisivel.png" />
+    <None Remove="Images\ocultarsenha.png" />
+    <None Remove="Images\oculto.png" />
     <None Remove="Images\olhoaberto.png" />
     <None Remove="Images\olhofechado.png" />
+    <None Remove="Images\trespontos.png" />
+    <None Remove="Images\versenha.png" />
+    <None Remove="Images\visivel.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Images\logobibank.png">
+    <EmbeddedResource Include="Images\invisivel.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Images\olhoaberto.png">
+    <EmbeddedResource Include="Images\trespontos.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Images\olhofechado.png">
+    <EmbeddedResource Include="Images\visivel.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
@@ -58,6 +63,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\Correntista.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Home.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\Transacao.xaml">

@@ -16,16 +16,46 @@ namespace AppBancoDigital.View
 			InitializeComponent ();
 			NavigationPage.SetHasNavigationBar(this,false);
             dtpck_datanasc.MaximumDate = DateTime.Now.AddYears(-16);
+            btn_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
+            btn_confirme_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.invisivel.png");
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void continuar(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new Login());
         }
 
         private void dtpck_checkin_DateSelected(object sender, DateChangedEventArgs e)
         {
 
+        }
+
+        private void ver_senha(object sender, EventArgs e)
+        {
+            if (txtpassword.IsPassword == true)
+            {
+                txtpassword.IsPassword = false;
+                btn_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.invisivel.png");
+            }
+            else
+            {
+                txtpassword.IsPassword = true;
+                btn_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
+            }
+        }
+
+        private void ver_confirme_senha(object sender, EventArgs e)
+        {
+            if (txtconfirmpassword.IsPassword == true)
+            {
+                txtconfirmpassword.IsPassword = false;
+                btn_confirme_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.invisivel.png");
+            }
+            else
+            {
+                txtconfirmpassword.IsPassword = true;
+                btn_confirme_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
+            }
         }
     }
 }

@@ -56,25 +56,42 @@
 
 
                     <Label Text="SENHA:" Style="{StaticResource LabelTituloCampo}"/>
-                    <Entry x:Name="txtpassword" 
-                           IsPassword="True" 
-                           Margin="0,0,0,10">
-                        <Entry.Behaviors>
-                            <behaviorPack:PasswordValidationBehavior />
-                        </Entry.Behaviors>
-                    </Entry>
+                    <StackLayout Orientation="Horizontal">
+                        <Entry x:Name="txtpassword" IsPassword="True"
+                               WidthRequest="230"
+                               Margin="0,0,10,10">
+                            <Entry.Behaviors>
+                                <behaviorPack:PasswordValidationBehavior />
+                            </Entry.Behaviors>
+                        </Entry>
+
+                        <ImageButton x:Name="btn_senha" 
+                                     BackgroundColor="Transparent" 
+                                     Clicked="ver_senha"/>
+
+                    </StackLayout>
+
 
                     <Label Text="CONFIRME SENHA:" Style="{StaticResource LabelTituloCampo}"/>
-                    <Entry x:Name="txtconfirmpassword" 
-                           IsPassword="True" 
-                           Margin="0,0,0,10">
-                        <Entry.Behaviors>
-                            <behaviorPack:PasswordValidationBehavior />
-                            <behaviorPack:CompareValidationBehavior BindingContext="{x:Reference txtpassword}" Text="{Binding Text}"/>
-                        </Entry.Behaviors>
-                    </Entry>
+                    <StackLayout Orientation="Horizontal">
+                        <Entry x:Name="txtconfirmpassword" IsPassword="True"
+                               WidthRequest="230"
+                               Margin="0,0,10,30">
+                            <Entry.Behaviors>
+                                <behaviorPack:PasswordValidationBehavior />
+                                <behaviorPack:CompareValidationBehavior BindingContext="{x:Reference txtpassword}" Text="{Binding Text}"/>
+                            </Entry.Behaviors>
+                        </Entry>
 
-                    <Button Text="Continuar" Style="{StaticResource BotaoRoxo}" Clicked="Button_Clicked" />
+                        <ImageButton x:Name="btn_confirme_senha" 
+                                     BackgroundColor="Transparent" 
+                                     Clicked="ver_confirme_senha"/>
+
+                    </StackLayout>
+
+                    
+
+                    <Button Text="Continuar" Style="{StaticResource BotaoRoxo}" Clicked="continuar" />
 
                 </StackLayout>
             </Frame>

@@ -17,6 +17,7 @@
                    FontSize="55"
                    Margin="0,150,0,0"
                    TextColor="#FFF"
+                   HorizontalTextAlignment="Center"
                    />
 
             <Frame CornerRadius="15"
@@ -38,25 +39,33 @@
                     </Entry>
 
                     <Label Text="SENHA:" Style="{StaticResource LabelTituloCampo}"/>
-                    <StackLayout>
-                        <Entry x:Name="txt_senha" 
-                           IsPassword="True" 
-                           Margin="0,0,0,10" />
-                        
+                    <StackLayout Orientation="Horizontal">
+                        <Entry x:Name="txt_senha" IsPassword="True"
+                               WidthRequest="230"
+                               Margin="0,0,10,0">
+                            <Entry.Behaviors>
+                                <behaviorPack:PasswordValidationBehavior />
+                            </Entry.Behaviors>
+                        </Entry>
+
+                        <ImageButton x:Name="btn_senha" 
+                                     BackgroundColor="Transparent" 
+                                     Clicked="ver_senha"/>
+
                     </StackLayout>
-                   
-                    
 
-                    <Button Text="Entrar" Style="{StaticResource BotaoVazado}" Clicked="Button_Clicked" />
 
-                    
+                    <Button Text="Entrar" Style="{StaticResource BotaoVazado}" Margin="0,10,0,30" Clicked="btn_entrar" />
+
+
                     <Label Text="Não possui conta? Cadastre-se aqui!" 
                            FontSize="15"
                            FontAttributes="Bold"
+                           Margin="0,10,0,0"
                            HorizontalTextAlignment="Center"/>
-                    
-                    <Button Text="Registrar" Style="{StaticResource BotaoRoxo}" Clicked="Registrar" />
-                    
+
+                    <Button Text="Registrar" Style="{StaticResource BotaoRoxo}" Margin="0,10,0,0" Clicked="btn_registrar" />
+
                 </StackLayout>
             </Frame>
         </StackLayout>

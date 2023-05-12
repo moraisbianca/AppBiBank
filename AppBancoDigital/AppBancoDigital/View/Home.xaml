@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBancoDigital.View.Home">
+
+    <!--o gradient tá em process-->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="#eee" Offset="0.3"/>
+            <GradientStop Color="#eee" Offset="1.1"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="#fff">
+                <Label Text="bibank" Style="{StaticResource FonteLogo}"
+                       FontSize="25"
+                       Margin="30,40,180,20"
+                       HorizontalOptions="Start"
+                       TextColor="#993399"
+                   />
+                <ImageButton x:Name="btn_menu" 
+                         BackgroundColor="Transparent"
+                         Margin="0,20,0,0"
+                         HorizontalOptions="End"
+                         Clicked="btn_menu_Clicked"/>
+            </StackLayout>
+            
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label x:Name="txt_saldo"
+                           Text="R$ 0,00" 
+                       FontAttributes="Bold"
+                       FontFamily="Century Gothic"
+                       TextColor="black"/>
+                    
+                    <ImageButton x:Name="btn_saldo" 
+                                     BackgroundColor="Transparent" 
+                                     Clicked="ver_saldo"/>
+                </StackLayout>
+
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

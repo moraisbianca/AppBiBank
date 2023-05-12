@@ -8,7 +8,6 @@
 
             <Style x:Key="FonteLogo" TargetType="Label">
                 <Setter Property="FontFamily" Value="{OnPlatform Android='ethnocentric-it.otf#ethnocentric-it'}" />
-                <Setter Property="HorizontalTextAlignment" Value="Center"/>
             </Style>
 
             <Style x:Key="LabelTituloCampo" TargetType="Label">
