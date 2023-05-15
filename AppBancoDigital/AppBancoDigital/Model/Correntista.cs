@@ -9,8 +9,8 @@ namespace AppBancoDigital.Model
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public int Cpf { get; set;}
-        public DatePicker DataNasc { get; set;}
+        public string Cpf { get; set;}
+        public string DataNasc { get; set;}
         public string Senha { get; set;}
 
     }

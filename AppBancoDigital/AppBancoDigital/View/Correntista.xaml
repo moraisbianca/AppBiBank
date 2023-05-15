@@ -37,7 +37,6 @@
 
                     <Label Text="NOME COMPLETO:" Style="{StaticResource LabelTituloCampo}" />
                     <Entry x:Name="txt_nome"
-                           Placeholder="Bianca Morais"
                            Margin="0,0,0,10"/>
 
                     <Label Text="CPF:" Style="{StaticResource LabelTituloCampo}"/>

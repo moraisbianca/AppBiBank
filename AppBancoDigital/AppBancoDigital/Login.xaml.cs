@@ -43,7 +43,7 @@ namespace AppBancoDigital
                 Model.Correntista c = await DataServiceCorrentista.Entrar(new Model.Correntista
                 {
                     Senha = txt_senha.Text,
-                    Cpf = Convert.ToInt32(txt_cpf.Text)
+                    Cpf = txt_cpf.Text
                 });
 
                 if (c.Id != 0)

@@ -17,9 +17,10 @@
             <ActivityIndicator x:Name="carregando" IsRunning="False"/>
             <Label Text="bibank" Style="{StaticResource FonteLogo}"
                    FontSize="55"
-                   Margin="0,150,0,0"
+                   Margin="0,0,0,0"
                    TextColor="#FFF"
                    HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
                    />
 
             <Frame CornerRadius="15"

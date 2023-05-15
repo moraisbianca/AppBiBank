@@ -23,16 +23,15 @@ namespace AppBancoDigital.View
         }
 
         private async void continuar(object sender, EventArgs e)
-        {
-            
+        {    
             try
             {
                 Model.Correntista c = await DataServiceCorrentista.Cadastrar(new Model.Correntista
                 {
                     Nome = txt_nome.Text,
                     Senha = txt_senha.Text,
-                    DataNasc = dtpck_datanasc,
-                    Cpf = Convert.ToInt32(txt_cpf.Text)
+                    DataNasc = dtpck_datanasc.Date.ToString("yyyy-MM-dd"),
+                    Cpf = txt_cpf.Text
                 });
 
                 string msg = $"Correntista criado! Faça login para acessar.";
