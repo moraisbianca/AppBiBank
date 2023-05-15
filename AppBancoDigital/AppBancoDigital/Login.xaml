@@ -10,9 +10,11 @@
             <GradientStop Color="#993399" Offset="1.1"/>
         </LinearGradientBrush>
     </ContentPage.Background>
-
+    
     <ContentPage.Content>
+
         <StackLayout>
+            <ActivityIndicator x:Name="carregando" IsRunning="False"/>
             <Label Text="bibank" Style="{StaticResource FonteLogo}"
                    FontSize="55"
                    Margin="0,150,0,0"

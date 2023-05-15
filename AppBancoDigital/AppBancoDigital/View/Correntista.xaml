@@ -14,6 +14,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="bibank" Style="{StaticResource FonteLogo}"
+                   HorizontalTextAlignment="Center"
                    FontSize="30"
                    Margin="0,30,0,0"
                    TextColor="#FFF"
@@ -50,14 +51,12 @@
 
                     <Label Text="DATA DE NASCIMENTO:" Style="{StaticResource LabelTituloCampo}"/>
                     <DatePicker x:Name="dtpck_datanasc"
-                                Margin="0,0,0,10"
-                                Format="dd/MM/yyyy"
-                                DateSelected="dtpck_checkin_DateSelected" />
+                                Margin="0,0,0,10"/>
 
 
                     <Label Text="SENHA:" Style="{StaticResource LabelTituloCampo}"/>
                     <StackLayout Orientation="Horizontal">
-                        <Entry x:Name="txtpassword" IsPassword="True"
+                        <Entry x:Name="txt_senha" IsPassword="True"
                                WidthRequest="230"
                                Margin="0,0,10,10">
                             <Entry.Behaviors>
@@ -74,12 +73,12 @@
 
                     <Label Text="CONFIRME SENHA:" Style="{StaticResource LabelTituloCampo}"/>
                     <StackLayout Orientation="Horizontal">
-                        <Entry x:Name="txtconfirmpassword" IsPassword="True"
+                        <Entry x:Name="txt_confirme_senha" IsPassword="True"
                                WidthRequest="230"
-                               Margin="0,0,10,30">
+                               Margin="0,0,10,10">
                             <Entry.Behaviors>
                                 <behaviorPack:PasswordValidationBehavior />
-                                <behaviorPack:CompareValidationBehavior BindingContext="{x:Reference txtpassword}" Text="{Binding Text}"/>
+                                <behaviorPack:CompareValidationBehavior BindingContext="{x:Reference txt_senha}" Text="{Binding Text}"/>
                             </Entry.Behaviors>
                         </Entry>
 

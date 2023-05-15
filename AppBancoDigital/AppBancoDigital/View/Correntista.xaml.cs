@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AppBancoDigital.Model;
+using AppBancoDigital.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,40 +22,55 @@ namespace AppBancoDigital.View
             btn_confirme_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.invisivel.png");
         }
 
-        private void continuar(object sender, EventArgs e)
+        private async void continuar(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Login());
-        }
+            
+            try
+            {
+                Model.Correntista c = await DataServiceCorrentista.Cadastrar(new Model.Correntista
+                {
+                    Nome = txt_nome.Text,
+                    Senha = txt_senha.Text,
+                    DataNasc = dtpck_datanasc,
+                    Cpf = Convert.ToInt32(txt_cpf.Text)
+                });
 
-        private void dtpck_checkin_DateSelected(object sender, DateChangedEventArgs e)
-        {
+                string msg = $"Correntista criado! Faça login para acessar.";
 
+                await DisplayAlert("Sucesso!", msg, "OK");
+
+                await Navigation.PushAsync(new Login());
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops", ex.Message, "OK");
+            }
         }
 
         private void ver_senha(object sender, EventArgs e)
         {
-            if (txtpassword.IsPassword == true)
+            if (txt_senha.IsPassword == true)
             {
-                txtpassword.IsPassword = false;
+                txt_senha.IsPassword = false;
                 btn_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.invisivel.png");
             }
             else
             {
-                txtpassword.IsPassword = true;
+                txt_senha.IsPassword = true;
                 btn_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
             }
         }
 
         private void ver_confirme_senha(object sender, EventArgs e)
         {
-            if (txtconfirmpassword.IsPassword == true)
+            if (txt_confirme_senha.IsPassword == true)
             {
-                txtconfirmpassword.IsPassword = false;
+                txt_confirme_senha.IsPassword = false;
                 btn_confirme_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.invisivel.png");
             }
             else
             {
-                txtconfirmpassword.IsPassword = true;
+                txt_confirme_senha.IsPassword = true;
                 btn_confirme_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
             }
         }

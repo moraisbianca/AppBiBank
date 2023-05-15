@@ -1,4 +1,6 @@
-﻿using AppBancoDigital.View;
+﻿using AppBancoDigital.Model;
+using AppBancoDigital.Service;
+using AppBancoDigital.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,14 +34,49 @@ namespace AppBancoDigital
             }
         }
 
-        private void btn_entrar(object sender, EventArgs e)
+        private async void btn_entrar(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Home());
+            
+            carregando.IsRunning = true;
+            try
+            {
+                Model.Correntista c = await DataServiceCorrentista.Entrar(new Model.Correntista
+                {
+                    Senha = txt_senha.Text,
+                    Cpf = Convert.ToInt32(txt_cpf.Text)
+                });
+
+                if (c.Id != 0)
+                {
+                    string msg = $"O login foi feito com sucesso";
+
+                    await DisplayAlert("Bem vindo!", msg, "OK");
+
+                    await Navigation.PushAsync(new Home());
+                }
+                else
+                {
+                    string msg = $"Algo deu errado, tente logar novamente!";
+
+                    await DisplayAlert("Erro!", msg, "OK");
+
+                    await Navigation.PushAsync(new Login());
+                }
+
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops", ex.Message, "OK");
+            }
+            finally
+            {
+                carregando.IsRunning = false;
+            }
         }
 
         private void btn_registrar(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Correntista());
+            Navigation.PushAsync(new View.Correntista());
         }
 
     }
