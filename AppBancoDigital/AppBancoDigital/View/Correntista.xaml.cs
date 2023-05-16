@@ -19,7 +19,7 @@ namespace AppBancoDigital.View
 			NavigationPage.SetHasNavigationBar(this,false);
             dtpck_datanasc.MaximumDate = DateTime.Now.AddYears(-16);
             btn_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
-            btn_confirme_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.invisivel.png");
+            btn_confirme_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
         }
 
         private async void continuar(object sender, EventArgs e)
@@ -30,8 +30,8 @@ namespace AppBancoDigital.View
                 {
                     Nome = txt_nome.Text,
                     Senha = txt_senha.Text,
-                    DataNasc = dtpck_datanasc.Date.ToString("yyyy-MM-dd"),
-                    Cpf = txt_cpf.Text
+                    DataNasc = dtpck_datanasc.Date,
+                    Cpf = txt_cpf.Text.Replace(".", string.Empty).Replace("-", string.Empty)
                 });
 
                 string msg = $"Correntista criado! Faça login para acessar.";

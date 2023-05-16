@@ -25,16 +25,9 @@ namespace AppBancoDigital.Service
         {
             var json_to_send = JsonConvert.SerializeObject(c);
 
-            string json = await DataService.GetDataFromService(String.Format("/correntista/entrar?cpf={0}&senha={1}", c.Cpf, c.Senha));
+            string json = await DataService.PostDataToService(json_to_send, "/correntista/entrar");
 
-            Correntista correntista = new Correntista();
-            if (json != "false")
-            {
-                correntista = JsonConvert.DeserializeObject<Correntista>(json);
-            }
-
-
-            return correntista;
+            return JsonConvert.DeserializeObject<Correntista>(json);
         }
     }
 }
