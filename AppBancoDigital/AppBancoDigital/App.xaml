@@ -31,7 +31,18 @@
                 <Setter Property="TextColor" Value="#FFF" />
                 <Setter Property="CornerRadius" Value="10" />
             </Style>
-            
+
+            <Style x:Key="BotaoHome" TargetType="Button">
+                <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
+                <Setter Property="FontSize" Value="Micro"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="TextColor" Value="black"/>
+                <Setter Property="BorderColor" Value="gray"/>
+                <Setter Property="BorderWidth" Value="1"/>
+                <Setter Property="CornerRadius" Value="10"/>
+            </Style>
+
+
         </ResourceDictionary>
 
     </Application.Resources>

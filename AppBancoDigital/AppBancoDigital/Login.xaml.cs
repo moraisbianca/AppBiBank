@@ -36,8 +36,9 @@ namespace AppBancoDigital
 
         private async void btn_entrar(object sender, EventArgs e)
         {
-            
-            carregando.IsRunning = true;
+
+            await Navigation.PushAsync(new Home());
+            /*carregando.IsRunning = true;
             try
             {
                 Model.Correntista c = await DataServiceCorrentista.Entrar(new Model.Correntista
@@ -71,7 +72,7 @@ namespace AppBancoDigital
             finally
             {
                 carregando.IsRunning = false;
-            }
+            }*/
         }
 
         private void btn_registrar(object sender, EventArgs e)

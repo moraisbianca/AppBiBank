@@ -12,9 +12,9 @@ namespace AppBancoDigital.View
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Home : ContentPage
 	{
-		public Home ()
-		{
-			InitializeComponent ();
+        public Home()
+        {
+            InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             btn_saldo.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
 			btn_menu.Source = ImageSource.FromResource("AppBancoDigital.Images.trespontos.png");
