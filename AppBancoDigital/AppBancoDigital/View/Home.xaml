@@ -2,10 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Home"
-             BackgroundColor="#f9f9f9">
+             Background="red"
+            >
 
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Margin="0, 30, 0, 0"  BackgroundColor="#f9f9f9">
             
             <StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
                 <Label Text="bibank" Style="{StaticResource FonteLogo}"
@@ -22,6 +23,12 @@
             </StackLayout>
 
             <StackLayout Orientation="Horizontal">
+                <Label x:Name="txt_correntista"
+                           FontAttributes="Bold"
+                           FontFamily="Century Gothic"
+                           Margin="30,0,20,20"
+                           TextColor="black"/>
+                
                 <Label x:Name="txt_saldo"
                            Text="R$ 0,00" 
                            FontAttributes="Bold"

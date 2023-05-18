@@ -37,21 +37,23 @@ namespace AppBancoDigital
         private async void btn_entrar(object sender, EventArgs e)
         {
 
-            await Navigation.PushAsync(new Home());
-            /*carregando.IsRunning = true;
+            //await Navigation.PushAsync(new Home());
+            carregando.IsRunning = true;
             try
             {
                 Model.Correntista c = await DataServiceCorrentista.Entrar(new Model.Correntista
                 {
                     Senha = txt_senha.Text,
-                    Cpf = txt_cpf.Text
+                    Cpf = txt_cpf.Text.Replace(".", string.Empty).Replace("-", string.Empty)
                 });
 
-                if (c.Id != 0)
+                if (c.Id != null)
                 {
-                    string msg = $"O login foi feito com sucesso";
+                    /*string msg = $"O login foi feito com sucesso";
 
-                    await DisplayAlert("Bem vindo!", msg, "OK");
+                    await DisplayAlert("Bem vindo!", msg, "OK");*/
+
+                    App.DadosCorrentista = c;
 
                     await Navigation.PushAsync(new Home());
                 }
@@ -61,7 +63,7 @@ namespace AppBancoDigital
 
                     await DisplayAlert("Erro!", msg, "OK");
 
-                    await Navigation.PushAsync(new Login());
+                    //await Navigation.PushAsync(new Login());
                 }
 
             }
@@ -72,7 +74,7 @@ namespace AppBancoDigital
             finally
             {
                 carregando.IsRunning = false;
-            }*/
+            }
         }
 
         private void btn_registrar(object sender, EventArgs e)

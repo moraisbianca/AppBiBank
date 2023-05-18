@@ -18,6 +18,8 @@ namespace AppBancoDigital.View
             NavigationPage.SetHasNavigationBar(this, false);
             btn_saldo.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
 			btn_menu.Source = ImageSource.FromResource("AppBancoDigital.Images.trespontos.png");
+
+            txt_correntista.Text = App.DadosCorrentista.Nome;
         }
 
         private void ver_saldo(object sender, EventArgs e)
