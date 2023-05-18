@@ -36,8 +36,6 @@ namespace AppBancoDigital
 
         private async void btn_entrar(object sender, EventArgs e)
         {
-
-            //await Navigation.PushAsync(new Home());
             carregando.IsRunning = true;
             try
             {
@@ -49,9 +47,6 @@ namespace AppBancoDigital
 
                 if (c.Id != null)
                 {
-                    /*string msg = $"O login foi feito com sucesso";
-
-                    await DisplayAlert("Bem vindo!", msg, "OK");*/
 
                     App.DadosCorrentista = c;
 
@@ -62,8 +57,6 @@ namespace AppBancoDigital
                     string msg = $"Algo deu errado, tente logar novamente!";
 
                     await DisplayAlert("Erro!", msg, "OK");
-
-                    //await Navigation.PushAsync(new Login());
                 }
 
             }

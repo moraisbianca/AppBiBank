@@ -35,6 +35,7 @@
             <Style x:Key="BotaoHome" TargetType="Button">
                 <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
                 <Setter Property="FontSize" Value="Micro"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
                 <Setter Property="BackgroundColor" Value="Transparent"/>
                 <Setter Property="TextColor" Value="black"/>
                 <Setter Property="BorderColor" Value="gray"/>

@@ -13,11 +13,10 @@
     
     <ContentPage.Content>
 
-        <StackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand">
             <ActivityIndicator x:Name="carregando" IsRunning="False"/>
             <Label Text="bibank" Style="{StaticResource FonteLogo}"
                    FontSize="55"
-                   Margin="0,0,0,0"
                    TextColor="#FFF"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"

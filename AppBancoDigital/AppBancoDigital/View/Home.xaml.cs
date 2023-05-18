@@ -19,7 +19,14 @@ namespace AppBancoDigital.View
             btn_saldo.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
 			btn_menu.Source = ImageSource.FromResource("AppBancoDigital.Images.trespontos.png");
 
-            txt_correntista.Text = App.DadosCorrentista.Nome;
+            string[] resultsArray = explode(" ", App.DadosCorrentista.Nome);
+
+            txt_correntista.Text = resultsArray[0];
+        }
+
+        public static string[] explode(string separator, string source)
+        {
+            return source.Split(new string[] { separator }, StringSplitOptions.None);
         }
 
         private void ver_saldo(object sender, EventArgs e)

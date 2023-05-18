@@ -2,33 +2,33 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Home"
-             Background="red"
+             Background="#993399"
             >
 
     <ContentPage.Content>
-        <StackLayout Margin="0, 30, 0, 0"  BackgroundColor="#f9f9f9">
+        <StackLayout Margin="0, 25, 0, 0"  BackgroundColor="#f9f9f9">
             
             <StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
                 <Label Text="bibank" Style="{StaticResource FonteLogo}"
                        FontSize="25"
-                       Margin="30,45,180,10"
+                       Margin="30,25,180,10"
                        HorizontalOptions="Start"
                        TextColor="#993399"
                    />
                 <ImageButton x:Name="btn_menu" 
                          BackgroundColor="Transparent"
-                         Margin="0,30,0,0"
+                         Margin="0,17,0,0"
                          HorizontalOptions="End"
                          Clicked="btn_menu_Clicked"/>
             </StackLayout>
 
-            <StackLayout Orientation="Horizontal">
-                <Label x:Name="txt_correntista"
+            <StackLayout Orientation="Horizontal" Margin="0,0,0,0">
+                <!--<Label x:Name="txt_correntista"
                            FontAttributes="Bold"
                            FontFamily="Century Gothic"
                            Margin="30,0,20,20"
-                           TextColor="black"/>
-                
+                           TextColor="black"/>-->
+
                 <Label x:Name="txt_saldo"
                            Text="R$ 0,00" 
                            FontAttributes="Bold"
@@ -37,7 +37,7 @@
                            TextColor="black"/>
 
                 <ImageButton x:Name="btn_saldo"
-                             WidthRequest="30"
+                             WidthRequest="20"
                              Margin="-15,-19,0,0"
                              BackgroundColor="Transparent" 
                              Clicked="ver_saldo"/>

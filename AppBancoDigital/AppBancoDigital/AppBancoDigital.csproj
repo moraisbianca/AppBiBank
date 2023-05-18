@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Images\extrato.png" />
     <None Remove="Images\invisivel.png" />
     <None Remove="Images\ocultarsenha.png" />
     <None Remove="Images\oculto.png" />
@@ -44,6 +45,12 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
     <PackageReference Include="Xamarin.Forms.BehaviorValidationPack" Version="1.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\extrato.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
