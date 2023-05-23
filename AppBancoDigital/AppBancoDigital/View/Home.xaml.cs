@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -22,6 +21,7 @@ namespace AppBancoDigital.View
             string[] resultsArray = explode(" ", App.DadosCorrentista.Nome);
 
             txt_correntista.Text = resultsArray[0];
+            txt_saldo.Text = "";
         }
 
         public static string[] explode(string separator, string source)
@@ -31,15 +31,15 @@ namespace AppBancoDigital.View
 
         private void ver_saldo(object sender, EventArgs e)
         {
-            /*if (txt_saldo == "R$ 0,00")
+            /*if (txt_saldo = "")
             {
-                txt_senha.IsPassword = false;
-                btn_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.invisivel.png");
+                txt_saldo.Text = App.DadosConta.Saldo;
+                btn_saldo.Source = ImageSource.FromResource("AppBancoDigital.Images.invisivel.png");
             }
             else
             {
-                txt_senha.IsPassword = true;
-                btn_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
+
+                btn_saldo.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
             }*/
         }
 

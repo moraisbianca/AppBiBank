@@ -8,6 +8,7 @@ namespace AppBancoDigital
     public partial class App : Application
     {
         public static Correntista DadosCorrentista { get; set; }
+        public static Conta DadosConta { get; set; } 
 
         public App()
         {
