@@ -32,15 +32,19 @@
                 <Setter Property="CornerRadius" Value="10" />
             </Style>
 
-            <Style x:Key="BotaoHome" TargetType="Button">
+            <Style x:Key="LabelBotaoHome" TargetType="Label">
                 <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
                 <Setter Property="FontSize" Value="Micro"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
-                <Setter Property="BackgroundColor" Value="Transparent"/>
                 <Setter Property="TextColor" Value="black"/>
-                <Setter Property="BorderColor" Value="gray"/>
-                <Setter Property="BorderWidth" Value="1"/>
-                <Setter Property="CornerRadius" Value="10"/>
+            </Style>
+
+            <Style x:Key="BotaoHome" TargetType="Frame">
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                <Setter Property="Scale" Value="2.7"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="HasShadow" Value="True"/>
+                <Setter Property="CornerRadius" Value="2"/>
             </Style>
 
 

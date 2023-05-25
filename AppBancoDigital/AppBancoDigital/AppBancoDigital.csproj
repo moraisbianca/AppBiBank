@@ -18,18 +18,26 @@
 
   <ItemGroup>
     <None Remove="Images\extrato.png" />
+    <None Remove="Images\icone-pix.png" />
     <None Remove="Images\invisivel.png" />
     <None Remove="Images\ocultarsenha.png" />
     <None Remove="Images\oculto.png" />
     <None Remove="Images\olhoaberto.png" />
     <None Remove="Images\olhofechado.png" />
+    <None Remove="Images\transferencia-bancaria.png" />
     <None Remove="Images\trespontos.png" />
     <None Remove="Images\versenha.png" />
     <None Remove="Images\visivel.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Images\icone-pix.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Images\invisivel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\transferencia-bancaria.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\trespontos.png">
@@ -48,9 +56,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\extrato.png">
+    <EmbeddedResource Include="Images\extrato.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>

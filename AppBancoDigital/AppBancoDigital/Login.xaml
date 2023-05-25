@@ -50,7 +50,7 @@
                             </Entry.Behaviors>
                         </Entry>
 
-                        <ImageButton x:Name="btn_senha" 
+                        <ImageButton x:Name="btn_senha"
                                      BackgroundColor="Transparent" 
                                      Clicked="ver_senha"/>
 

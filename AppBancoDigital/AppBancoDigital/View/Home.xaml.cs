@@ -17,6 +17,9 @@ namespace AppBancoDigital.View
             NavigationPage.SetHasNavigationBar(this, false);
             btn_saldo.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
 			btn_menu.Source = ImageSource.FromResource("AppBancoDigital.Images.trespontos.png");
+            btn_extrato.Source = ImageSource.FromResource("AppBancoDigital.Images.extrato.png");
+            btn_pix.Source = ImageSource.FromResource("AppBancoDigital.Images.icone-pix.png");
+            btn_transferencias.Source = ImageSource.FromResource("AppBancoDigital.Images.transferencia-bancaria.png");
 
             string[] resultsArray = explode(" ", App.DadosCorrentista.Nome);
 
@@ -48,5 +51,19 @@ namespace AppBancoDigital.View
 
         }
 
+        private void btn_extrato_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_transferencias_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_pix_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
