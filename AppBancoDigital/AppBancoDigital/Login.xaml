@@ -55,9 +55,10 @@
                                      Clicked="ver_senha"/>
 
                     </StackLayout>
+                    <Label Text="" Style="{StaticResource LabelErro}"/>
 
 
-                    <Button Text="Entrar" Style="{StaticResource BotaoVazado}" Margin="0,10,0,30" Clicked="btn_entrar" />
+                    <Button Text="Entrar" Style="{StaticResource BotaoVazado}" Margin="0,5,0,30" Clicked="btn_entrar" />
 
 
                     <Label Text="Não possui conta? Cadastre-se aqui!" 

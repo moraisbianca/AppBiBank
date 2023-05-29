@@ -19,7 +19,7 @@
 
 	<style name="DatePickerStyle" parent="ThemeOverlay.AppCompat.Dialog">
 		<!--header background-->
-		<item name="colorAccent">#ac58aa</item>
+		<item name="colorAccent">#642764</item>
 		<!--header textcolor-->
 		<item name="android:textColorPrimaryInverse">#fff</item>
 		<!--body background-->
@@ -27,11 +27,11 @@
 		<!--selected day-->
 		<item name="android:colorControlActivated">#D3D3D3</item>
 		<!--days of the month-->
-		<item name="android:textColorPrimary">#ac58aa</item>
+		<item name="android:textColorPrimary">#642764</item>
 		<!--days of the week-->
-		<item name="android:textColorSecondary">#ac58aa</item>
+		<item name="android:textColorSecondary">#642764</item>
 		<!--cancel&ok-->
-		<item name="android:textColor">#ac58aa</item>
+		<item name="android:textColor">#642764</item>
 	</style>
 	
 </resources>

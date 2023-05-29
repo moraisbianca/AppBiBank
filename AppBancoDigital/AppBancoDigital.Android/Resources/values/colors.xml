@@ -4,4 +4,10 @@
     <color name="colorPrimary">#993399</color>
     <color name="colorPrimaryDark">#993399</color>
     <color name="colorAccent">#993399</color>
+	<color name="splash_background">
+		<LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+			<GradientStop Color="#341933" Offset="0.3"/>
+			<GradientStop Color="#993399" Offset="1.1"/>
+		</LinearGradientBrush>
+	</color>
 </resources>

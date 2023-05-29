@@ -19,6 +19,9 @@ namespace AppBancoDigital
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             btn_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
+
+            if ()
+            { } else { }
         }
         private void ver_senha(object sender, EventArgs e)
         {
