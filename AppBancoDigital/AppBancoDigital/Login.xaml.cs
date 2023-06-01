@@ -19,9 +19,6 @@ namespace AppBancoDigital
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             btn_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
-
-            if ()
-            { } else { }
         }
         private void ver_senha(object sender, EventArgs e)
         {
@@ -50,16 +47,13 @@ namespace AppBancoDigital
 
                 if (c.Id != null)
                 {
-
                     App.DadosCorrentista = c;
 
                     await Navigation.PushAsync(new Home());
                 }
                 else
                 {
-                    string msg = $"Algo deu errado, tente logar novamente!";
-
-                    await DisplayAlert("Erro!", msg, "OK");
+                    lbl_erro.Text = "Usuário ou senha incorretos!";
                 }
 
             }
@@ -78,5 +72,9 @@ namespace AppBancoDigital
             Navigation.PushAsync(new View.Correntista());
         }
 
+        private void esqueci_senha(object sender, EventArgs e)
+        {
+
+        }
     }
 }

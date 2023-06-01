@@ -17,27 +17,34 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Images\extrato.png" />
-    <None Remove="Images\icone-pix.png" />
+    <None Remove="Images\cartao-de-credito.png" />
+    <None Remove="Images\extrato-bancario.png" />
+    <None Remove="Images\icon-pix-512.png" />
     <None Remove="Images\invisivel.png" />
     <None Remove="Images\ocultarsenha.png" />
     <None Remove="Images\oculto.png" />
     <None Remove="Images\olhoaberto.png" />
     <None Remove="Images\olhofechado.png" />
-    <None Remove="Images\transferencia-bancaria.png" />
+    <None Remove="Images\transferencia.png" />
     <None Remove="Images\trespontos.png" />
     <None Remove="Images\versenha.png" />
     <None Remove="Images\visivel.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Images\icone-pix.png">
+    <EmbeddedResource Include="Images\cartao-de-credito.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\extrato-bancario.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\icon-pix-512.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\invisivel.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Images\transferencia-bancaria.png">
+    <EmbeddedResource Include="Images\transferencia.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\trespontos.png">
@@ -53,12 +60,6 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
     <PackageReference Include="Xamarin.Forms.BehaviorValidationPack" Version="1.1.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Images\extrato.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>

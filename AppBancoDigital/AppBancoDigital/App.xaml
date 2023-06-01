@@ -11,7 +11,6 @@
             </Style>
 
             <Style x:Key="LabelTituloCampo" TargetType="Label">
-                <Setter Property="FontSize" Value="Medium" />
                 <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
             </Style>
 
@@ -49,7 +48,7 @@
 
             <Style x:Key="LabelErro" TargetType="Label">
                 <Setter Property="TextColor" Value="Red" />
-                <Setter Property="FontSize" Value="10" />
+                <Setter Property="FontSize" Value="12" />
                 <Setter Property="FontAttributes" Value="Italic" />
                 <Setter Property="Margin" Value="5,0,0,10" />
                 <!--<Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic.ttf#century-gothic'}" />-->

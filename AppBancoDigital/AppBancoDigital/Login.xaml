@@ -55,10 +55,16 @@
                                      Clicked="ver_senha"/>
 
                     </StackLayout>
-                    <Label Text="" Style="{StaticResource LabelErro}"/>
+                    <Label x:Name="lbl_erro" Text="" Style="{StaticResource LabelErro}"/>
 
+                    <Button x:Name="btn_esqueci_senha" 
+                            FontSize="12" FontAttributes="Bold"
+                            Text="oi" BackgroundColor="Transparent" TextColor="Gray"
+                            Clicked="esqueci_senha"
+                            HeightRequest="30" Padding="0" Margin="0"
+                            VerticalOptions="Center" HorizontalOptions="Center"/>
 
-                    <Button Text="Entrar" Style="{StaticResource BotaoVazado}" Margin="0,5,0,30" Clicked="btn_entrar" />
+                    <Button Text="Entrar" Style="{StaticResource BotaoVazado}" Margin="0,2,0,30" Clicked="btn_entrar" />
 
 
                     <Label Text="Não possui conta? Cadastre-se aqui!" 
