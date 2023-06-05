@@ -6,14 +6,33 @@
 
         <ResourceDictionary>
 
+            <!-- Fonte Logo -->
             <Style x:Key="FonteLogo" TargetType="Label">
                 <Setter Property="FontFamily" Value="{OnPlatform Android='ethnocentric-it.otf#ethnocentric-it'}" />
             </Style>
 
+            <!-- Label dos campos-->
             <Style x:Key="LabelTituloCampo" TargetType="Label">
                 <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
             </Style>
 
+            <!-- Label mensagem de erro-->
+            <Style x:Key="LabelErro" TargetType="Label">
+                <Setter Property="TextColor" Value="Red" />
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="FontAttributes" Value="Italic" />
+                <Setter Property="Margin" Value="5,0,0,10" />
+            </Style>
+
+            <!-- Fonte do botão esqueci senha -->
+            <Style x:Key="LabelEsqueciSenha" TargetType="Button">
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="#6e6d6d"/>
+                <Setter Property="TextTransform" Value="None"/>
+            </Style>
+
+            <!-- Botão Vazado (entrar)-->
             <Style x:Key="BotaoVazado" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="Transparent" />
                 <Setter Property="FontFamily" Value="{OnPlatform Android='ethnocentric.otf#ethnocentric-it'}" />
@@ -24,36 +43,31 @@
                 <Setter Property="CornerRadius" Value="10" />
             </Style>
 
+            <!-- Botão Roxo (registrar) -->
             <Style x:Key="BotaoRoxo" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="#642764" />
                 <Setter Property="FontFamily" Value="{OnPlatform Android='ethnocentric.otf#ethnocentric-it'}" />
                 <Setter Property="TextColor" Value="#FFF" />
                 <Setter Property="CornerRadius" Value="10" />
             </Style>
+            
 
+            <!-- Label dos botões de ação da home-->
             <Style x:Key="LabelBotaoHome" TargetType="Label">
                 <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
-                <Setter Property="FontSize" Value="Micro"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
                 <Setter Property="TextColor" Value="black"/>
             </Style>
 
+            <!-- Botões de ação da home-->
             <Style x:Key="BotaoHome" TargetType="Frame">
                 <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
-                <Setter Property="Scale" Value="2.7"/>
+                <Setter Property="WidthRequest" Value="75"/>
+                <Setter Property="HeightRequest" Value="70"/>
                 <Setter Property="BackgroundColor" Value="White"/>
                 <Setter Property="HasShadow" Value="True"/>
-                <Setter Property="CornerRadius" Value="2"/>
+                <Setter Property="CornerRadius" Value="12"/>
             </Style>
-
-            <Style x:Key="LabelErro" TargetType="Label">
-                <Setter Property="TextColor" Value="Red" />
-                <Setter Property="FontSize" Value="12" />
-                <Setter Property="FontAttributes" Value="Italic" />
-                <Setter Property="Margin" Value="5,0,0,10" />
-                <!--<Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic.ttf#century-gothic'}" />-->
-            </Style>
-
 
         </ResourceDictionary>
 

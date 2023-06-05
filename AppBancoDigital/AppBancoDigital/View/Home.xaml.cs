@@ -37,7 +37,6 @@ namespace AppBancoDigital.View
         {
             /*if (txt_saldo = "")
             {
-                txt_saldo.Text = App.DadosConta.Saldo;
                 btn_saldo.Source = ImageSource.FromResource("AppBancoDigital.Images.invisivel.png");
             }
             else
