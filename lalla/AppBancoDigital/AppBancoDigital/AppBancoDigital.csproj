@@ -18,7 +18,7 @@
 
   <ItemGroup>
     <None Remove="Images\cartao-de-credito.png" />
-    <None Remove="Images\extrato-bancario.png" />
+    <None Remove="Images\extrato-banco.png" />
     <None Remove="Images\icon-pix-512.png" />
     <None Remove="Images\invisivel.png" />
     <None Remove="Images\ocultarsenha.png" />
@@ -35,7 +35,7 @@
     <EmbeddedResource Include="Images\cartao-de-credito.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Images\extrato-bancario.png">
+    <EmbeddedResource Include="Images\extrato-banco.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\icon-pix-512.png">
@@ -72,16 +72,28 @@
     <EmbeddedResource Update="Login.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\ChavePix.xaml">
+    <EmbeddedResource Update="View\Dados\Cartoes.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\Conta.xaml">
+    <EmbeddedResource Update="View\Pix\ChavePix.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\Correntista.xaml">
+    <EmbeddedResource Update="View\Dados\Conta.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Dados\Correntista.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Funções\Extrato.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\Home.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Pix\PagarComPix.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Pix\ReceberComPix.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\Transacao.xaml">

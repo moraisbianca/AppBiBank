@@ -16,7 +16,7 @@
             <Label Text="bibank" Style="{StaticResource FonteLogo}"
                    HorizontalTextAlignment="Center"
                    FontSize="30"
-                   Margin="0,30,0,0"
+                   Margin="0,40,0,0"
                    TextColor="#FFF"
                    />
             <Label Text="Por favor, cadastre-se para continuar"
@@ -28,10 +28,9 @@
 
             <Frame CornerRadius="15"
                    x:Name="frm_login"
-                   Margin="30,0,30,30"
+                   Margin="30,40,30,30"
                    Padding="30,30,30,30"
-                   HasShadow="True"
-                   VerticalOptions="Center">
+                   HasShadow="True">
 
                 <StackLayout>
 
