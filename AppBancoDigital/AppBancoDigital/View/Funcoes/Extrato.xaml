@@ -1,17 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppBancoDigital.View.Pix.ChavePix">
+             x:Class="AppBancoDigital.View.Funcoes.Extrato"
+             BackgroundColor="#993399"
+             Title="Extrato">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Style="{StaticResource StackStatusBar}">
+            
             <StackLayout  Orientation="Horizontal"
                 Style="{StaticResource StackTitulo}">
 
                 <!-- aqui vai uma imagem de setinha para retornar onde tava -->
-                <Label Text="Cadastrar chave pix" Style="{StaticResource LabelMenu}"/>
+                <Label Text="Extrato e devoluções" Style="{StaticResource LabelMenu}"/>
                 <!-- aqui é uma imagem de um "?" -->
-
+                
             </StackLayout>
+            
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

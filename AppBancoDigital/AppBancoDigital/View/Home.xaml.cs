@@ -48,17 +48,17 @@ namespace AppBancoDigital.View
 
         private void btn_menu_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new View.Menu());
         }
 
         private void btn_extrato_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new View.Extrato());
+            Navigation.PushAsync(new View.Funcoes.Extrato());
         }
 
         private void btn_transferencias_Clicked(object sender, EventArgs e)
         {
-            //Navigation.PushAsync(new View.Page1());
+            Navigation.PushAsync(new View.Funcoes.Transferencias());
         }
 
         private void btn_pix_Clicked(object sender, EventArgs e)
@@ -68,7 +68,7 @@ namespace AppBancoDigital.View
 
         private void btn_cartao_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new View.Cartoes());
+            Navigation.PushAsync(new View.Dados.Cartoes() );
         }
     }
 }

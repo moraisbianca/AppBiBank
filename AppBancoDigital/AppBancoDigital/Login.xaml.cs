@@ -69,7 +69,7 @@ namespace AppBancoDigital
 
         private void btn_registrar(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new View.Correntista());
+            Navigation.PushAsync(new View.Dados.Correntista());
         }
 
         private void esqueci_senha(object sender, EventArgs e)

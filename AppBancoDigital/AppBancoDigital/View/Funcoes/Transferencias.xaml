@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppBancoDigital.View.Pix.HomePix"
-             Title="Pix">
+             x:Class="AppBancoDigital.View.Funcoes.Transferencias"
+             Title="Transações">
     <ContentPage.Content>
         <StackLayout  Orientation="Horizontal"
                 Style="{StaticResource StackTitulo}">
 
             <!-- aqui vai uma imagem de setinha para retornar onde tava -->
-            <Label Text="Pix" Style="{StaticResource LabelMenu}"/>
+            <Label Text="Transferências" Style="{StaticResource LabelMenu}"/>
             <!-- aqui é uma imagem de um "?" -->
 
         </StackLayout>

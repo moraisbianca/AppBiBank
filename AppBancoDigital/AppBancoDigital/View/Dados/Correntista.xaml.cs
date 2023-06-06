@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace AppBancoDigital.View
+namespace AppBancoDigital.View.Dados
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Correntista : ContentPage
@@ -26,6 +26,7 @@ namespace AppBancoDigital.View
         {    
             try
             {
+
                 Model.Correntista c = await DataServiceCorrentista.Cadastrar(new Model.Correntista
                 {
                     Nome = txt_nome.Text,

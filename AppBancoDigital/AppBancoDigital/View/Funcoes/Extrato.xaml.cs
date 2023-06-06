@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace AppBancoDigital.View.Dados
+namespace AppBancoDigital.View.Funcoes
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Conta : ContentPage
-	{
-		public Conta ()
-		{
-			InitializeComponent ();
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Extrato : ContentPage
+    {
+        public Extrato()
+        {
+            InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
         }
-	}
+    }
 }

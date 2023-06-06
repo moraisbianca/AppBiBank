@@ -6,7 +6,7 @@
             >
 
     <ContentPage.Content>
-        <StackLayout Margin="0, 25, 0, 0"  BackgroundColor="#f2f3f7">
+        <StackLayout Style="{StaticResource StackStatusBar}">
 
             <StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
                 <Label Text="bibank" Style="{StaticResource FonteLogo}"
@@ -47,19 +47,23 @@
 
             <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*" BackgroundColor="Transparent" Padding="15">
 
-                <Frame Grid.Column="0" Grid.Row="0" Style="{StaticResource BotaoHome}"
-                       HasShadow="True">
-                    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-                        <ImageButton x:Name="btn_extrato" 
+                <!--  -->
+                <Frame Grid.Column="0" Grid.Row="0" 
+                       HasShadow="True"
+                       Style="{StaticResource BotaoHome}">
+                    <StackLayout HorizontalOptions="Center"
+                                 Padding="5"
+                                 VerticalOptions="Center">
+                        <ImageButton x:Name="btn_extrato"
                                      Clicked="btn_extrato_Clicked"
                                      BackgroundColor="Transparent"
                                      WidthRequest="30"
                                      Margin="5"/>
 
-                        <Label Text="Extrato"
+                         <Label Text="Extrato"
                                HorizontalOptions="Center"
                                FontSize="11"
-                               Style="{StaticResource LabelBotaoHome}"/>
+                               Style="{StaticResource LabelBotaoHome}"/> 
                     </StackLayout>
                 </Frame>
 

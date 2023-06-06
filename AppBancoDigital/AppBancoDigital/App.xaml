@@ -62,11 +62,33 @@
             <!-- Botões de ação da home-->
             <Style x:Key="BotaoHome" TargetType="Frame">
                 <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
-                <Setter Property="WidthRequest" Value="75"/>
-                <Setter Property="HeightRequest" Value="70"/>
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="WidthRequest" Value="150"/>
+                <Setter Property="HeightRequest" Value="100"/>
                 <Setter Property="BackgroundColor" Value="White"/>
                 <Setter Property="HasShadow" Value="True"/>
                 <Setter Property="CornerRadius" Value="12"/>
+            </Style>
+
+            
+            <Style x:Key="StackStatusBar" TargetType="StackLayout">
+                <Setter Property="Margin" Value="0,25,0,0"/>
+                <Setter Property="BackgroundColor" Value="#f2f3f7"/>
+            </Style>
+            
+            <!-- Gambiarra do Stacklayout para fazer a barra de título -->
+            <Style x:Key="StackTitulo" TargetType="StackLayout">
+                <Setter Property="HeightRequest" Value="60"/>
+            </Style>
+
+            <!-- Font da barra de título -->
+            <Style x:Key="LabelMenu" TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                <!--<Setter Property="Margin" Value="0,15,0,0"/>-->
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
             </Style>
 
         </ResourceDictionary>

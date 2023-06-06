@@ -63,8 +63,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="View\Transacao.xaml.cs">
-      <DependentUpon>Transacao.xaml</DependentUpon>
+    <Compile Update="View\Funcoes\Transferencias.xaml.cs">
+      <DependentUpon>Transferencias.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -73,6 +73,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\Dados\Cartoes.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Menu.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\Pix\ChavePix.xaml">
@@ -84,7 +87,7 @@
     <EmbeddedResource Update="View\Dados\Correntista.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\Funções\Extrato.xaml">
+    <EmbeddedResource Update="View\Funcoes\Extrato.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\Home.xaml">
@@ -99,7 +102,7 @@
     <EmbeddedResource Update="View\Pix\ReceberComPix.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\Transacao.xaml">
+    <EmbeddedResource Update="View\Funcoes\Transferencias.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

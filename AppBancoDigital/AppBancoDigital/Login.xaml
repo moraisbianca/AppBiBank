@@ -33,7 +33,7 @@
 
                     <Label Text="CPF:" Style="{StaticResource LabelTituloCampo}"/>
                     <Entry x:Name="txt_cpf"
-                           Margin="0,0,0,10">
+                           Margin="0,0,0,10" TabIndex="0">
                         <Entry.Behaviors>
                             <behaviorPack:MaskedBehavior Mask="XXX.XXX.XXX-XX" />
                         </Entry.Behaviors>
@@ -43,12 +43,13 @@
                     <StackLayout Orientation="Horizontal">
                         <Entry x:Name="txt_senha" IsPassword="True"
                                WidthRequest="230"
-                               Margin="0,0,10,0">
+                               Margin="0,0,10,0" TabIndex="1">
                         </Entry>
 
                         <ImageButton x:Name="btn_senha"
                                      BackgroundColor="Transparent" 
-                                     Clicked="ver_senha"/>
+                                     Clicked="ver_senha"
+                                     TabIndex="2"/>
 
                     </StackLayout>
                     <Label x:Name="lbl_erro" Text="" Style="{StaticResource LabelErro}"/>
@@ -61,7 +62,7 @@
                             Text="Esqueci minha senha"
                             Style="{StaticResource LabelEsqueciSenha}"/>-->
 
-                    <Button Text="Entrar" Style="{StaticResource BotaoVazado}" Margin="0,2,0,30" Clicked="btn_entrar" />
+                    <Button Text="Entrar" Style="{StaticResource BotaoVazado}" Margin="0,2,0,30" Clicked="btn_entrar" TabIndex="3"/>
 
 
                     <Label Text="Não possui conta? Cadastre-se aqui!" 
@@ -71,7 +72,7 @@
                            HorizontalTextAlignment="Center"/>
                     
 
-                    <Button Text="Registrar" Style="{StaticResource BotaoRoxo}" Margin="0,10,0,0" Clicked="btn_registrar" />
+                    <Button Text="Registrar" Style="{StaticResource BotaoRoxo}" Margin="0,10,0,0" Clicked="btn_registrar" TabIndex="5"/>
 
                 </StackLayout>
             </Frame>

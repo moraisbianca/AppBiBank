@@ -4,9 +4,14 @@
              x:Class="AppBancoDigital.View.Pix.ReceberComPix">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout  Orientation="Horizontal"
+                Style="{StaticResource StackTitulo}">
+
+                <!-- aqui vai uma imagem de setinha para retornar onde tava -->
+                <Label Text="Receber com pix" Style="{StaticResource LabelMenu}"/>
+                <!-- aqui é uma imagem de um "?" -->
+
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

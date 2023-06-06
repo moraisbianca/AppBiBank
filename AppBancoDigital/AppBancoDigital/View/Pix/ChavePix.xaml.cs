@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace AppBancoDigital.View
+namespace AppBancoDigital.View.Pix
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ChavePix : ContentPage

@@ -15,6 +15,7 @@ namespace AppBancoDigital.View.Pix
         public HomePix()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }

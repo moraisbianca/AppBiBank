@@ -9,12 +9,12 @@ using Xamarin.Forms.Xaml;
 
 namespace AppBancoDigital.View
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Extrato : ContentPage
-    {
-        public Extrato()
-        {
-            InitializeComponent();
-        }
-    }
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class Menu : ContentPage
+	{
+		public Menu ()
+		{
+			InitializeComponent ();
+		}
+	}
 }
