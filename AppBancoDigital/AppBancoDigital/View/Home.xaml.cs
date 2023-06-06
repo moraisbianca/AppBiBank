@@ -20,12 +20,12 @@ namespace AppBancoDigital.View
             btn_extrato.Source = ImageSource.FromResource("AppBancoDigital.Images.extrato-banco.png");
             btn_pix.Source = ImageSource.FromResource("AppBancoDigital.Images.icon-pix-512.png");
             btn_transferencias.Source = ImageSource.FromResource("AppBancoDigital.Images.transferencia.png");
-            //btn_cartao.Source = ImageSource.FromResource("AppBancoDigital.Images.cartao-de-credito.png");
+            btn_cartao.Source = ImageSource.FromResource("AppBancoDigital.Images.cartao-de-credito.png");
 
             string[] resultsArray = explode(" ", App.DadosCorrentista.Nome);
+            string nome = resultsArray[0];
 
-            txt_correntista.Text = resultsArray[0];
-            //txt_saldo.Text = "";
+            txt_correntista.Text = nome;
         }
 
         public static string[] explode(string separator, string source)
@@ -53,17 +53,22 @@ namespace AppBancoDigital.View
 
         private void btn_extrato_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new View.Extrato());
         }
 
         private void btn_transferencias_Clicked(object sender, EventArgs e)
         {
-
+            //Navigation.PushAsync(new View.Page1());
         }
 
         private void btn_pix_Clicked(object sender, EventArgs e)
         {
+            Navigation.PushAsync(new View.Pix.HomePix());
+        }
 
+        private void btn_cartao_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.Cartoes());
         }
     }
 }
