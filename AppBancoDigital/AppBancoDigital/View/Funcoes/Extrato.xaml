@@ -11,7 +11,8 @@
                 Style="{StaticResource StackTitulo}">
 
                 <!-- aqui vai uma imagem de setinha para retornar onde tava -->
-                <Label Text="Extrato e devoluções" Style="{StaticResource LabelMenu}"/>
+                <Label Text="Extrato e devoluções" Style="{StaticResource LabelMenu}"
+                       Margin="115,20,100,20"/>
                 <!-- aqui é uma imagem de um "?" -->
                 
             </StackLayout>

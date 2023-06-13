@@ -60,6 +60,7 @@ namespace AppBancoDigital
             catch (Exception ex)
             {
                 await DisplayAlert("Ops", ex.Message, "OK");
+                Console.WriteLine(ex.StackTrace);
             }
             finally
             {

@@ -17,34 +17,34 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Images\cartao-de-credito.png" />
-    <None Remove="Images\extrato-banco.png" />
-    <None Remove="Images\icon-pix-512.png" />
+    <None Remove="Images\Botao-Cartoes.png" />
+    <None Remove="Images\Botao-Extrato.png" />
+    <None Remove="Images\Botao-Pix.png" />
+    <None Remove="Images\Botao-Transacoes.png" />
     <None Remove="Images\invisivel.png" />
     <None Remove="Images\ocultarsenha.png" />
     <None Remove="Images\oculto.png" />
     <None Remove="Images\olhoaberto.png" />
     <None Remove="Images\olhofechado.png" />
-    <None Remove="Images\transferencia.png" />
     <None Remove="Images\trespontos.png" />
     <None Remove="Images\versenha.png" />
     <None Remove="Images\visivel.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Images\cartao-de-credito.png">
+    <EmbeddedResource Include="Images\Botao-Cartoes.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Images\extrato-banco.png">
+    <EmbeddedResource Include="Images\Botao-Extrato.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Images\icon-pix-512.png">
+    <EmbeddedResource Include="Images\Botao-Pix.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Botao-Transacoes.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\invisivel.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Images\transferencia.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\trespontos.png">
@@ -69,6 +69,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="App.xaml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Update="Login.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

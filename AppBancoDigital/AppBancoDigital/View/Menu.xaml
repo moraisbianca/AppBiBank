@@ -2,9 +2,43 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Menu"
-             Title="Configurações">
+             Title="Configurações"
+             BackgroundColor="#993399">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Style="{StaticResource StackStatusBar}">
+            <StackLayout  Orientation="Horizontal"
+                Style="{StaticResource StackTitulo}">
+
+                <!-- aqui vai uma imagem de setinha para retornar onde tava -->
+                <Label Text="Menu" Style="{StaticResource LabelMenu}" Margin="173,20,0,20"/>
+                <!-- aqui é uma imagem de um "?" -->
+
+
+            </StackLayout>
+
+            <Label x:Name="txt_correntista"
+                   Text="teste"
+                   FontAttributes="Bold"
+                   FontFamily="Century Gothic"
+                   Margin="0,10,0,0"
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   TextTransform="Uppercase"/>
+
+            <Button Text="Ver dados bancários"
+                    BackgroundColor="Transparent"
+                    TextColor="#ac58aa"
+                    BorderColor="#ac58aa"
+                    BorderWidth="2"
+                    CornerRadius="10"
+                    Margin="50,10,50,10"
+                    TextTransform="None"/>
+
+            <Label Text="Configurações"
+                   Margin="30,30,0,0"/>
+
+            <Line X1="360" Stroke="black"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

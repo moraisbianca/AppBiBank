@@ -24,6 +24,7 @@
 
 
             <Label x:Name="txt_correntista"
+                   Text="teste"
                    FontAttributes="Bold"
                    FontFamily="Century Gothic"
                    Margin="30,10,20,0"
@@ -51,69 +52,35 @@
                 <Frame Grid.Column="0" Grid.Row="0" 
                        HasShadow="True"
                        Style="{StaticResource BotaoHome}">
-                    <StackLayout HorizontalOptions="Center"
-                                 Padding="5"
-                                 VerticalOptions="Center">
-                        <ImageButton x:Name="btn_extrato"
-                                     Clicked="btn_extrato_Clicked"
-                                     BackgroundColor="Transparent"
-                                     WidthRequest="30"
-                                     Margin="5"/>
-
-                         <Label Text="Extrato"
-                               HorizontalOptions="Center"
-                               FontSize="11"
-                               Style="{StaticResource LabelBotaoHome}"/> 
-                    </StackLayout>
+                    <ImageButton x:Name="btn_extrato"
+                                 Clicked="btn_extrato_Clicked"
+                                 BackgroundColor="Transparent"
+                                 Scale="0.7"/>
                 </Frame>
 
 
                 <Frame Grid.Column="1" Grid.Row="0" Style="{StaticResource BotaoHome}"
                        HasShadow="True">
-                    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-                        <ImageButton x:Name="btn_transferencias" 
-                                     Clicked="btn_transferencias_Clicked"
-                                     BackgroundColor="Transparent"
-                                     WidthRequest="30"
-                                     Margin="5"/>
-
-                        <Label Text="Transferências"
-                               HorizontalOptions="Center"
-                               FontSize="11"
-                               Style="{StaticResource LabelBotaoHome}"/>
-                    </StackLayout>
+                    <ImageButton x:Name="btn_transferencias"
+                                 Clicked="btn_transferencias_Clicked"
+                                 BackgroundColor="Transparent"
+                                 Scale="0.7"/>
                 </Frame>
 
 
                 <Frame Grid.Column="2" Grid.Row="0" Style="{StaticResource BotaoHome}"
                        HasShadow="True">
-                    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-                        <ImageButton x:Name="btn_pix" 
-                                     Clicked="btn_pix_Clicked"
-                                     BackgroundColor="Transparent"
-                                     WidthRequest="28"
-                                     Margin="5"/>
-
-                        <Label Text="Pix"
-                               HorizontalOptions="Center"
-                               FontSize="11"
-                               Style="{StaticResource LabelBotaoHome}"/>
-                    </StackLayout>
+                    <ImageButton x:Name="btn_pix"
+                                 Clicked="btn_pix_Clicked"
+                                 BackgroundColor="Transparent"
+                                 Scale="0.7"/>
                 </Frame>
 
-                <Frame Grid.Column="0" Grid.Row="1" Style="{StaticResource BotaoHome}" HasShadow="True">
-                    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-                        <ImageButton x:Name="btn_cartao"
-                                         Clicked="btn_cartao_Clicked"
-                                         BackgroundColor="Transparent"
-                                         WidthRequest="28"
-                                         Margin="5"/>
-                        <Label Text="Cartões"
-                               HorizontalOptions="Center"
-                               FontSize="11"
-                               Style="{StaticResource LabelBotaoHome}"/>
-
-                    </StackLayout>
+                <Frame Grid.Column="3" Grid.Row="0" Style="{StaticResource BotaoHome}" HasShadow="True">
+                    <ImageButton x:Name="btn_cartao"
+                                 Clicked="btn_cartao_Clicked"
+                                 BackgroundColor="Transparent"
+                                 Scale="0.7"/>
                 </Frame>
             </Grid>
 

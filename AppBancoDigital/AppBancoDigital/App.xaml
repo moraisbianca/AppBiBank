@@ -63,8 +63,8 @@
             <Style x:Key="BotaoHome" TargetType="Frame">
                 <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
                 <Setter Property="Padding" Value="0" />
-                <Setter Property="WidthRequest" Value="150"/>
-                <Setter Property="HeightRequest" Value="100"/>
+                <Setter Property="WidthRequest" Value="100"/>
+                <Setter Property="HeightRequest" Value="90"/>
                 <Setter Property="BackgroundColor" Value="White"/>
                 <Setter Property="HasShadow" Value="True"/>
                 <Setter Property="CornerRadius" Value="12"/>
@@ -86,8 +86,6 @@
                 <Setter Property="TextColor" Value="Black"/>
                 <!--<Setter Property="Margin" Value="0,15,0,0"/>-->
                 <Setter Property="FontSize" Value="15"/>
-                <Setter Property="HorizontalTextAlignment" Value="Center"/>
-                <Setter Property="VerticalTextAlignment" Value="Center"/>
                 <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
             </Style>
 
