@@ -26,6 +26,8 @@
     <None Remove="Images\oculto.png" />
     <None Remove="Images\olhoaberto.png" />
     <None Remove="Images\olhofechado.png" />
+    <None Remove="Images\ponto-de-interrogacao.png" />
+    <None Remove="Images\seta-esquerda.png" />
     <None Remove="Images\trespontos.png" />
     <None Remove="Images\versenha.png" />
     <None Remove="Images\visivel.png" />
@@ -45,6 +47,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\invisivel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\ponto-de-interrogacao.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\seta-esquerda.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\trespontos.png">

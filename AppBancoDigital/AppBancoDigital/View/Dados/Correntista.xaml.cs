@@ -10,41 +10,48 @@ using Xamarin.Forms.Xaml;
 
 namespace AppBancoDigital.View.Dados
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Correntista : ContentPage
-	{
-		public Correntista ()
-		{
-			InitializeComponent ();
-			NavigationPage.SetHasNavigationBar(this,false);
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Correntista : ContentPage
+    {
+        public Correntista()
+        {
+            InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
             dtpck_datanasc.MaximumDate = DateTime.Now.AddYears(-16);
             btn_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
             btn_confirme_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
         }
 
         private async void continuar(object sender, EventArgs e)
-        {    
-            try
+        {
+            if (txt_senha.Text != txt_confirme_senha.Text)
             {
-
-                Model.Correntista c = await DataServiceCorrentista.Cadastrar(new Model.Correntista
+                lbl_erro.Text = "A senha deve ser a mesma nos dois campos!";
+            }
+            else
+            {
+                try
                 {
-                    Nome = txt_nome.Text,
-                    Senha = txt_senha.Text,
-                    DataNasc = dtpck_datanasc.Date,
-                    Cpf = txt_cpf.Text.Replace(".", string.Empty).Replace("-", string.Empty)
-                });
+                    Model.Correntista c = await DataServiceCorrentista.Cadastrar(new Model.Correntista
+                    {
+                        Nome = txt_nome.Text,
+                        Senha = txt_senha.Text,
+                        DataNasc = dtpck_datanasc.Date,
+                        Cpf = txt_cpf.Text.Replace(".", string.Empty).Replace("-", string.Empty)
+                    });
 
-                string msg = $"Correntista criado! Faça login para acessar.";
+                    string msg = $"Correntista criado! Faça login para acessar.";
 
-                await DisplayAlert("Sucesso!", msg, "OK");
+                    await DisplayAlert("Sucesso!", msg, "OK");
 
-                await Navigation.PushAsync(new Login());
+                    await Navigation.PushAsync(new Login());
+                }
+                catch (Exception ex)
+                {
+                    await DisplayAlert("Ops", ex.Message, "OK");
+                }
             }
-            catch (Exception ex)
-            {
-                await DisplayAlert("Ops", ex.Message, "OK");
-            }
+
         }
 
         private void ver_senha(object sender, EventArgs e)

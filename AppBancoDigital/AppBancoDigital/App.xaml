@@ -78,14 +78,25 @@
             
             <!-- Gambiarra do Stacklayout para fazer a barra de título -->
             <Style x:Key="StackTitulo" TargetType="StackLayout">
-                <Setter Property="HeightRequest" Value="60"/>
+                <Setter Property="HeightRequest" Value="70"/>
             </Style>
 
             <!-- Font da barra de título -->
             <Style x:Key="LabelMenu" TargetType="Label">
                 <Setter Property="TextColor" Value="Black"/>
-                <!--<Setter Property="Margin" Value="0,15,0,0"/>-->
                 <Setter Property="FontSize" Value="15"/>
+                <Setter Property="TextTransform" Value="Uppercase"/>
+                <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
+            </Style>
+            
+            <!-- Botões de navegação dentro do menu -->
+            <Style x:Key="PaginasMenu" TargetType="Button">
+                <Setter Property="TextTransform" Value="None"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="FontSize" Value="13"/>
+                <Setter Property="Margin" Value="70,0,0,0"/>
+                <Setter Property="HeightRequest" Value="35"/>
+                <Setter Property="HorizontalOptions" Value="Start"/>
                 <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
             </Style>
 

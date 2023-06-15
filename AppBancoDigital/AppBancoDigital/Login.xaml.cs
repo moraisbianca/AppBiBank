@@ -37,36 +37,47 @@ namespace AppBancoDigital
         private async void btn_entrar(object sender, EventArgs e)
         {
             carregando.IsRunning = true;
-            try
-            {
-                Model.Correntista c = await DataServiceCorrentista.Entrar(new Model.Correntista
-                {
-                    Senha = txt_senha.Text,
-                    Cpf = txt_cpf.Text.Replace(".", string.Empty).Replace("-", string.Empty)
-                });
 
-                if (c.Id != null)
-                {
-                    App.DadosCorrentista = c;
-
-                    await Navigation.PushAsync(new Home());
-                }
-                else
-                {
-                    lbl_erro.Text = "Usuário ou senha incorretos!";
-                }
-
-            }
-            catch (Exception ex)
+            if (txt_cpf.Text == null || txt_senha.Text == null)
             {
-                await DisplayAlert("Ops", ex.Message, "OK");
-                Console.WriteLine(ex.StackTrace);
-            }
-            finally
-            {
+                lbl_erro.Text = "Insira o usuário e a senha!";
                 carregando.IsRunning = false;
             }
+            else
+            {
+                try
+                {
+                    Model.Correntista c = await DataServiceCorrentista.Entrar(new Model.Correntista
+                    {
+                        Senha = txt_senha.Text,
+                        Cpf = txt_cpf.Text.Replace(".", string.Empty).Replace("-", string.Empty)
+                    });
+
+                    if (c.Id != null)
+                    {
+                        App.DadosCorrentista = c;
+
+                        await Navigation.PushAsync(new Home());
+                    }
+                    else
+                    {
+                        lbl_erro.Text = "Usuário ou senha incorretos!";
+                        carregando.IsRunning = false;
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    await DisplayAlert("Ops", ex.Message, "OK");
+                    Console.WriteLine(ex.StackTrace);
+                }
+                finally
+                {
+                    carregando.IsRunning = false;
+                }
+            }
         }
+
 
         private void btn_registrar(object sender, EventArgs e)
         {

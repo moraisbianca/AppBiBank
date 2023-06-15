@@ -73,7 +73,7 @@
                     <StackLayout Orientation="Horizontal">
                         <Entry x:Name="txt_confirme_senha" IsPassword="True"
                                WidthRequest="230"
-                               Margin="0,0,10,10">
+                               Margin="0,0,10,0">
                             <Entry.Behaviors>
                                 <behaviorPack:PasswordValidationBehavior />
                                 <behaviorPack:CompareValidationBehavior BindingContext="{x:Reference txt_senha}" Text="{Binding Text}"/>
@@ -86,6 +86,7 @@
 
                     </StackLayout>
 
+                    <Label x:Name="lbl_erro" Text="" Style="{StaticResource LabelErro}"/>
                     
 
                     <Button Text="Continuar" Style="{StaticResource BotaoRoxo}" Clicked="continuar" />
