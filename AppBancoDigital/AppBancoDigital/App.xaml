@@ -14,6 +14,11 @@
             <!-- Label dos campos-->
             <Style x:Key="LabelTituloCampo" TargetType="Label">
                 <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
+            </Style
+                   >
+            <!-- Fonte Botões-->
+            <Style x:Key="FonteBotão" TargetType="Button">
+                <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
             </Style>
 
             <!-- Label mensagem de erro-->

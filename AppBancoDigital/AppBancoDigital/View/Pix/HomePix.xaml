@@ -18,7 +18,7 @@
                              Grid.Column="0"
                              Grid.Row="0"/>
 
-                    <Label Text="Pix" Style="{StaticResource LabelMenu}" Margin="98,27,0,20" 
+                    <Label Text="Pix" Style="{StaticResource LabelMenu}" Margin="108,27,0,20" 
                                    Grid.Column="1"
                                    Grid.Row="0"
                                    Grid.ColumnSpan="3"/>
@@ -27,7 +27,7 @@
                                          Clicked="btn_interrogacao_Clicked"
                                          BackgroundColor="Transparent"
                                          Scale="0.8"
-                                         Margin="10,25,40,20"
+                                         Margin="9,28,40,20"
                                          Grid.Column="4"
                                          Grid.Row="0"/>
                 </Grid>
@@ -35,12 +35,42 @@
 
             <ScrollView>
 
-                <Frame>
-                    <!--imagem icone-->
-                    <!-- label -->
-                    <!-- setinha de ação-->
+                <!--imagem icone-->
+                <!-- label -->
+                <!-- setinha de ação-->
+                <StackLayout>
+                    <Button Text="Pagar"
+                            Margin="25,10,25,0"
+                            BackgroundColor="Transparent"
+                            BorderColor="LightGray"
+                            BorderWidth="1"
+                            CornerRadius="8"
+                            TextTransform="None"
+                            HeightRequest="60"
+                            Style="{StaticResource FonteBotão}"/>
 
-                </Frame>
+                    <Button Text="Receber"
+                            Margin="25,10,25,20"
+                            BackgroundColor="Transparent"
+                            BorderColor="LightGray"
+                            BorderWidth="1"
+                            CornerRadius="8"
+                            TextTransform="None"
+                            HeightRequest="60"
+                            Style="{StaticResource FonteBotão}"/>
+
+                    <Label Text="Mais ações"
+                           TextColor="Black"
+                           Margin="25,5,0,0"
+                           FontSize="17"
+                           Style="{StaticResource LabelTituloCampo}"/>
+
+                    <Grid RowDefinitions="*,*" ColumnDefinitions="*,*,*,*,*">
+
+
+                    </Grid>
+
+                </StackLayout>
             </ScrollView>
 
         </StackLayout>
