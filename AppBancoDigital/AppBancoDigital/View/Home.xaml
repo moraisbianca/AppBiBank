@@ -24,11 +24,10 @@
 
 
             <Label x:Name="txt_correntista"
-                   Text="teste"
                    FontAttributes="Bold"
                    FontFamily="Century Gothic"
                    Margin="30,10,20,0"
-                   TextColor="Transparent"/>
+                   TextColor="Black"/>
 
             <StackLayout Orientation="Horizontal" Margin="0,0,0,10" HeightRequest="20">
                 <Label x:Name="txt_saldo"

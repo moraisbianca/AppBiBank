@@ -1,5 +1,6 @@
 ﻿using AppBancoDigital.Model;
 using System;
+using System.Text.RegularExpressions;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

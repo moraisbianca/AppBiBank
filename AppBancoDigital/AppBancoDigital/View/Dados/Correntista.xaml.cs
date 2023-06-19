@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static AppBancoDigital.App;
 
 namespace AppBancoDigital.View.Dados
 {
@@ -24,31 +25,38 @@ namespace AppBancoDigital.View.Dados
 
         private async void continuar(object sender, EventArgs e)
         {
-            if (txt_senha.Text != txt_confirme_senha.Text)
+            if (txt_nome.Text == null || txt_cpf.Text == null || txt_senha.Text == null || txt_confirme_senha.Text == null)
             {
-                lbl_erro.Text = "A senha deve ser a mesma nos dois campos!";
+                lbl_erro.Text = "Preencha todos os campos!";
             }
             else
             {
-                try
+                if (txt_senha.Text != txt_confirme_senha.Text)
                 {
-                    Model.Correntista c = await DataServiceCorrentista.Cadastrar(new Model.Correntista
-                    {
-                        Nome = txt_nome.Text,
-                        Senha = txt_senha.Text,
-                        DataNasc = dtpck_datanasc.Date,
-                        Cpf = txt_cpf.Text.Replace(".", string.Empty).Replace("-", string.Empty)
-                    });
-
-                    string msg = $"Correntista criado! Faça login para acessar.";
-
-                    await DisplayAlert("Sucesso!", msg, "OK");
-
-                    await Navigation.PushAsync(new Login());
+                    lbl_erro.Text = "A senha deve ser a mesma nos dois campos!";
                 }
-                catch (Exception ex)
+                else
                 {
-                    await DisplayAlert("Ops", ex.Message, "OK");
+                    try
+                    {
+                        Model.Correntista c = await DataServiceCorrentista.Cadastrar(new Model.Correntista
+                        {
+                            Nome = txt_nome.Text,
+                            Senha = txt_senha.Text,
+                            DataNasc = dtpck_datanasc.Date,
+                            Cpf = txt_cpf.Text.Replace(".", string.Empty).Replace("-", string.Empty)
+                        });
+
+                        string msg = $"Correntista criado! Faça login para acessar.";
+
+                        await DisplayAlert("Sucesso!", msg, "OK");
+
+                        await Navigation.PushAsync(new Login());
+                    }
+                    catch (Exception ex)
+                    {
+                        await DisplayAlert("Ops", ex.Message, "OK");
+                    }
                 }
             }
 

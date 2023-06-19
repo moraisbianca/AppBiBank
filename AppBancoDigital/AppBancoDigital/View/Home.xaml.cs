@@ -17,10 +17,10 @@ namespace AppBancoDigital.View
             NavigationPage.SetHasNavigationBar(this, false);
             btn_saldo.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
 			btn_menu.Source = ImageSource.FromResource("AppBancoDigital.Images.trespontos.png");
-            btn_extrato.Source = ImageSource.FromResource("AppBancoDigital.Images.Botao-Extrato.png");
-            btn_pix.Source = ImageSource.FromResource("AppBancoDigital.Images.Botao-Pix.png");
-            btn_transferencias.Source = ImageSource.FromResource("AppBancoDigital.Images.Botao-Transacoes.png");
-            btn_cartao.Source = ImageSource.FromResource("AppBancoDigital.Images.Botao-Cartoes.png");
+            btn_extrato.Source = ImageSource.FromResource("AppBancoDigital.Images.Extrato.png");
+            btn_pix.Source = ImageSource.FromResource("AppBancoDigital.Images.Pix.png");
+            btn_transferencias.Source = ImageSource.FromResource("AppBancoDigital.Images.Transacoes.png");
+            btn_cartao.Source = ImageSource.FromResource("AppBancoDigital.Images.Cartoes.png");
 
             string[] resultsArray = explode(" ", App.DadosCorrentista.Nome);
             string nome = resultsArray[0];

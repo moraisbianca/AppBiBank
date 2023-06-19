@@ -17,42 +17,42 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Images\Botao-Cartoes.png" />
-    <None Remove="Images\Botao-Extrato.png" />
-    <None Remove="Images\Botao-Pix.png" />
-    <None Remove="Images\Botao-Transacoes.png" />
+    <None Remove="Images\Cartoes.png" />
+    <None Remove="Images\Extrato.png" />
     <None Remove="Images\invisivel.png" />
     <None Remove="Images\ocultarsenha.png" />
     <None Remove="Images\oculto.png" />
     <None Remove="Images\olhoaberto.png" />
     <None Remove="Images\olhofechado.png" />
+    <None Remove="Images\Pix.png" />
     <None Remove="Images\ponto-de-interrogacao.png" />
     <None Remove="Images\seta-esquerda.png" />
+    <None Remove="Images\Transacoes.png" />
     <None Remove="Images\trespontos.png" />
     <None Remove="Images\versenha.png" />
     <None Remove="Images\visivel.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Images\Botao-Cartoes.png">
+    <EmbeddedResource Include="Images\Cartoes.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Images\Botao-Extrato.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Images\Botao-Pix.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Images\Botao-Transacoes.png">
+    <EmbeddedResource Include="Images\Extrato.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\invisivel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Pix.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\ponto-de-interrogacao.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\seta-esquerda.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Transacoes.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\trespontos.png">

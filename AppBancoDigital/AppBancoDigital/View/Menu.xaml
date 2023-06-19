@@ -61,17 +61,12 @@
                    FontSize="14"
                    Margin="30,50,0,5"/>
 
-                    <Button Text="Navegação de algo"
+                    <Button Text="Função em andamento xd"
                     Style="{StaticResource PaginasMenu}"/>
 
                     <Line X1="360" BackgroundColor="Gray" Margin="25,0,30,0"/>
 
-                    <Button Text="Navegação de algo"
-                    Style="{StaticResource PaginasMenu}"/>
-
-                    <Line X1="360" BackgroundColor="Gray" Margin="25,0,30,0"/>
-
-                    <Button Text="Navegação de algo"
+                    <Button Text="Função em andamento xd"
                     Style="{StaticResource PaginasMenu}"/>
 
                     <Line X1="360" BackgroundColor="Gray" Margin="25,0,30,0"/>
@@ -80,17 +75,12 @@
                    FontSize="14"
                    Margin="30,50,0,5"/>
 
-                    <Button Text="Navegação de algo"
+                    <Button Text="Função em andamento xd"
                     Style="{StaticResource PaginasMenu}"/>
 
                     <Line X1="360" BackgroundColor="Gray" Margin="25,0,30,0"/>
 
-                    <Button Text="Navegação de algo"
-                    Style="{StaticResource PaginasMenu}"/>
-
-                    <Line X1="360" BackgroundColor="Gray" Margin="25,0,30,0"/>
-
-                    <Button Text="Navegação de algo"
+                    <Button Text="Função em andamento xd"
                     Style="{StaticResource PaginasMenu}"/>
 
                     <Line X1="360" BackgroundColor="Gray" Margin="25,0,30,0"/>
@@ -99,20 +89,14 @@
                    FontSize="14"
                    Margin="30,50,0,5"/>
 
-                    <Button Text="Navegação de algo"
+                    <Button Text="Função em andamento xd"
                     Style="{StaticResource PaginasMenu}"/>
 
                     <Line X1="360" BackgroundColor="Gray" Margin="25,0,30,0"/>
 
-                    <Button Text="Navegação de algo"
+                    <Button Text="Função em andamento xd"
                     Style="{StaticResource PaginasMenu}"/>
 
-                    <Line X1="360" BackgroundColor="Gray" Margin="25,0,30,0"/>
-
-                    <Button Text="Navegação de algo"
-                    Style="{StaticResource PaginasMenu}"/>
-
-                    <Line X1="360" BackgroundColor="Gray" Margin="25,0,30,0"/>
                 </StackLayout>
             </ScrollView>
 
