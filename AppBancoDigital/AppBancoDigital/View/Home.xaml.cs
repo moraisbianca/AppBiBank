@@ -25,7 +25,7 @@ namespace AppBancoDigital.View
             string[] resultsArray = explode(" ", App.DadosCorrentista.Nome);
             string nome = resultsArray[0];
 
-            txt_correntista.Text = nome;
+            txt_correntista.Text = "Olá, " + nome;
         }
 
         public static string[] explode(string separator, string source)
