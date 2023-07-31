@@ -39,7 +39,9 @@
                 <!-- label -->
                 <!-- setinha de ação-->
                 <StackLayout>
-                    <Button Text="Pagar"
+                    <Button x:Name="btn_pagar_pix"
+                            Text="Pagar"
+                            Clicked="btn_pagar_pix_Clicked"
                             Margin="25,10,25,0"
                             BackgroundColor="Transparent"
                             BorderColor="LightGray"
@@ -49,7 +51,9 @@
                             HeightRequest="60"
                             Style="{StaticResource FonteBotão}"/>
 
-                    <Button Text="Receber"
+                    <Button x:Name="btn_receber_pix"
+                            Text="Receber"
+                            Clicked="btn_receber_pix_Clicked"
                             Margin="25,10,25,20"
                             BackgroundColor="Transparent"
                             BorderColor="LightGray"

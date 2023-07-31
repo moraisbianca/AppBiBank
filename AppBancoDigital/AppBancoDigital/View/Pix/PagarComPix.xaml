@@ -1,17 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppBancoDigital.View.Pix.PagarComPix">
+             x:Class="AppBancoDigital.View.Pix.PagarComPix"
+             BackgroundColor="#993399"
+             Title="Pagar com Pix">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout  Orientation="Horizontal"
+        <StackLayout  Orientation="Horizontal"
                 Style="{StaticResource StackTitulo}">
 
-                <!-- aqui vai uma imagem de setinha para retornar onde tava -->
-                <Label Text="Pagar com pix" Style="{StaticResource LabelMenu}"/>
-                <!-- aqui é uma imagem de um "?" -->
+            <Grid RowDefinitions="*" ColumnDefinitions="*,*,*,*,*" >
+                <ImageButton x:Name="btn_voltar" 
+                             Clicked="btn_voltar_Clicked"
+                             BackgroundColor="Transparent"
+                             Scale="0.8"
+                             Margin="40,25,0,20"
+                             Grid.Column="0"
+                             Grid.Row="0"/>
 
-            </StackLayout>
+                <Label Text="Pagar com Pix" Style="{StaticResource LabelMenu}" Margin="108,27,0,20" 
+                                   Grid.Column="1"
+                                   Grid.Row="0"
+                                   Grid.ColumnSpan="3"/>
+
+                <ImageButton x:Name="btn_interrogacao"
+                             Clicked="btn_interrogacao_Clicked"
+                             BackgroundColor="Transparent"
+                             Scale="0.8"
+                             Margin="9,28,40,20"
+                                         Grid.Column="4"
+                                         Grid.Row="0"/>
+            </Grid>
         </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>

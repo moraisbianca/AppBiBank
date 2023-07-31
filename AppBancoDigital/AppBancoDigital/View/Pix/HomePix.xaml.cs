@@ -29,5 +29,15 @@ namespace AppBancoDigital.View.Pix
         {
             Navigation.PushAsync(new View.Home());
         }
+
+        private void btn_pagar_pix_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.Pix.PagarComPix());
+        }
+
+        private void btn_receber_pix_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.Pix.ReceberComPix());
+        }
     }
 }

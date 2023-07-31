@@ -54,7 +54,7 @@
                     <ImageButton x:Name="btn_extrato"
                                  Clicked="btn_extrato_Clicked"
                                  BackgroundColor="Transparent"
-                                 Scale="0.7"/>
+                                 Scale="0.8"/>
                 </Frame>
 
 
@@ -63,7 +63,7 @@
                     <ImageButton x:Name="btn_transferencias"
                                  Clicked="btn_transferencias_Clicked"
                                  BackgroundColor="Transparent"
-                                 Scale="0.7"/>
+                                 Scale="0.8"/>
                 </Frame>
 
 
@@ -72,14 +72,14 @@
                     <ImageButton x:Name="btn_pix"
                                  Clicked="btn_pix_Clicked"
                                  BackgroundColor="Transparent"
-                                 Scale="0.7"/>
+                                 Scale="0.8"/>
                 </Frame>
 
                 <Frame Grid.Column="3" Grid.Row="0" Style="{StaticResource BotaoHome}" HasShadow="True">
                     <ImageButton x:Name="btn_cartao"
                                  Clicked="btn_cartao_Clicked"
                                  BackgroundColor="Transparent"
-                                 Scale="0.7"/>
+                                 Scale="0.8"/>
                 </Frame>
             </Grid>
 

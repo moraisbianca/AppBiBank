@@ -15,6 +15,18 @@ namespace AppBancoDigital.View.Pix
         public PagarComPix()
         {
             InitializeComponent();
+            btn_voltar.Source = ImageSource.FromResource("AppBancoDigital.Images.seta-esquerda.png");
+            btn_interrogacao.Source = ImageSource.FromResource("AppBancoDigital.Images.ponto-de-interrogacao.png");
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
+
+        private void btn_voltar_Clicked(object sender, EventArgs e)
+        {
+
+        }
+        private void btn_interrogacao_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 }

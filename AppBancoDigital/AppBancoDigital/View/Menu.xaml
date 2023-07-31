@@ -5,7 +5,7 @@
              Title="Configurações"
              BackgroundColor="#993399">
     <ContentPage.Content>
-        <StackLayout Style="{StaticResource StackStatusBar}">
+        <StackLayout Margin="0,25,0,0" BackgroundColor="White">
             <StackLayout  Orientation="Horizontal"
                 Style="{StaticResource StackTitulo}">
 
