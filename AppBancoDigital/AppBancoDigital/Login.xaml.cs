@@ -1,6 +1,9 @@
 ﻿using AppBancoDigital.Model;
 using AppBancoDigital.Service;
 using AppBancoDigital.View;
+using AppBancoDigital.View.Popup;
+using Rg.Plugins.Popup.Pages;
+using Rg.Plugins.Popup.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -79,9 +82,13 @@ namespace AppBancoDigital
         }
 
 
-        private void btn_registrar(object sender, EventArgs e)
+        private async void btn_registrar(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new View.Dados.Correntista());
+            //Navigation.PushAsync(new View.Dados.Correntista());
+
+            var page = new PopupMenu();
+
+            await PopupNavigation.Instance.PushAsync(page);
         }
 
         private void esqueci_senha(object sender, EventArgs e)
