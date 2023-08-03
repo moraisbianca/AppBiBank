@@ -14,8 +14,12 @@
             <!-- Label dos campos-->
             <Style x:Key="LabelTituloCampo" TargetType="Label">
                 <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
-            </Style
-                   >
+            </Style>
+
+            <Style x:Key="LabelPopup" TargetType="Label">
+                 <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic.ttf#century-gothic'}" />
+            </Style>
+                
             <!-- Fonte Botões-->
             <Style x:Key="FonteBotão" TargetType="Button">
                 <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
@@ -55,7 +59,7 @@
                 <Setter Property="TextColor" Value="#FFF" />
                 <Setter Property="CornerRadius" Value="10" />
             </Style>
-            
+
 
             <!-- Label dos botões de ação da home-->
             <Style x:Key="LabelBotaoHome" TargetType="Label">
@@ -75,12 +79,12 @@
                 <Setter Property="CornerRadius" Value="12"/>
             </Style>
 
-            
+
             <Style x:Key="StackStatusBar" TargetType="StackLayout">
                 <Setter Property="Margin" Value="0,25,0,0"/>
                 <Setter Property="BackgroundColor" Value="#f2f3f7"/>
             </Style>
-            
+
             <!-- Gambiarra do Stacklayout para fazer a barra de título -->
             <Style x:Key="StackTitulo" TargetType="StackLayout">
                 <Setter Property="HeightRequest" Value="70"/>
@@ -93,7 +97,7 @@
                 <Setter Property="TextTransform" Value="Uppercase"/>
                 <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
             </Style>
-            
+
             <!-- Botões de navegação dentro do menu -->
             <Style x:Key="PaginasMenu" TargetType="Button">
                 <Setter Property="TextTransform" Value="None"/>

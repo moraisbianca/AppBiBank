@@ -85,10 +85,6 @@ namespace AppBancoDigital
         private async void btn_registrar(object sender, EventArgs e)
         {
             Navigation.PushAsync(new View.Dados.Correntista());
-
-            //var page = new PopupMenu();
-
-            //await PopupNavigation.Instance.PushAsync(page);
         }
 
         private void esqueci_senha(object sender, EventArgs e)

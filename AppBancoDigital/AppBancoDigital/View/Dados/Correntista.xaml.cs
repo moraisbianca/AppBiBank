@@ -1,5 +1,7 @@
 ﻿using AppBancoDigital.Model;
 using AppBancoDigital.Service;
+using AppBancoDigital.View.Popup;
+using Rg.Plugins.Popup.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,15 +49,18 @@ namespace AppBancoDigital.View.Dados
                             Cpf = txt_cpf.Text.Replace(".", string.Empty).Replace("-", string.Empty)
                         });
 
-                        string msg = $"Correntista criado! Faça login para acessar.";
+                        var page = new PopupSucesso();
 
-                        await DisplayAlert("Sucesso!", msg, "OK");
+                        await PopupNavigation.Instance.PushAsync(page);
 
-                        await Navigation.PushAsync(new Login());
                     }
                     catch (Exception ex)
                     {
-                        await DisplayAlert("Ops", ex.Message, "OK");
+                        string error = ex.Message;
+
+                        var page = new PopupErro();
+
+                        await PopupNavigation.Instance.PushAsync(page);
                     }
                 }
             }

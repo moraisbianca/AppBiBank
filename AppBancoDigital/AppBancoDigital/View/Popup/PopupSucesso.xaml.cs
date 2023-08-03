@@ -16,6 +16,8 @@ namespace AppBancoDigital.View.Popup
 		public PopupSucesso ()
 		{
 			InitializeComponent ();
-		}
-	}
+        }
+
+		
+    }
 }

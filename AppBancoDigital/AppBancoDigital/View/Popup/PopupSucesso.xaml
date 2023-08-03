@@ -3,7 +3,8 @@
                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                  xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
                  xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
-                 x:Class="AppBancoDigital.View.Popup.PopupSucesso">
+                 x:Class="AppBancoDigital.View.Popup.PopupSucesso"
+                 CloseWhenBackgroundIsClicked="True" BackgroundInputTransparent="True" BackgroundClickedCommand="Close">
 
     <pages:PopupPage.Animation>
         <animations:ScaleAnimation
@@ -19,7 +20,29 @@
     <StackLayout>
         <Frame BackgroundColor="White"
                CornerRadius="15"
-               VerticalOptions="End">
+               HeightRequest="100"
+               WidthRequest="250"
+               Padding="20"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand">
+            
+            <StackLayout>
+
+                <Label x:Name="Título" Text="Sucesso!"
+                       HorizontalTextAlignment="Start"
+                       VerticalTextAlignment="Start"
+                       FontSize="Title"
+                       TextColor="#993399"
+                       Margin="0"
+                       Style="{StaticResource LabelTituloCampo}"/>
+
+                <Label Text="Ação concluída com sucesso! Toque para continuar"
+                       FontSize="Default"
+                       Padding="20,10,20,30"
+                       TextColor="Black"
+                       Style="{StaticResource LabelTituloCampo}"/>
+
+            </StackLayout>
 
         </Frame>
 
