@@ -4,7 +4,7 @@
                  xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
                  xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
                  x:Class="AppBancoDigital.View.Popup.PopupSucesso"
-                 CloseWhenBackgroundIsClicked="True" BackgroundInputTransparent="True" BackgroundClickedCommand="Close">
+                 CloseWhenBackgroundIsClicked="True" BackgroundInputTransparent="True">
 
     <pages:PopupPage.Animation>
         <animations:ScaleAnimation
@@ -17,7 +17,7 @@
     </pages:PopupPage.Animation>
 
     <!-- continuar -->
-    <StackLayout>
+    <StackLayout VerticalOptions="Center">
         <Frame BackgroundColor="White"
                CornerRadius="15"
                HeightRequest="100"

@@ -16,7 +16,8 @@
             />
     </pages:PopupPage.Animation>
 
-    <StackLayout>
+
+    <StackLayout VerticalOptions="Center">
         <Frame BackgroundColor="White"
                CornerRadius="15"
                HeightRequest="100"
@@ -35,7 +36,7 @@
                        Margin="0"
                        Style="{StaticResource LabelTituloCampo}"/>
 
-                <Label Text="Houve um erro inesperado, tente novamente!"
+                <Label Text="{Binding Message}"
                        FontSize="Default"
                        Padding="20,10,20,30"
                        TextColor="Black"
