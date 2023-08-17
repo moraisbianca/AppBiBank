@@ -60,7 +60,9 @@ namespace AppBancoDigital
                     {
                         App.DadosCorrentista = c;
 
-                        await Navigation.PushAsync(new Home());
+                        //await Navigation.PushAsync(new Home());
+
+                        App.Current.MainPage = new Home();
                     }
                     else
                     {

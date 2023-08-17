@@ -31,12 +31,12 @@ namespace AppBancoDigital.Model
               
         public string Cpf 
         {
-            get { return cpf; }
+            get { return cpf.Replace(".", "").Replace("-", ""); }
 
             set
             {
                 if (!Validation.CpfIsValid(value)) 
-                    throw new Exception("Informe o cpf!");                
+                    throw new Exception("Informe um cpf válido!");                
 
                 cpf = value;
             }

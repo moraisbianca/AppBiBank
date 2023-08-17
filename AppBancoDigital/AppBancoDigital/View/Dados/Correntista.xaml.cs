@@ -27,47 +27,19 @@ namespace AppBancoDigital.View.Dados
 
         private async void continuar(object sender, EventArgs e)
         {
-            /*if (txt_nome.Text == null)
-            {
-                lbl_erro.Text = "Preencha o nome =)";
-                lbl_erro.TextColor = Color.Red;
-            } else
-            {
-                lbl_erro.IsVisible = false;
-            }*/
-
-
-
-
-            /*if (txt_nome.Text == null || txt_cpf.Text == null || txt_senha.Text == null || txt_confirme_senha.Text == null)
-            {
-                lbl_erro.Text = "Preencha todos os campos!";
-            }
-            
-            if (txt_cpf.TextColor == Color.Red)
-            {
-                lbl_erro.Text = "Insira um cpf válido!";
-            }
-            if (txt_senha.Text != txt_confirme_senha.Text)
-            {
-                lbl_erro.Text = "A senha deve ser a mesma nos dois campos!";
-            }
-
-            /*else
-            {*/
-
-            Console.WriteLine("____________________________________________");
-            Console.WriteLine(txt_cpf.Text);
-            Console.WriteLine("____________________________________________");
-
             try
             {
+                if (txt_senha.Text != txt_confirme_senha.Text)
+                {
+                    //lbl_erro.Text = "A senha deve ser a mesma nos dois campos!";
+                    throw new Exception("A senha deve ser a mesma nos dois campos!");
+                }
+
                 Model.Correntista c = await DataServiceCorrentista.Cadastrar(new Model.Correntista
                 {
                     Nome = txt_nome.Text,
                     Senha = txt_senha.Text,
                     DataNasc = dtpck_datanasc.Date,
-                   // Cpf = txt_cpf.Text.Replace(".", string.Empty).Replace("-", string.Empty)
                     Cpf = txt_cpf.Text
                 });
 
@@ -75,13 +47,19 @@ namespace AppBancoDigital.View.Dados
 
                 await PopupNavigation.Instance.PushAsync(page);
 
+                //await Navigation.PushAsync(new Login());
+
+                App.Current.MainPage = new Login();
+
+                /*Device.BeginInvokeOnMainThread(() => {
+                    App.Current.MainPage = new Login();
+                });*/
+
+                //await Task.Run(() => {  });              
             }
             catch (Exception ex)
             {
-                /*DisplayAlert("Ops", ex.Message, "OK");*/
-
-                Console.WriteLine(ex.StackTrace);
-
+                //Console.WriteLine(ex.StackTrace);
 
                 var page = new PopupErro();
                 page.BindingContext = ex;
