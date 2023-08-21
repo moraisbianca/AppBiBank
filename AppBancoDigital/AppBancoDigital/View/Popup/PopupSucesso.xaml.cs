@@ -16,6 +16,7 @@ namespace AppBancoDigital.View.Popup
 		public PopupSucesso ()
 		{
 			InitializeComponent ();
+            Barrinha.Source = ImageSource.FromResource("AppBancoDigital.Images.barrinha.png");
         }
 
 		

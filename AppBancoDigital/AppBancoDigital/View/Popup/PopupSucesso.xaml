@@ -16,31 +16,38 @@
             />
     </pages:PopupPage.Animation>
 
-    <!-- continuar -->
     <StackLayout VerticalOptions="Center">
         <Frame BackgroundColor="White"
                CornerRadius="15"
-               HeightRequest="100"
-               WidthRequest="250"
-               Padding="20"
-               HorizontalOptions="CenterAndExpand"
-               VerticalOptions="CenterAndExpand">
-            
+               HeightRequest="250"
+               WidthRequest="400"
+               Margin="0,700,0,-10"
+               Padding="0"
+               VerticalOptions="End">
+
             <StackLayout>
+
+
+                <ImageButton x:Name="Barrinha" 
+                             BackgroundColor="Transparent"
+                             HorizontalOptions="Center"
+                             Padding="0,10,0,0"/>
 
                 <Label x:Name="Título" Text="Sucesso!"
                        HorizontalTextAlignment="Start"
                        VerticalTextAlignment="Start"
-                       FontSize="Title"
-                       TextColor="#993399"
-                       Margin="0"
+                       FontSize="20"
+                       TextColor="Black"
+                       Margin="30,20,0,0"
+                       
                        Style="{StaticResource LabelTituloCampo}"/>
 
-                <Label Text="Ação concluída com sucesso! Toque para continuar"
+                <Label Text="Ação concluída com sucesso! Toque para continuar."
                        FontSize="Default"
-                       Padding="20,10,20,30"
+                       Margin="45,20,0,0"
                        TextColor="Black"
-                       Style="{StaticResource LabelTituloCampo}"/>
+                    
+                       Style="{StaticResource LabelPopup}"/>
 
             </StackLayout>
 
