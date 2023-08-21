@@ -15,6 +15,12 @@
                        HorizontalOptions="Start"
                        TextColor="#7e2d7e "
                    />
+                <Label Text="sair"
+                       TextColor="#7e2d7e"
+                       Style="{StaticResource LabelTituloCampo}"
+                       Margin="0,35,10,0"/>
+
+
                 <ImageButton x:Name="btn_menu" 
                          BackgroundColor="Transparent"
                          Margin="0,17,0,0"

@@ -20,13 +20,19 @@
     <StackLayout VerticalOptions="Center">
         <Frame BackgroundColor="White"
                CornerRadius="15"
-               HeightRequest="100"
-               WidthRequest="250"
-               Padding="20"
-               HorizontalOptions="CenterAndExpand"
-               VerticalOptions="CenterAndExpand">
+               MinimumHeightRequest="100"
+               WidthRequest="350"
+               Margin="0,630,0,0"
+               Padding="0"
+               VerticalOptions="End">
 
             <StackLayout>
+               
+
+                <Frame BackgroundColor="Gray"
+                       HasShadow="True"
+                       Margin="0,15,0,0"
+                       HorizontalOptions="Center"/>
 
                 <Label x:Name="Título" Text="Ops! 😢"
                        HorizontalTextAlignment="Start"
@@ -34,14 +40,16 @@
                        FontSize="Title"
                        TextColor="#993399"
                        Margin="0"
+                    
                        Style="{StaticResource LabelTituloCampo}"/>
 
                 <Label Text="{Binding Message}"
                        FontSize="Default"
                        Padding="20,10,20,30"
                        TextColor="Black"
+                    
                        Style="{StaticResource LabelTituloCampo}"/>
-
+             
             </StackLayout>
 
         </Frame>
