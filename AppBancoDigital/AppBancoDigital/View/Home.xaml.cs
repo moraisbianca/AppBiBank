@@ -70,5 +70,12 @@ namespace AppBancoDigital.View
         {
             Navigation.PushAsync(new View.Dados.Cartoes() );
         }
+
+        private void btn_deslogar_Clicked(object sender, EventArgs e)
+        {
+            App.DadosCorrentista = null;
+
+            Navigation.PushAsync(new Login());
+        }
     }
 }

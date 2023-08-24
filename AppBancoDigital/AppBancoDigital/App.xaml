@@ -82,7 +82,7 @@
 
             <Style x:Key="StackStatusBar" TargetType="StackLayout">
                 <Setter Property="Margin" Value="0,25,0,0"/>
-                <Setter Property="BackgroundColor" Value="#f2f3f7"/>
+                <Setter Property="BackgroundColor" Value="#fcfafa"/>
             </Style>
 
             <!-- Gambiarra do Stacklayout para fazer a barra de título -->
@@ -108,6 +108,8 @@
                 <Setter Property="HorizontalOptions" Value="Start"/>
                 <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
             </Style>
+            
+            <!-- Cartão -->
 
         </ResourceDictionary>
 

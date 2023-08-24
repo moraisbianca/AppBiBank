@@ -6,7 +6,7 @@
              BackgroundColor="#993399">
     <ContentPage.Content>
         <StackLayout Style="{StaticResource StackStatusBar}">
-            <StackLayout  Orientation="Horizontal"
+            <StackLayout  Orientation="Horizontal" BackgroundColor="Red"
                 Style="{StaticResource StackTitulo}">
 
                 <Grid RowDefinitions="*" ColumnDefinitions="*,*,*,*,*" >
@@ -33,6 +33,14 @@
                 </Grid>
 
             </StackLayout>
+            
+            
+            <StackLayout BackgroundColor="blue">
+                <Label Text="oi sera que vai funcionarr???"/>
+
+            </StackLayout>
+            
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -62,7 +62,7 @@ namespace AppBancoDigital
 
                         //await Navigation.PushAsync(new Home());
 
-                        App.Current.MainPage = new Home();
+                        App.Current.MainPage = new NavigationPage(new Home());
                     }
                     else
                     {

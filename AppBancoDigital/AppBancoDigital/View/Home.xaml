@@ -11,14 +11,27 @@
             <StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
                 <Label Text="bibank" Style="{StaticResource FonteLogo}"
                        FontSize="27"
-                       Margin="30,30,120,10"
+                       Margin="30,30,100,10"
                        HorizontalOptions="Start"
                        TextColor="#7e2d7e "
                    />
-                <Label Text="sair"
+                <Button x:Name="btn_deslogar"
+                        Clicked="btn_deslogar_Clicked"
+                        Text="sair"
+                        TextTransform="Lowercase"
+                        FontSize="Small"
+                        HorizontalOptions="Center"
+                        TextColor="#7e2d7e"
+                        Style="{StaticResource FonteBotão}"
+                        WidthRequest="60"
+                        HeightRequest="20"
+                        BackgroundColor="Transparent"
+                        Margin="0,19,0,0"/>
+
+                <!--<Label Text="sair"
                        TextColor="#7e2d7e"
                        Style="{StaticResource LabelTituloCampo}"
-                       Margin="0,34,15,0"/>
+                       Margin="0,34,15,0"/>-->
 
 
                 <ImageButton x:Name="btn_menu" 

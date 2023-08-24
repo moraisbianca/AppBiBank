@@ -27,6 +27,7 @@
     <None Remove="Images\olhofechado.png" />
     <None Remove="Images\Pix.png" />
     <None Remove="Images\ponto-de-interrogacao.png" />
+    <None Remove="Images\seta-direita.png" />
     <None Remove="Images\seta-esquerda.png" />
     <None Remove="Images\Transacoes.png" />
     <None Remove="Images\trespontos.png" />
@@ -51,6 +52,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\ponto-de-interrogacao.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\seta-direita.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\seta-esquerda.png">
