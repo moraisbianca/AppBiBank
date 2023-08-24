@@ -16,25 +16,23 @@
             />
     </pages:PopupPage.Animation>
 
-
-    <StackLayout VerticalOptions="Center">
-        <Frame BackgroundColor="White"
+    <Frame BackgroundColor="White"
                CornerRadius="15"
-               HeightRequest="250"
+               HeightRequest="300"
                WidthRequest="400"
                Margin="0,700,0,-10"
                Padding="0"
                VerticalOptions="End">
 
-            <StackLayout>
+        <StackLayout>
 
 
-                <ImageButton x:Name="Barrinha" 
+            <ImageButton x:Name="Barrinha" 
                              BackgroundColor="Transparent"
                              HorizontalOptions="Center"
                              Padding="0,10,0,0"/>
 
-                <Label x:Name="Título" Text="Algo deu errado!"
+            <Label x:Name="Título" Text="Algo deu errado!"
                        HorizontalTextAlignment="Start"
                        VerticalTextAlignment="Start"
                        FontSize="20"
@@ -43,17 +41,15 @@
                        
                        Style="{StaticResource LabelTituloCampo}"/>
 
-                <Label Text="{Binding Message}"
+            <Label Text="{Binding Message}"
                        FontSize="Default"
-                       Margin="45,20,0,0"
+                       Margin="45,10,45,20"
                        TextColor="Black"
                     
                        Style="{StaticResource LabelPopup}"/>
-             
-            </StackLayout>
 
-        </Frame>
+        </StackLayout>
 
-    </StackLayout>
+    </Frame>
 
 </pages:PopupPage>

@@ -11,19 +11,19 @@
             <StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
                 <Label Text="bibank" Style="{StaticResource FonteLogo}"
                        FontSize="27"
-                       Margin="30,30,160,10"
+                       Margin="30,30,120,10"
                        HorizontalOptions="Start"
                        TextColor="#7e2d7e "
                    />
                 <Label Text="sair"
                        TextColor="#7e2d7e"
                        Style="{StaticResource LabelTituloCampo}"
-                       Margin="0,35,10,0"/>
+                       Margin="0,34,15,0"/>
 
 
                 <ImageButton x:Name="btn_menu" 
                          BackgroundColor="Transparent"
-                         Margin="0,17,0,0"
+                         Margin="0,20,0,0"
                          HorizontalOptions="End"
                          Clicked="btn_menu_Clicked"/>
             </StackLayout>
