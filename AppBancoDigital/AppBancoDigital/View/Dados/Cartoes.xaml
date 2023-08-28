@@ -6,8 +6,8 @@
              BackgroundColor="#993399">
     <ContentPage.Content>
         <StackLayout Style="{StaticResource StackStatusBar}">
-            <StackLayout  Orientation="Horizontal" BackgroundColor="Red"
-                Style="{StaticResource StackTitulo}">
+            <StackLayout  Orientation="Horizontal"
+                          Style="{StaticResource StackTitulo}">
 
                 <Grid RowDefinitions="*" ColumnDefinitions="*,*,*,*,*" >
                     <ImageButton x:Name="btn_voltar" 
@@ -33,14 +33,94 @@
                 </Grid>
 
             </StackLayout>
-            
-            
-            <StackLayout BackgroundColor="blue">
-                <Label Text="oi sera que vai funcionarr???"/>
 
-            </StackLayout>
-            
-            
+
+            <ScrollView>
+                <StackLayout Orientation="Horizontal"
+                             Padding="30">
+
+                    <Frame x:Name="cartao_fisico" Style="{StaticResource Cartao}"
+                           Margin="0,0,8,0"
+                           HasShadow="True">
+                        <Frame.Background>
+                            <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                                <GradientStop Color="#341933" Offset="0.3"/>
+                                <GradientStop Color="#993399" Offset="1.1"/>
+                            </LinearGradientBrush>
+                        </Frame.Background>
+
+
+                        <StackLayout Padding="0">
+                            <ImageButton x:Name="btn_config_cartao_fisico" 
+                                         Clicked="btn_config_cartao_Clicked"
+                                         HorizontalOptions="End"
+                                         WidthRequest="25"
+                                         BackgroundColor="Transparent"/>
+
+                            <Label x:Name="nome_titular" 
+                                   Text="NOME DO TITULAR"
+                                   TextColor="White"
+                                   
+                                   FontSize="Micro"
+                                   FontAttributes="Bold"
+                                   Margin="0,40,0,20"/>
+
+                            <StackLayout Orientation="Horizontal">
+                                
+                                <Label x:Name="numero_cartao_fisico" Text=""/>
+                                
+                                <Image x:Name="bandeira_cartao_fisico"
+                                       Margin="50,0,0,0"
+                                       WidthRequest="25"/>
+                                
+                            </StackLayout>
+
+                        </StackLayout>
+                    </Frame>
+                    <Frame x:Name="cartao_digital" Style="{StaticResource Cartao}"
+                           Margin="0,0,8,0"
+                           HasShadow="True">
+                        <Frame.Background>
+                            <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                                <GradientStop Color="#341933" Offset="0.3"/>
+                                <GradientStop Color="#993399" Offset="1.1"/>
+                            </LinearGradientBrush>
+                        </Frame.Background>
+
+
+                        <StackLayout Padding="0">
+                            <ImageButton x:Name="btn_config_cartao_digital" 
+                                         Clicked="btn_config_cartao_digital_Clicked"
+                                         HorizontalOptions="End"
+                                         WidthRequest="25"
+                                         BackgroundColor="Transparent"/>
+
+                            <Label x:Name="nome_titular" 
+                                   Text="NOME DO TITULAR"
+                                   TextColor="White"
+                                   
+                                   FontSize="Micro"
+                                   FontAttributes="Bold"
+                                   Margin="0,40,0,20"/>
+
+                            <StackLayout Orientation="Horizontal">
+
+                                <Label x:Name="numero_cartao" Text=""/>
+
+                                <Image x:Name="bandeira_cartao_digital"
+                                       Margin="50,0,0,0"
+                                       WidthRequest="25"/>
+
+                            </StackLayout>
+
+                        </StackLayout>
+                    </Frame>
+
+
+                </StackLayout>
+            </ScrollView>
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

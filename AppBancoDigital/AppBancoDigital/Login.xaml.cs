@@ -60,8 +60,6 @@ namespace AppBancoDigital
                     {
                         App.DadosCorrentista = c;
 
-                        //await Navigation.PushAsync(new Home());
-
                         App.Current.MainPage = new NavigationPage(new Home());
                     }
                     else
@@ -84,7 +82,7 @@ namespace AppBancoDigital
         }
 
 
-        private async void btn_registrar(object sender, EventArgs e)
+        private void btn_registrar(object sender, EventArgs e)
         {
             Navigation.PushAsync(new View.Dados.Correntista());
         }

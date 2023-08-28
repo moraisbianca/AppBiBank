@@ -31,7 +31,6 @@ namespace AppBancoDigital.View.Dados
             {
                 if (txt_senha.Text != txt_confirme_senha.Text)
                 {
-                    //lbl_erro.Text = "A senha deve ser a mesma nos dois campos!";
                     throw new Exception("A senha deve ser a mesma nos dois campos!");
                 }
 
@@ -47,24 +46,14 @@ namespace AppBancoDigital.View.Dados
 
                 await PopupNavigation.Instance.PushAsync(page);
 
-                //await Navigation.PushAsync(new Login());
-
-                App.Current.MainPage = new Login();
-
-                /*Device.BeginInvokeOnMainThread(() => {
-                    App.Current.MainPage = new Login();
-                });*/
-
-                //await Task.Run(() => {  });              
+                App.Current.MainPage = new Login();          
             }
             catch (Exception ex)
             {
-                //Console.WriteLine(ex.StackTrace);
 
                 var page = new PopupErro();
                 page.BindingContext = ex;
 
-                //await PopupNavigation.Instance.PushAsync(page);
                 await PopupNavigation.PushAsync(page, true);
             }
         }

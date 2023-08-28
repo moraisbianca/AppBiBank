@@ -19,8 +19,10 @@
   <ItemGroup>
     <None Remove="Images\barrinha.png" />
     <None Remove="Images\Cartoes.png" />
+    <None Remove="Images\configuracao.png" />
     <None Remove="Images\Extrato.png" />
     <None Remove="Images\invisivel.png" />
+    <None Remove="Images\mastercard.png" />
     <None Remove="Images\ocultarsenha.png" />
     <None Remove="Images\oculto.png" />
     <None Remove="Images\olhoaberto.png" />
@@ -42,10 +44,16 @@
     <EmbeddedResource Include="Images\Cartoes.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Images\configuracao.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Images\Extrato.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\invisivel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\mastercard.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\Pix.png">
