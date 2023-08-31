@@ -46,7 +46,7 @@ namespace AppBancoDigital.View.Dados
 
                 await PopupNavigation.Instance.PushAsync(page);
 
-                App.Current.MainPage = new Login();          
+                await Navigation.PushAsync(new Login());
             }
             catch (Exception ex)
             {

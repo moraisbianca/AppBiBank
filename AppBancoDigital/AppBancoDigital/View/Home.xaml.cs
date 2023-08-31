@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AppBancoDigital.View.Popup;
+using Rg.Plugins.Popup.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,38 +19,24 @@ namespace AppBancoDigital.View
             NavigationPage.SetHasNavigationBar(this, false);
             btn_saldo.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
 			btn_menu.Source = ImageSource.FromResource("AppBancoDigital.Images.trespontos.png");
-            btn_extrato.Source = ImageSource.FromResource("AppBancoDigital.Images.Extrato.png");
+            btn_lupa.Source = ImageSource.FromResource("AppBancoDigital.Images.lupa.png");
             btn_pix.Source = ImageSource.FromResource("AppBancoDigital.Images.Pix.png");
             btn_transferencias.Source = ImageSource.FromResource("AppBancoDigital.Images.Transacoes.png");
             btn_cartao.Source = ImageSource.FromResource("AppBancoDigital.Images.Cartoes.png");
-
-            string[] resultsArray = explode(" ", App.DadosCorrentista.Nome);
-            string nome = resultsArray[0];
-
-            txt_correntista.Text = "Olá, " + nome;
-        }
-
-        public static string[] explode(string separator, string source)
-        {
-            return source.Split(new string[] { separator }, StringSplitOptions.None);
         }
 
         private void ver_saldo(object sender, EventArgs e)
         {
-            /*if (txt_saldo = "")
-            {
-                btn_saldo.Source = ImageSource.FromResource("AppBancoDigital.Images.invisivel.png");
-            }
-            else
-            {
-
-                btn_saldo.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
-            }*/
+            //Fazer funcionalidade do saldo
         }
 
-        private void btn_menu_Clicked(object sender, EventArgs e)
+        private async void btn_menu_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new View.Menu());
+            //Navigation.PushAsync(new View.Menu()); (AGORA NAVEGA PRA UM POPUP)
+
+            var page = new PopupMenu();
+
+            await PopupNavigation.PushAsync(page, true);
         }
 
         private void btn_extrato_Clicked(object sender, EventArgs e)
@@ -76,6 +64,11 @@ namespace AppBancoDigital.View
             App.DadosCorrentista = null;
 
             Navigation.PushAsync(new Login());
+        }
+
+        private void btn_lupa_Clicked(object sender, EventArgs e)
+        {
+            // Fazer funcionalidade da pesquisa
         }
     }
 }

@@ -16,6 +16,15 @@ namespace AppBancoDigital.View.Popup
         public PopupMenu()
         {
             InitializeComponent();
+
+            string[] resultsArray = explode(" ", App.DadosCorrentista.Nome);
+            string nome = resultsArray[0];
+            txt_correntista.Text = "Olá, " + nome;
+        }
+
+        public static string[] explode(string separator, string source)
+        {
+            return source.Split(new string[] { separator }, StringSplitOptions.None);
         }
     }
 }

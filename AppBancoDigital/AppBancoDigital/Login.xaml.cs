@@ -71,8 +71,10 @@ namespace AppBancoDigital
                 }
                 catch (Exception ex)
                 {
-                    await DisplayAlert("Ops", ex.Message, "OK");
-                    Console.WriteLine(ex.StackTrace);
+                    var page = new PopupErro();
+                    page.BindingContext = ex;
+
+                    await PopupNavigation.PushAsync(page, true);
                 }
                 finally
                 {

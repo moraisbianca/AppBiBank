@@ -52,12 +52,12 @@
 
                         <StackLayout Padding="0">
                             <ImageButton x:Name="btn_config_cartao_fisico" 
-                                         Clicked="btn_config_cartao_Clicked"
+                                         Clicked="btn_config_cartao_fisico_Clicked"
                                          HorizontalOptions="End"
                                          WidthRequest="25"
                                          BackgroundColor="Transparent"/>
 
-                            <Label x:Name="nome_titular" 
+                            <Label x:Name="nome_titular_fisico" 
                                    Text="NOME DO TITULAR"
                                    TextColor="White"
                                    
@@ -95,7 +95,7 @@
                                          WidthRequest="25"
                                          BackgroundColor="Transparent"/>
 
-                            <Label x:Name="nome_titular" 
+                            <Label x:Name="nome_titular_digital" 
                                    Text="NOME DO TITULAR"
                                    TextColor="White"
                                    
@@ -105,7 +105,7 @@
 
                             <StackLayout Orientation="Horizontal">
 
-                                <Label x:Name="numero_cartao" Text=""/>
+                                <Label x:Name="numero_cartao_digital" Text=""/>
 
                                 <Image x:Name="bandeira_cartao_digital"
                                        Margin="50,0,0,0"

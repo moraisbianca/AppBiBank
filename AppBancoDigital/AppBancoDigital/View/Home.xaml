@@ -11,11 +11,12 @@
             <StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
                 <Label Text="bibank" Style="{StaticResource FonteLogo}"
                        FontSize="27"
-                       Margin="30,30,100,10"
+                       Margin="30,30,130,20"
                        HorizontalOptions="Start"
-                       TextColor="#7e2d7e "
+                       TextColor="#7e2d7e"
                    />
-                <Button x:Name="btn_deslogar"
+                
+                <!--<Button x:Name="btn_deslogar"
                         Clicked="btn_deslogar_Clicked"
                         Text="sair"
                         TextTransform="Lowercase"
@@ -26,58 +27,43 @@
                         WidthRequest="60"
                         HeightRequest="20"
                         BackgroundColor="Transparent"
-                        Margin="0,19,0,0"/>
+                        Margin="0,19,0,0"/> -->
+                
+                <ImageButton x:Name="btn_lupa"
+                             Clicked="btn_lupa_Clicked"
+                             BackgroundColor="Transparent"
+                             WidthRequest="20"
+                             HeightRequest="20"
+                             Margin="0,19,15,10"/>
 
-                <!--<Label Text="sair"
-                       TextColor="#7e2d7e"
-                       Style="{StaticResource LabelTituloCampo}"
-                       Margin="0,34,15,0"/>-->
 
 
                 <ImageButton x:Name="btn_menu" 
                          BackgroundColor="Transparent"
-                         Margin="0,20,0,0"
+                         Margin="0,20,10,9"
                          HorizontalOptions="End"
                          Clicked="btn_menu_Clicked"/>
+                
             </StackLayout>
-
-
-            <Label x:Name="txt_correntista"
-                   FontAttributes="Bold"
-                   FontFamily="Century Gothic"
-                   Margin="30,10,20,0"
-                   TextColor="Black"/>
 
             <StackLayout Orientation="Horizontal" Margin="0,0,0,10" HeightRequest="20">
                 <Label x:Name="txt_saldo"
                        Text="R$ 0,00" 
                        FontAttributes="Bold"
                        FontFamily="Century Gothic"
-                       Margin="270,0,0,0"
+                       Margin="30,0,0,0"
                        TextColor="black"/>
 
                 <ImageButton x:Name="btn_saldo"
                              WidthRequest="20"
                              BackgroundColor="Transparent" 
                              Clicked="ver_saldo"
-                             HorizontalOptions="EndAndExpand"
-                             Margin="0,0,40,0"/>
+                             Margin="6,0,40,0"/>
             </StackLayout>
 
-            <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*" BackgroundColor="Transparent" Padding="15">
+            <Grid ColumnDefinitions="*,*,*" RowDefinitions="*" BackgroundColor="Transparent" Padding="15">
 
-                <!--  -->
-                <Frame Grid.Column="0" Grid.Row="0" 
-                       HasShadow="True"
-                       Style="{StaticResource BotaoHome}">
-                    <ImageButton x:Name="btn_extrato"
-                                 Clicked="btn_extrato_Clicked"
-                                 BackgroundColor="Transparent"
-                                 Scale="0.8"/>
-                </Frame>
-
-
-                <Frame Grid.Column="1" Grid.Row="0" Style="{StaticResource BotaoHome}"
+                <Frame Grid.Column="2" Grid.Row="0" Style="{StaticResource BotaoHome}"
                        HasShadow="True">
                     <ImageButton x:Name="btn_transferencias"
                                  Clicked="btn_transferencias_Clicked"
@@ -86,7 +72,14 @@
                 </Frame>
 
 
-                <Frame Grid.Column="2" Grid.Row="0" Style="{StaticResource BotaoHome}"
+                <Frame Grid.Column="1" Grid.Row="0" Style="{StaticResource BotaoHome}" HasShadow="True">
+                    <ImageButton x:Name="btn_cartao"
+                                 Clicked="btn_cartao_Clicked"
+                                 BackgroundColor="Transparent"
+                                 Scale="0.8"/>
+                </Frame>
+
+                <Frame Grid.Column="0" Grid.Row="0" Style="{StaticResource BotaoHome}"
                        HasShadow="True">
                     <ImageButton x:Name="btn_pix"
                                  Clicked="btn_pix_Clicked"
@@ -94,12 +87,6 @@
                                  Scale="0.8"/>
                 </Frame>
 
-                <Frame Grid.Column="3" Grid.Row="0" Style="{StaticResource BotaoHome}" HasShadow="True">
-                    <ImageButton x:Name="btn_cartao"
-                                 Clicked="btn_cartao_Clicked"
-                                 BackgroundColor="Transparent"
-                                 Scale="0.8"/>
-                </Frame>
             </Grid>
 
         </StackLayout>
