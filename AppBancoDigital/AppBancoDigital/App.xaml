@@ -11,6 +11,11 @@
                 <Setter Property="FontFamily" Value="{OnPlatform Android='ethnocentric-it.otf#ethnocentric-it'}" />
             </Style>
 
+            <!-- Fonte Saldo-->
+            <Style x:Key="FonteSaldo" TargetType="Label">
+                <Setter Property="FontFamily" Value="{OnPlatform Android='made-tommy-extra.otf#made-tommy-extra'}" />
+            </Style>
+
             <!-- Label dos campos-->
             <Style x:Key="LabelTituloCampo" TargetType="Label">
                 <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
@@ -116,6 +121,13 @@
                 <Setter Property="BackgroundColor" Value="Purple"/>
                 <Setter Property="CornerRadius" Value="15"/>
                 <Setter Property="Padding" Value="10"/>
+            </Style>
+            
+            <!-- Estilo da imagem do popup menu -->
+            <Style x:Key="Imagem" TargetType="ImageButton">
+                <Setter Property="WidthRequest" Value="25"/>
+                <Setter Property="HeightRequest" Value="25"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
             </Style>
 
         </ResourceDictionary>
