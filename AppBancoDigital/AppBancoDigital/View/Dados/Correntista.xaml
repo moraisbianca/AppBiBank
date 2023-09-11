@@ -36,11 +36,13 @@
 
                     <Label Text="NOME COMPLETO:" Style="{StaticResource LabelTituloCampo}" />
                     <Entry x:Name="txt_nome"
-                           Margin="0,0,0,10"/>
+                           Margin="0,0,0,10"
+                           TabIndex="0"/>
 
                     <Label Text="CPF:" Style="{StaticResource LabelTituloCampo}"/>
                     <Entry x:Name="txt_cpf"
-                           Margin="0,0,0,10">
+                           Margin="0,0,0,10"
+                           TabIndex="1">
                         <Entry.Behaviors>
                             <behaviorPack:MaskedBehavior Mask="XXX.XXX.XXX-XX" />
                         </Entry.Behaviors>
@@ -48,14 +50,16 @@
 
                     <Label Text="DATA DE NASCIMENTO:" Style="{StaticResource LabelTituloCampo}"/>
                     <DatePicker x:Name="dtpck_datanasc"
-                                Margin="0,0,0,10"/>
+                                Margin="0,0,0,10"
+                                TabIndex="2"/>
 
 
                     <Label Text="SENHA:" Style="{StaticResource LabelTituloCampo}"/>
                     <StackLayout Orientation="Horizontal">
                         <Entry x:Name="txt_senha" IsPassword="True"
                                WidthRequest="230"
-                               Margin="0,0,10,10">
+                               Margin="0,0,10,10"
+                               TabIndex="3">
                             <Entry.Behaviors>
                                 <behaviorPack:PasswordValidationBehavior />
                             </Entry.Behaviors>
@@ -72,7 +76,8 @@
                     <StackLayout Orientation="Horizontal">
                         <Entry x:Name="txt_confirme_senha" IsPassword="True"
                                WidthRequest="230"
-                               Margin="0,0,10,0">
+                               Margin="0,0,10,0"
+                               TabIndex="4">
                             <Entry.Behaviors>
                                 <behaviorPack:PasswordValidationBehavior />
                                 <behaviorPack:CompareValidationBehavior BindingContext="{x:Reference txt_senha}" Text="{Binding Text}"/>
@@ -88,7 +93,7 @@
                     <Label x:Name="lbl_erro" Text="" Style="{StaticResource LabelErro}"/>
                     
 
-                    <Button Text="Continuar" Style="{StaticResource BotaoRoxo}" Clicked="continuar" />
+                    <Button Text="Continuar" Style="{StaticResource BotaoRoxo}" Clicked="continuar" TabIndex="5"/>
 
                 </StackLayout>
             </Frame>

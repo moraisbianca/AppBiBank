@@ -16,19 +16,6 @@
                        TextColor="#7e2d7e"
                    />
 
-                <!--<Button x:Name="btn_deslogar"
-                        Clicked="btn_deslogar_Clicked"
-                        Text="sair"
-                        TextTransform="Lowercase"
-                        FontSize="Small"
-                        HorizontalOptions="Center"
-                        TextColor="#7e2d7e"
-                        Style="{StaticResource FonteBotão}"
-                        WidthRequest="60"
-                        HeightRequest="20"
-                        BackgroundColor="Transparent"
-                        Margin="0,19,0,0"/> -->
-
                 <ImageButton x:Name="btn_lupa"
                              Clicked="btn_lupa_Clicked"
                              BackgroundColor="Transparent"

@@ -35,28 +35,40 @@
 
 
             <ScrollView>
-                <StackLayout Orientation="Horizontal"
+
+                <StackLayout>
+                    
+                    <Label Text="Meus cartões"
+                           TextColor="Black"
+                           Margin="30,5,0,-20"
+                           FontSize="14"
+                           Style="{StaticResource LabelTituloCampo}"/>
+
+
+                    <StackLayout Orientation="Horizontal"
                              Padding="30">
 
-                    <Frame x:Name="cartao_fisico" Style="{StaticResource Cartao}"
+
+
+                        <Frame x:Name="cartao_fisico" Style="{StaticResource Cartao}"
                            Margin="0,0,8,0"
                            HasShadow="True">
-                        <Frame.Background>
-                            <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-                                <GradientStop Color="#341933" Offset="0.3"/>
-                                <GradientStop Color="#993399" Offset="1.1"/>
-                            </LinearGradientBrush>
-                        </Frame.Background>
+                            <Frame.Background>
+                                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                                    <GradientStop Color="#341933" Offset="0.3"/>
+                                    <GradientStop Color="#993399" Offset="1.1"/>
+                                </LinearGradientBrush>
+                            </Frame.Background>
 
 
-                        <StackLayout Padding="0">
-                            <ImageButton x:Name="btn_config_cartao_fisico" 
+                            <StackLayout Padding="0">
+                                <ImageButton x:Name="btn_config_cartao_fisico" 
                                          Clicked="btn_config_cartao_fisico_Clicked"
                                          HorizontalOptions="End"
                                          WidthRequest="25"
                                          BackgroundColor="Transparent"/>
 
-                            <Label x:Name="nome_titular_fisico" 
+                                <Label x:Name="nome_titular_fisico" 
                                    Text="NOME DO TITULAR"
                                    TextColor="White"
                                    
@@ -64,37 +76,37 @@
                                    FontAttributes="Bold"
                                    Margin="0,40,0,20"/>
 
-                            <StackLayout Orientation="Horizontal">
+                                <StackLayout Orientation="Horizontal">
 
-                                <Label x:Name="numero_cartao_fisico" Text=""/>
+                                    <Label x:Name="numero_cartao_fisico" Text=""/>
 
-                                <Image x:Name="bandeira_cartao_fisico"
+                                    <Image x:Name="bandeira_cartao_fisico"
                                        Margin="50,0,0,0"
                                        WidthRequest="25"/>
 
-                            </StackLayout>
+                                </StackLayout>
 
-                        </StackLayout>
-                    </Frame>
-                    <Frame x:Name="cartao_digital" Style="{StaticResource Cartao}"
+                            </StackLayout>
+                        </Frame>
+                        <Frame x:Name="cartao_digital" Style="{StaticResource Cartao}"
                            Margin="0,0,8,0"
                            HasShadow="True">
-                        <Frame.Background>
-                            <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-                                <GradientStop Color="#341933" Offset="0.3"/>
-                                <GradientStop Color="#993399" Offset="1.1"/>
-                            </LinearGradientBrush>
-                        </Frame.Background>
+                            <Frame.Background>
+                                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                                    <GradientStop Color="#663177" Offset="0.3"/>
+                                    <GradientStop Color="#c63f7b" Offset="1.1"/>
+                                </LinearGradientBrush>
+                            </Frame.Background>
 
 
-                        <StackLayout Padding="0">
-                            <ImageButton x:Name="btn_config_cartao_digital" 
+                            <StackLayout Padding="0">
+                                <ImageButton x:Name="btn_config_cartao_digital" 
                                          Clicked="btn_config_cartao_digital_Clicked"
                                          HorizontalOptions="End"
                                          WidthRequest="25"
                                          BackgroundColor="Transparent"/>
 
-                            <Label x:Name="nome_titular_digital" 
+                                <Label x:Name="nome_titular_digital" 
                                    Text="NOME DO TITULAR"
                                    TextColor="White"
                                    
@@ -102,20 +114,21 @@
                                    FontAttributes="Bold"
                                    Margin="0,40,0,20"/>
 
-                            <StackLayout Orientation="Horizontal">
+                                <StackLayout Orientation="Horizontal">
 
-                                <Label x:Name="numero_cartao_digital" Text=""/>
+                                    <Label x:Name="numero_cartao_digital" Text=""/>
 
-                                <Image x:Name="bandeira_cartao_digital"
+                                    <Image x:Name="bandeira_cartao_digital"
                                        Margin="50,0,0,0"
                                        WidthRequest="25"/>
 
+                                </StackLayout>
+
                             </StackLayout>
-
-                        </StackLayout>
-                    </Frame>
+                        </Frame>
 
 
+                    </StackLayout>
                 </StackLayout>
             </ScrollView>
 

@@ -130,8 +130,8 @@
             
             <!-- Estilo da imagem do popup menu -->
             <Style x:Key="Imagem" TargetType="ImageButton">
-                <Setter Property="WidthRequest" Value="23"/>
-                <Setter Property="HeightRequest" Value="23"/>
+                <Setter Property="WidthRequest" Value="20"/>
+                <Setter Property="HeightRequest" Value="20"/>
                 <Setter Property="BackgroundColor" Value="Transparent"/>
             </Style>
 

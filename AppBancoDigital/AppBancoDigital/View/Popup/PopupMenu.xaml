@@ -18,9 +18,9 @@
 
     <Frame BackgroundColor="White"
                CornerRadius="15"
-               HeightRequest="500"
+               HeightRequest="250"
                WidthRequest="400"
-               Margin="0,500,0,-10"
+               Margin="0,400,0,-10"
                Padding="0"
                VerticalOptions="End">
 
@@ -33,28 +33,31 @@
                              Padding="0,10,0,0"/>
 
             <Label x:Name="txt_correntista"
-                   FontAttributes="Bold"
-                   FontFamily="Century Gothic"
-                   Margin="30,10,20,0"
+                   Style="{StaticResource FonteSaldo}"
+                   FontSize="15"
+                   Margin="30,15,20,10"
                    TextColor="Black"/>
 
 
             <ScrollView>
                 <StackLayout>
 
-                    <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="50" Padding="0">
+                    <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="40" Padding="0">
 
                         <ImageButton x:Name="btn_avatar" Clicked="btn_avatar_Clicked"
-                                     Style="{StaticResource Imagem}"
-                                     Margin="30,0,0,0"/>
+                                     WidthRequest="17"
+                                     HeightRequest="17"
+                                     Margin="30,0,3,0"
+                                     BackgroundColor="Transparent"/>
                         
-                        <Button Text="Meu cadastro e limites                                  "
+                        <Button Text="Meu cadastro e limites"
                                 Clicked="btn_avatar_Clicked"
-                                FontSize="14"
+                                FontSize="12"
                                 Margin="0,0,0,0"
                                 BackgroundColor="Transparent"
                                 TextTransform="None"
-                                FontAttributes="Bold"/>
+                                Style="{StaticResource FonteExtrato}"
+                                Padding="0,-10,145,-10"/>
                         
                         <ImageButton x:Name="btn_setinha_1" Clicked="btn_avatar_Clicked"
                                      Style="{StaticResource Imagem}"
@@ -62,37 +65,52 @@
 
                     </StackLayout>
 
-                    <Line X1="360" BackgroundColor="Gray" Margin="25,0,30,0"/>
+                    <Line X1="360" BackgroundColor="Black" Margin="30,-5,30,0"/>
 
-                    <!--<StackLayout Orientation="Horizontal" BackgroundColor="blue">
+                    <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="40" Padding="0">
 
                         <ImageButton x:Name="btn_notificacoes" Clicked="btn_notificacoes_Clicked"
-                                     Style="{StaticResource Imagem}"/>
+                                     Style="{StaticResource Imagem}"
+                                     Margin="30,0,3,0"/>
+
                         <Button Text="Notificações"
-                                
                                 Clicked="btn_notificacoes_Clicked"
-                                FontSize="14"
-                                Margin="30,50,0,5"/>
+                                FontSize="12"
+                                Margin="0,0,0,0"
+                                BackgroundColor="Transparent"
+                                TextTransform="None"
+                                Style="{StaticResource FonteExtrato}"
+                                Padding="0,-10,200,-10"/>
+
                         <ImageButton x:Name="btn_setinha_2" Clicked="btn_notificacoes_Clicked"
-                                     Style="{StaticResource Imagem}"/>
+                                     Style="{StaticResource Imagem}"
+                                     Margin="0"/>
 
                     </StackLayout>
 
-                    <Line X1="360" BackgroundColor="Gray" Margin="25,0,30,0"/>
+                    <Line X1="360" BackgroundColor="Black" Margin="30,-5,30,0"/>
 
-                    <StackLayout Orientation="Horizontal" BackgroundColor="green">
+                    <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="40" Padding="0">
 
                         <ImageButton x:Name="btn_deslogar" Clicked="btn_deslogar_Clicked"
-                                     Style="{StaticResource Imagem}"/>
-                        <Button Text="Sair do App"
-                                
-                                Clicked="btn_deslogar_Clicked"
-                                FontSize="14"
-                                Margin="30,50,0,5"/>
-                        <ImageButton x:Name="btn_setinha_3" Clicked="btn_deslogar_Clicked"
-                                     Style="{StaticResource Imagem}"/>
+                                     Style="{StaticResource Imagem}"
+                                     Margin="30,0,3,0"/>
 
-                    </StackLayout>-->
+                        <Button Text="Sair"
+                                Clicked="btn_deslogar_Clicked"
+                                FontSize="12"
+                                Margin="0,0,0,0"
+                                BackgroundColor="Transparent"
+                                TextTransform="None"
+                                Style="{StaticResource FonteExtrato}"
+                                Padding="0,-10,145,-10"/>
+
+                        <ImageButton x:Name="btn_setinha_3" Clicked="btn_deslogar_Clicked"
+                                     Style="{StaticResource Imagem}"
+                                     Margin="0"/>
+
+                    </StackLayout>
+
 
                 </StackLayout>
             </ScrollView>

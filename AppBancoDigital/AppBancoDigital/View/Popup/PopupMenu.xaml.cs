@@ -18,15 +18,15 @@ namespace AppBancoDigital.View.Popup
             InitializeComponent();
             Barrinha.Source = ImageSource.FromResource("AppBancoDigital.Images.barrinha.png");
             btn_setinha_1.Source = ImageSource.FromResource("AppBancoDigital.Images.seta-direita.png");
-            //btn_setinha_2.Source = ImageSource.FromResource("AppBancoDigital.Images.seta-direita.png");
-            //btn_setinha_3.Source = ImageSource.FromResource("AppBancoDigital.Images.seta-direita.png");
+            btn_setinha_2.Source = ImageSource.FromResource("AppBancoDigital.Images.seta-direita.png");
+            btn_setinha_3.Source = ImageSource.FromResource("AppBancoDigital.Images.seta-direita.png");
             btn_avatar.Source = ImageSource.FromResource("AppBancoDigital.Images.avatar.png");
-            //btn_notificacoes.Source = ImageSource.FromResource("AppBancoDigital.Images.notificacao.png");
-            //btn_deslogar.Source = ImageSource.FromResource("AppBancoDigital.Images.sair.png");
+            btn_notificacoes.Source = ImageSource.FromResource("AppBancoDigital.Images.notificacao.png");
+            btn_deslogar.Source = ImageSource.FromResource("AppBancoDigital.Images.sair.png");
 
             string[] resultsArray = explode(" ", App.DadosCorrentista.Nome);
             string nome = resultsArray[0];
-            txt_correntista.Text = "Olá, " + nome;
+            txt_correntista.Text = "Olá, " + nome + "!";
         }
 
         public static string[] explode(string separator, string source)
@@ -46,7 +46,9 @@ namespace AppBancoDigital.View.Popup
 
         private void btn_deslogar_Clicked(object sender, EventArgs e)
         {
+            App.DadosCorrentista = null;
 
+            Navigation.PushAsync(new Login());
         }
     }
 }
