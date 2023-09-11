@@ -7,30 +7,29 @@
     <ContentPage.Content>
         <StackLayout Style="{StaticResource StackStatusBar}">
             <StackLayout  Orientation="Horizontal"
-                          Style="{StaticResource StackTitulo}">
+    Style="{StaticResource StackTitulo}"
+              BackgroundColor="Transparent">
 
-                <Grid RowDefinitions="*" ColumnDefinitions="*,*,*,*,*" >
-                    <ImageButton x:Name="btn_voltar" 
+                <ImageButton x:Name="btn_voltar" 
                              Clicked="btn_voltar_Clicked"
                              BackgroundColor="Transparent"
-                             Scale="0.8"
-                             Margin="40,25,0,20"
-                             Grid.Column="0"
-                             Grid.Row="0"/>
+                             HeightRequest="20"
+                             WidthRequest="20"
+                             Margin="30,0,0,0"/>
 
-                    <Label Text="Cartões" Style="{StaticResource LabelMenu}" Margin="85,27,0,20" 
-                                   Grid.Column="1"
-                                   Grid.Row="0"
-                                   Grid.ColumnSpan="3"/>
+                <Label Text="Cartões" Style="{StaticResource LabelMenu}" BackgroundColor="Transparent" 
+                       HorizontalTextAlignment="Center" 
+                       VerticalTextAlignment="Center" 
+                       HorizontalOptions="CenterAndExpand"
+                       Margin="0"/>
 
-                    <ImageButton x:Name="btn_interrogacao"
-                                         Clicked="btn_interrogacao_Clicked"
-                                         BackgroundColor="Transparent"
-                                         Scale="0.8"
-                                         Margin="9,28,40,20"
-                                         Grid.Column="4"
-                                         Grid.Row="0"/>
-                </Grid>
+                <ImageButton x:Name="btn_interrogacao"
+                             Clicked="btn_interrogacao_Clicked"
+                             BackgroundColor="Transparent"
+                             HeightRequest="20"
+                             WidthRequest="20"
+                             Margin="0,4,30,0"
+                             VerticalOptions="Center"/>
 
             </StackLayout>
 
@@ -66,13 +65,13 @@
                                    Margin="0,40,0,20"/>
 
                             <StackLayout Orientation="Horizontal">
-                                
+
                                 <Label x:Name="numero_cartao_fisico" Text=""/>
-                                
+
                                 <Image x:Name="bandeira_cartao_fisico"
                                        Margin="50,0,0,0"
                                        WidthRequest="25"/>
-                                
+
                             </StackLayout>
 
                         </StackLayout>

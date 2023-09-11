@@ -7,30 +7,29 @@
     <ContentPage.Content>
         <StackLayout Style="{StaticResource StackStatusBar}">
             <StackLayout  Orientation="Horizontal"
-                Style="{StaticResource StackTitulo}">
+    Style="{StaticResource StackTitulo}"
+              BackgroundColor="Transparent">
 
-                <Grid RowDefinitions="*" ColumnDefinitions="*,*,*,*,*" >
-                    <ImageButton x:Name="btn_voltar" 
-                             Clicked="btn_voltar_Clicked"
-                             BackgroundColor="Transparent"
-                             Scale="0.8"
-                             Margin="40,25,0,20"
-                             Grid.Column="0"
-                             Grid.Row="0"/>
+                <ImageButton x:Name="btn_voltar" 
+                 Clicked="btn_voltar_Clicked"
+                 BackgroundColor="Transparent"
+                 HeightRequest="20"
+                 WidthRequest="20"
+                 Margin="30,0,0,0"/>
 
-                    <Label Text="Transações" Style="{StaticResource LabelMenu}" Margin="73,27,0,20" 
-                                   Grid.Column="1"
-                                   Grid.Row="0"
-                                   Grid.ColumnSpan="3"/>
+                <Label Text="Transações" Style="{StaticResource LabelMenu}" BackgroundColor="Transparent" 
+           HorizontalTextAlignment="Center" 
+           VerticalTextAlignment="Center" 
+           HorizontalOptions="CenterAndExpand"
+           Margin="0"/>
 
-                    <ImageButton x:Name="btn_interrogacao"
-                                         Clicked="btn_interrogacao_Clicked"
-                                         BackgroundColor="Transparent"
-                                         Scale="0.8"
-                                         Margin="9,28,40,20"
-                                         Grid.Column="4"
-                                         Grid.Row="0"/>
-                </Grid>
+                <ImageButton x:Name="btn_interrogacao"
+                 Clicked="btn_interrogacao_Clicked"
+                 BackgroundColor="Transparent"
+                 HeightRequest="20"
+                 WidthRequest="20"
+                 Margin="0,4,30,0"
+                 VerticalOptions="Center"/>
 
             </StackLayout>
         </StackLayout>

@@ -15,6 +15,11 @@
             <Style x:Key="FonteSaldo" TargetType="Label">
                 <Setter Property="FontFamily" Value="{OnPlatform Android='made-tommy-extra.otf#made-tommy-extra'}" />
             </Style>
+            
+            <!-- Fonte extrato-->
+            <Style x:Key="FonteExtrato" TargetType="Button">
+                <Setter Property="FontFamily" Value="{OnPlatform Android='made-tommy-extra.otf#made-tommy-extra'}" />
+            </Style>
 
             <!-- Label dos campos-->
             <Style x:Key="LabelTituloCampo" TargetType="Label">
@@ -78,10 +83,10 @@
                 <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
                 <Setter Property="Padding" Value="0" />
                 <Setter Property="WidthRequest" Value="100"/>
-                <Setter Property="HeightRequest" Value="90"/>
+                <Setter Property="HeightRequest" Value="100"/>
                 <Setter Property="BackgroundColor" Value="White"/>
                 <Setter Property="HasShadow" Value="True"/>
-                <Setter Property="CornerRadius" Value="12"/>
+                <Setter Property="CornerRadius" Value="10"/>
             </Style>
 
 
@@ -98,9 +103,9 @@
             <!-- Font da barra de título -->
             <Style x:Key="LabelMenu" TargetType="Label">
                 <Setter Property="TextColor" Value="Black"/>
-                <Setter Property="FontSize" Value="15"/>
-                <Setter Property="TextTransform" Value="Uppercase"/>
-                <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="TextTransform" Value="None"/>
+                <Setter Property="FontFamily" Value="{OnPlatform Android='made-tommy-extra.otf#made-tommy-extra'}" />
             </Style>
 
             <!-- Botões de navegação dentro do menu -->
@@ -125,8 +130,8 @@
             
             <!-- Estilo da imagem do popup menu -->
             <Style x:Key="Imagem" TargetType="ImageButton">
-                <Setter Property="WidthRequest" Value="25"/>
-                <Setter Property="HeightRequest" Value="25"/>
+                <Setter Property="WidthRequest" Value="23"/>
+                <Setter Property="HeightRequest" Value="23"/>
                 <Setter Property="BackgroundColor" Value="Transparent"/>
             </Style>
 

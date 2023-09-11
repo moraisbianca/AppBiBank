@@ -42,24 +42,29 @@
             <ScrollView>
                 <StackLayout>
 
-                    <StackLayout Orientation="Horizontal" BackgroundColor="red">
+                    <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="50" Padding="0">
 
                         <ImageButton x:Name="btn_avatar" Clicked="btn_avatar_Clicked"
                                      Style="{StaticResource Imagem}"
-                                     Margin="20"/>
-                        <Button Text="Meu cadastro e limites"
-                                
+                                     Margin="30,0,0,0"/>
+                        
+                        <Button Text="Meu cadastro e limites                                  "
                                 Clicked="btn_avatar_Clicked"
                                 FontSize="14"
-                                Margin="30,50,0,5"/>
+                                Margin="0,0,0,0"
+                                BackgroundColor="Transparent"
+                                TextTransform="None"
+                                FontAttributes="Bold"/>
+                        
                         <ImageButton x:Name="btn_setinha_1" Clicked="btn_avatar_Clicked"
-                                     Style="{StaticResource Imagem}"/>
+                                     Style="{StaticResource Imagem}"
+                                     Margin="0"/>
 
                     </StackLayout>
 
                     <Line X1="360" BackgroundColor="Gray" Margin="25,0,30,0"/>
 
-                    <StackLayout Orientation="Horizontal" BackgroundColor="blue">
+                    <!--<StackLayout Orientation="Horizontal" BackgroundColor="blue">
 
                         <ImageButton x:Name="btn_notificacoes" Clicked="btn_notificacoes_Clicked"
                                      Style="{StaticResource Imagem}"/>
@@ -87,7 +92,7 @@
                         <ImageButton x:Name="btn_setinha_3" Clicked="btn_deslogar_Clicked"
                                      Style="{StaticResource Imagem}"/>
 
-                    </StackLayout>
+                    </StackLayout>-->
 
                 </StackLayout>
             </ScrollView>
