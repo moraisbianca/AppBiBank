@@ -2,11 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Home"
-             Background="#993399"
-            >
+             Style="{StaticResource BackgroundBar}">
 
     <ContentPage.Content>
-        <StackLayout Style="{StaticResource StackStatusBar}">
+        <StackLayout  Style="{StaticResource StackStatusBar}">
 
             <StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
                 <Label Text="bibank" Style="{StaticResource FonteLogo}"

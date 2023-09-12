@@ -33,12 +33,12 @@ namespace AppBancoDigital.View.Pix
         {
             base.OnAppearing();
 
-            zxing.IsScanning = true;
+            //zxing.IsScanning = true;
         }
 
         protected override void OnDisappearing()
         {
-            zxing.IsScanning = false;
+            //zxing.IsScanning = false;
 
             base.OnDisappearing();
         }

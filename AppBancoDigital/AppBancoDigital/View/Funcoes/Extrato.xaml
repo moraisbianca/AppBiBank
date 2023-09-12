@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Funcoes.Extrato"
-             BackgroundColor="#993399"
+             Style="{StaticResource BackgroundBar}"
              Title="Extrato">
     <ContentPage.Content>
         <StackLayout Style="{StaticResource StackStatusBar}">

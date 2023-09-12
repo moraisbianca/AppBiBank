@@ -1,4 +1,5 @@
 ﻿using AppBancoDigital.Model;
+using AppBancoDigital.View;
 using System;
 using System.Text.RegularExpressions;
 using Xamarin.Forms;
@@ -14,7 +15,7 @@ namespace AppBancoDigital
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Login());
+            MainPage = new NavigationPage(new Home());
         }
 
         protected override void OnStart()

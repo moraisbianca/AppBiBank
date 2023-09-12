@@ -3,8 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Dados.Cartoes"
              Title="Cartões"
-             BackgroundColor="#993399">
+             Style="{StaticResource BackgroundBar}">
+
     <ContentPage.Content>
+        
         <StackLayout Style="{StaticResource StackStatusBar}">
             <StackLayout  Orientation="Horizontal"
     Style="{StaticResource StackTitulo}"
@@ -55,8 +57,8 @@
                            HasShadow="True">
                             <Frame.Background>
                                 <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-                                    <GradientStop Color="#341933" Offset="0.3"/>
-                                    <GradientStop Color="#993399" Offset="1.1"/>
+                                    <GradientStop Color="#663177" Offset="0.3"/>
+                                    <GradientStop Color="#c63f7b" Offset="1.1"/>
                                 </LinearGradientBrush>
                             </Frame.Background>
 

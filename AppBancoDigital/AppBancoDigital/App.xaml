@@ -135,6 +135,16 @@
                 <Setter Property="BackgroundColor" Value="Transparent"/>
             </Style>
 
+            <!-- Gradient da barra de status -->
+            <Style x:Key="BackgroundBar" TargetType="ContentPage">
+                <Setter Property="Background">
+                    <LinearGradientBrush StartPoint="0,1" EndPoint="1,1">
+                        <GradientStop Color="#c63f7b" Offset="0"/>
+                        <GradientStop Color="#663177" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter>
+            </Style>
+
         </ResourceDictionary>
 
     </Application.Resources>

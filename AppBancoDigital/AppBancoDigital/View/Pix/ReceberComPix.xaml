@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppBancoDigital.View.Pix.ReceberComPix">
+             x:Class="AppBancoDigital.View.Pix.ReceberComPix"
+             Style="{StaticResource BackgroundBar}">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Style="{StaticResource StackStatusBar}">
             <StackLayout  Orientation="Horizontal"
                           Style="{StaticResource StackTitulo}"
                           BackgroundColor="Transparent">
@@ -29,6 +30,15 @@
                             Margin="0,4,30,0"
                             VerticalOptions="Center"/>
 
+            </StackLayout>
+
+
+            <StackLayout>
+                <Button Text="Gerar QR CODE" Clicked="Button_Clicked" />
+
+                <Label Text="QR Code vai aparecer abaixo: " />
+
+                <Image x:Name="img_qrcode" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

@@ -24,22 +24,12 @@ namespace AppBancoDigital.View.Pix
 
         private void btn_voltar_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new View.Home());
         }
         private void btn_interrogacao_Clicked(object sender, EventArgs e)
         {
 
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            string teste = "Chave da Transferência: tiago@tiago.blog.br ";
-
-            QRCodeGenerator qrGenerator = new QRCodeGenerator();
-            QRCodeData qrCodeData = qrGenerator.CreateQrCode(teste, QRCodeGenerator.ECCLevel.Q);
-            PngByteQRCode qRCode = new PngByteQRCode(qrCodeData);
-            byte[] qrCodeBytes = qRCode.GetGraphic(20);
-            img_qrcode.Source = ImageSource.FromStream(() => new MemoryStream(qrCodeBytes));
-        }
     }
 }
