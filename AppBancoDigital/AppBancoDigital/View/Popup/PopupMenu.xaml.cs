@@ -1,7 +1,10 @@
-﻿using Rg.Plugins.Popup.Pages;
+﻿using Rg.Plugins.Popup.Extensions;
+using Rg.Plugins.Popup.Pages;
+using Rg.Plugins.Popup.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -24,9 +27,9 @@ namespace AppBancoDigital.View.Popup
             btn_notificacoes.Source = ImageSource.FromResource("AppBancoDigital.Images.notificacao.png");
             btn_deslogar.Source = ImageSource.FromResource("AppBancoDigital.Images.sair.png");
 
-            string[] resultsArray = explode(" ", App.DadosCorrentista.Nome);
-            string nome = resultsArray[0];
-            txt_correntista.Text = "Olá, " + nome + "!";
+            //string[] resultsArray = explode(" ", App.DadosCorrentista.Nome);
+            //string nome = resultsArray[0];
+            //txt_correntista.Text = "Olá, " + nome + "!";
         }
 
         public static string[] explode(string separator, string source)
@@ -49,6 +52,9 @@ namespace AppBancoDigital.View.Popup
             App.DadosCorrentista = null;
 
             Navigation.PushAsync(new Login());
+
+            //Navigation.RemovePopupPageAsync(PopupMenu);
+
         }
     }
 }

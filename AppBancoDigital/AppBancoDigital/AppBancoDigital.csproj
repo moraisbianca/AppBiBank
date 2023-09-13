@@ -20,8 +20,11 @@
     <None Remove="Images\atencao.png" />
     <None Remove="Images\avatar.png" />
     <None Remove="Images\barrinha.png" />
+    <None Remove="Images\cartao-de-credito %281%29.png" />
     <None Remove="Images\Cartoes.png" />
+    <None Remove="Images\chave.png" />
     <None Remove="Images\configuracao.png" />
+    <None Remove="Images\copiando.png" />
     <None Remove="Images\Extrato.png" />
     <None Remove="Images\invisivel.png" />
     <None Remove="Images\lupa.png" />
@@ -31,13 +34,16 @@
     <None Remove="Images\oculto.png" />
     <None Remove="Images\olhoaberto.png" />
     <None Remove="Images\olhofechado.png" />
+    <None Remove="Images\pagamento-seguro.png" />
     <None Remove="Images\Pix.png" />
     <None Remove="Images\ponto-de-interrogacao.png" />
+    <None Remove="Images\qr.png" />
     <None Remove="Images\sair.png" />
     <None Remove="Images\seta-direita.png" />
     <None Remove="Images\seta-esquerda.png" />
     <None Remove="Images\Transacoes.png" />
     <None Remove="Images\trespontos.png" />
+    <None Remove="Images\verificacao-de-codigo-qr.png" />
     <None Remove="Images\versenha.png" />
     <None Remove="Images\visivel.png" />
   </ItemGroup>
@@ -52,10 +58,19 @@
     <EmbeddedResource Include="Images\barrinha.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Images\cartao-de-credito (1).png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Images\Cartoes.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Images\chave.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Images\configuracao.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\copiando.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\Extrato.png">
@@ -73,10 +88,16 @@
     <EmbeddedResource Include="Images\notificacao.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Images\pagamento-seguro.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Images\Pix.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\ponto-de-interrogacao.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\qr.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\sair.png">
@@ -92,6 +113,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\trespontos.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\verificacao-de-codigo-qr.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\visivel.png">

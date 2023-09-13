@@ -65,7 +65,7 @@
 
                     </StackLayout>
 
-                    <Line X1="360" BackgroundColor="Black" Margin="30,-5,30,0"/>
+                    <Line X1="360" BackgroundColor="Gray" Margin="30,-5,30,0"/>
 
                     <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="40" Padding="0">
 
@@ -88,7 +88,7 @@
 
                     </StackLayout>
 
-                    <Line X1="360" BackgroundColor="Black" Margin="30,-5,30,0"/>
+                    <Line X1="360" BackgroundColor="Gray" Margin="30,-5,30,0"/>
 
                     <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="40" Padding="0">
 
@@ -103,7 +103,7 @@
                                 BackgroundColor="Transparent"
                                 TextTransform="None"
                                 Style="{StaticResource FonteExtrato}"
-                                Padding="0,-10,145,-10"/>
+                                Padding="0,-10,248,-10"/>
 
                         <ImageButton x:Name="btn_setinha_3" Clicked="btn_deslogar_Clicked"
                                      Style="{StaticResource Imagem}"

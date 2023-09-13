@@ -56,7 +56,7 @@ namespace AppBancoDigital.View
 
         private void btn_cartao_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new View.Dados.Cartoes() );
+            Navigation.PushAsync(new View.Dados.Cartoes());
         }
 
 
