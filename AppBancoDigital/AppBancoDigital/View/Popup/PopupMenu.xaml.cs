@@ -27,9 +27,9 @@ namespace AppBancoDigital.View.Popup
             btn_notificacoes.Source = ImageSource.FromResource("AppBancoDigital.Images.notificacao.png");
             btn_deslogar.Source = ImageSource.FromResource("AppBancoDigital.Images.sair.png");
 
-            //string[] resultsArray = explode(" ", App.DadosCorrentista.Nome);
-            //string nome = resultsArray[0];
-            //txt_correntista.Text = "Olá, " + nome + "!";
+            string[] resultsArray = explode(" ", App.DadosCorrentista.Nome);
+            string nome = resultsArray[0];
+            txt_correntista.Text = "Olá, " + nome + "!";
         }
 
         public static string[] explode(string separator, string source)

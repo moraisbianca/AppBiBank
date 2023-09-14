@@ -35,9 +35,11 @@
     <None Remove="Images\olhoaberto.png" />
     <None Remove="Images\olhofechado.png" />
     <None Remove="Images\pagamento-seguro.png" />
+    <None Remove="Images\Pagar.png" />
     <None Remove="Images\Pix.png" />
     <None Remove="Images\ponto-de-interrogacao.png" />
     <None Remove="Images\qr.png" />
+    <None Remove="Images\Receber.png" />
     <None Remove="Images\sair.png" />
     <None Remove="Images\seta-direita.png" />
     <None Remove="Images\seta-esquerda.png" />
@@ -91,6 +93,9 @@
     <EmbeddedResource Include="Images\pagamento-seguro.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Images\Pagar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Images\Pix.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -98,6 +103,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\qr.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Receber.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\sair.png">

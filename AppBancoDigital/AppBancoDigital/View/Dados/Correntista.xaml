@@ -2,14 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:behaviorPack="clr-namespace:Xamarin.Forms.BehaviorValidationPack;assembly=Xamarin.Forms.BehaviorValidationPack"
-             x:Class="AppBancoDigital.View.Dados.Correntista">
-
-    <ContentPage.Background>
-        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-            <GradientStop Color="#341933" Offset="0.3"/>
-            <GradientStop Color="#993399" Offset="1.1"/>
-        </LinearGradientBrush>
-    </ContentPage.Background>
+             x:Class="AppBancoDigital.View.Dados.Correntista"
+             Style="{StaticResource BackgroundGradient}">
 
     <ContentPage.Content>
         <StackLayout>

@@ -17,6 +17,8 @@ namespace AppBancoDigital.View.Pix
             InitializeComponent();
             btn_voltar.Source = ImageSource.FromResource("AppBancoDigital.Images.seta-esquerda.png");
             btn_interrogacao.Source = ImageSource.FromResource("AppBancoDigital.Images.ponto-de-interrogacao.png");
+            btn_pagar_pix.Source = ImageSource.FromResource("AppBancoDigital.Images.Pagar.png");
+            btn_receber_pix.Source = ImageSource.FromResource("AppBancoDigital.Images.Receber.png");
             NavigationPage.SetHasNavigationBar(this, false);
         }
 

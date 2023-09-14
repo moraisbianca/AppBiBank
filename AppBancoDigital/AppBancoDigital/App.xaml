@@ -55,8 +55,8 @@
             <Style x:Key="BotaoVazado" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="Transparent" />
                 <Setter Property="FontFamily" Value="{OnPlatform Android='ethnocentric.otf#ethnocentric-it'}" />
-                <Setter Property="TextColor" Value="#ac58aa" />
-                <Setter Property="BorderColor" Value="#ac58aa" />
+                <Setter Property="TextColor" Value="#663177" />
+                <Setter Property="BorderColor" Value="#663177" />
                 <Setter Property="BorderWidth" Value="2" />
                 <Setter Property="Margin" Value="0,0,0,20" />
                 <Setter Property="CornerRadius" Value="10" />
@@ -64,7 +64,7 @@
 
             <!-- Botão Roxo (registrar) -->
             <Style x:Key="BotaoRoxo" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="#642764" />
+                <Setter Property="BackgroundColor" Value="#663177" />
                 <Setter Property="FontFamily" Value="{OnPlatform Android='ethnocentric.otf#ethnocentric-it'}" />
                 <Setter Property="TextColor" Value="#FFF" />
                 <Setter Property="CornerRadius" Value="10" />
@@ -141,6 +141,16 @@
                     <LinearGradientBrush StartPoint="0,1" EndPoint="1,1">
                         <GradientStop Color="#c63f7b" Offset="0"/>
                         <GradientStop Color="#663177" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter>
+            </Style>
+            
+            <!-- Gradient do background-->
+            <Style x:Key="BackgroundGradient" TargetType="ContentPage">
+                <Setter Property="Background">
+                    <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                        <GradientStop Color="#341933" Offset="0.3"/>
+                        <GradientStop Color="#993399" Offset="1.1"/>
                     </LinearGradientBrush>
                 </Setter>
             </Style>

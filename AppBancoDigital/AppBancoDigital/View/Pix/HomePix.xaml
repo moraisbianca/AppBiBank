@@ -40,29 +40,38 @@
                 <!-- label -->
                 <!-- setinha de ação-->
                 <StackLayout>
-                    <Button x:Name="btn_pagar_pix"
-                            Text="Pagar"
-                            Clicked="btn_pagar_pix_Clicked"
-                            Margin="25,10,25,0"
-                            BackgroundColor="Transparent"
-                            BorderColor="LightGray"
-                            BorderWidth="1"
-                            CornerRadius="8"
-                            TextTransform="None"
-                            HeightRequest="60"
-                            Style="{StaticResource FonteBotão}"/>
-
-                    <Button x:Name="btn_receber_pix"
-                            Text="Receber"
-                            Clicked="btn_receber_pix_Clicked"
-                            Margin="25,10,25,20"
-                            BackgroundColor="Transparent"
-                            BorderColor="LightGray"
-                            BorderWidth="1"
-                            CornerRadius="8"
-                            TextTransform="None"
-                            HeightRequest="60"
-                            Style="{StaticResource FonteBotão}"/>
+                    <Frame Margin="25,10,25,20"
+                           BorderColor="LightGray"
+                           CornerRadius="8"
+                           HeightRequest="60"
+                           BackgroundColor="Transparent"
+                           Padding="0">
+                        <StackLayout Margin="0" Padding="0">
+                            <ImageButton x:Name="btn_pagar_pix"
+                                         BackgroundColor="Transparent"
+                                         Clicked="btn_pagar_pix_Clicked"
+                                         HorizontalOptions="FillAndExpand"
+                                         HeightRequest="50"
+                                         Margin="10,5,10,5"/>
+                        </StackLayout>
+                    </Frame>
+                    
+                    <Frame Margin="25,10,25,20"
+                           BorderColor="LightGray"
+                           CornerRadius="8"
+                           HeightRequest="60"
+                           BackgroundColor="Transparent"
+                           Padding="0">
+                        <StackLayout Margin="0" Padding="0">
+                            <ImageButton x:Name="btn_receber_pix"
+                                         BackgroundColor="Transparent"
+                                         Clicked="btn_pagar_pix_Clicked"
+                                         HorizontalOptions="FillAndExpand"
+                                         HeightRequest="50"
+                                         Margin="10,5,10,5"/>
+                        </StackLayout>
+                    </Frame>
+                    
 
                     <Label Text="Mais ações"
                            TextColor="Black"
