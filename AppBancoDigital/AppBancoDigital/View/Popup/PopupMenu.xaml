@@ -16,13 +16,9 @@
             />
     </pages:PopupPage.Animation>
 
-    <Frame BackgroundColor="White"
-               CornerRadius="15"
+    <Frame Style="{StaticResource Popups}"
                HeightRequest="250"
-               WidthRequest="400"
-               Margin="0,400,0,-10"
-               Padding="0"
-               VerticalOptions="End">
+               Margin="0,400,0,-10">
 
         <StackLayout>
 
@@ -39,18 +35,17 @@
                    TextColor="Black"/>
 
 
-            <ScrollView>
-                <StackLayout>
+            <StackLayout>
 
-                    <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="40" Padding="0">
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="40" Padding="0">
 
-                        <ImageButton x:Name="btn_avatar" Clicked="btn_avatar_Clicked"
+                    <ImageButton x:Name="btn_avatar" Clicked="btn_avatar_Clicked"
                                      WidthRequest="17"
                                      HeightRequest="17"
-                                     Margin="30,0,3,0"
+                                     Margin="32,0,3,0"
                                      BackgroundColor="Transparent"/>
-                        
-                        <Button Text="Meu cadastro e limites"
+
+                    <Button Text="Meu cadastro e limites"
                                 Clicked="btn_avatar_Clicked"
                                 FontSize="12"
                                 Margin="0,0,0,0"
@@ -58,22 +53,22 @@
                                 TextTransform="None"
                                 Style="{StaticResource FonteExtrato}"
                                 Padding="0,-10,145,-10"/>
-                        
-                        <ImageButton x:Name="btn_setinha_1" Clicked="btn_avatar_Clicked"
+
+                    <ImageButton x:Name="btn_setinha_1" Clicked="btn_avatar_Clicked"
                                      Style="{StaticResource Imagem}"
                                      Margin="0"/>
 
-                    </StackLayout>
+                </StackLayout>
 
-                    <Line X1="360" BackgroundColor="Gray" Margin="30,-5,30,0"/>
+                <Line X1="360" BackgroundColor="Gray" Margin="30,0,30,0"/>
 
-                    <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="40" Padding="0">
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="40" Padding="0">
 
-                        <ImageButton x:Name="btn_notificacoes" Clicked="btn_notificacoes_Clicked"
+                    <ImageButton x:Name="btn_notificacoes" Clicked="btn_notificacoes_Clicked"
                                      Style="{StaticResource Imagem}"
                                      Margin="30,0,3,0"/>
 
-                        <Button Text="Notificações"
+                    <Button Text="Notificações"
                                 Clicked="btn_notificacoes_Clicked"
                                 FontSize="12"
                                 Margin="0,0,0,0"
@@ -82,21 +77,21 @@
                                 Style="{StaticResource FonteExtrato}"
                                 Padding="0,-10,200,-10"/>
 
-                        <ImageButton x:Name="btn_setinha_2" Clicked="btn_notificacoes_Clicked"
+                    <ImageButton x:Name="btn_setinha_2" Clicked="btn_notificacoes_Clicked"
                                      Style="{StaticResource Imagem}"
                                      Margin="0"/>
 
-                    </StackLayout>
+                </StackLayout>
 
-                    <Line X1="360" BackgroundColor="Gray" Margin="30,-5,30,0"/>
+                <Line X1="360" BackgroundColor="Gray" Margin="30,0,30,0"/>
 
-                    <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="40" Padding="0">
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="40" Padding="0">
 
-                        <ImageButton x:Name="btn_deslogar" Clicked="btn_deslogar_Clicked"
+                    <ImageButton x:Name="btn_deslogar" Clicked="btn_deslogar_Clicked"
                                      Style="{StaticResource Imagem}"
                                      Margin="30,0,3,0"/>
 
-                        <Button Text="Sair"
+                    <Button Text="Sair"
                                 Clicked="btn_deslogar_Clicked"
                                 FontSize="12"
                                 Margin="0,0,0,0"
@@ -105,15 +100,14 @@
                                 Style="{StaticResource FonteExtrato}"
                                 Padding="0,-10,248,-10"/>
 
-                        <ImageButton x:Name="btn_setinha_3" Clicked="btn_deslogar_Clicked"
+                    <ImageButton x:Name="btn_setinha_3" Clicked="btn_deslogar_Clicked"
                                      Style="{StaticResource Imagem}"
                                      Margin="0"/>
 
-                    </StackLayout>
-
-
                 </StackLayout>
-            </ScrollView>
+
+
+            </StackLayout>
 
         </StackLayout>
 

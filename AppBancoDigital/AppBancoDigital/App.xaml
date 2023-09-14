@@ -155,6 +155,16 @@
                 </Setter>
             </Style>
 
+            <!-- Popups -->
+            <Style x:Key="Popups" TargetType="Frame">
+                <Setter Property="VerticalOptions" Value="End" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="WidthRequest" Value="400"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="HasShadow" Value="True"/>
+                <Setter Property="CornerRadius" Value="15"/>
+            </Style>
+
         </ResourceDictionary>
 
     </Application.Resources>

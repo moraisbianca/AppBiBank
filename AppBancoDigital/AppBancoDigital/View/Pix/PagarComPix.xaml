@@ -33,6 +33,27 @@
                             VerticalOptions="Center"/>
             </StackLayout>
 
+            <StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
+                
+                <Label Text="Chave" 
+                       Style="{StaticResource LabelTituloCampo}"
+                       Margin="25,0,225,0"
+                       FontSize="14"
+                       TextColor="Black"/>
+                
+                <Button Text="Colar chave"
+                        HeightRequest="20"
+                        BackgroundColor="Gray"
+                        Padding="0,0,0,0"
+                        Style="{StaticResource FonteBotão}"
+                        Margin="0,0,25,0"
+                        FontSize="10"
+                        TextTransform="None"
+                        TextColor="#c63f7b"/>
+            </StackLayout>
+            
+            
+
 
         </StackLayout>
 

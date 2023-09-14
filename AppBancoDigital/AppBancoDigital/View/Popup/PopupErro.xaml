@@ -16,13 +16,9 @@
             />
     </pages:PopupPage.Animation>
 
-    <Frame BackgroundColor="White"
-               CornerRadius="15"
+    <Frame Style="{StaticResource Popups}"
                HeightRequest="300"
-               WidthRequest="400"
-               Margin="0,700,0,-10"
-               Padding="0"
-               VerticalOptions="End">
+               Margin="0,700,0,-10">
 
         <StackLayout>
 

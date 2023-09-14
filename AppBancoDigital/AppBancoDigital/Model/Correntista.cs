@@ -11,8 +11,6 @@ namespace AppBancoDigital.Model
         int id;
         string nome;
         string cpf;
-        string datanasc;
-        string senha;
 
 
         public int? Id { get; set; }
@@ -43,6 +41,7 @@ namespace AppBancoDigital.Model
         }
         public DateTime DataNasc { get; set;}
         public string Senha { get; set;}
+        public List<Conta> rows_contas { get; set; }
 
     }
 }

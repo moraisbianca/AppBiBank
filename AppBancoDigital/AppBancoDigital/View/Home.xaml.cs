@@ -10,15 +10,15 @@ using Xamarin.Forms.Xaml;
 
 namespace AppBancoDigital.View
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Home : ContentPage
-	{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Home : ContentPage
+    {
         public Home()
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             btn_saldo.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
-			btn_menu.Source = ImageSource.FromResource("AppBancoDigital.Images.trespontos.png");
+            btn_menu.Source = ImageSource.FromResource("AppBancoDigital.Images.trespontos.png");
             btn_lupa.Source = ImageSource.FromResource("AppBancoDigital.Images.lupa.png");
             btn_pix.Source = ImageSource.FromResource("AppBancoDigital.Images.Pix.png");
             btn_transferencias.Source = ImageSource.FromResource("AppBancoDigital.Images.Transacoes.png");
@@ -27,13 +27,22 @@ namespace AppBancoDigital.View
 
         private void ver_saldo(object sender, EventArgs e)
         {
-            //Fazer funcionalidade do saldo
+            double saldo_contas = App.DadosCorrentista.rows_contas.Sum(i => i.Saldo);
+
+            if (txt_saldo.Text == "R$ ")
+            {
+                txt_saldo.Text = "R" + saldo_contas.ToString("C");
+                btn_saldo.Source = ImageSource.FromResource("AppBancoDigital.Images.invisivel.png");
+            }
+            else
+            {
+                txt_saldo.Text = "R$ ";
+                btn_saldo.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
+            }
         }
 
         private async void btn_menu_Clicked(object sender, EventArgs e)
         {
-            //Navigation.PushAsync(new View.Menu()); (AGORA NAVEGA PRA UM POPUP)
-
             var page = new PopupMenu();
 
             await PopupNavigation.PushAsync(page, true);

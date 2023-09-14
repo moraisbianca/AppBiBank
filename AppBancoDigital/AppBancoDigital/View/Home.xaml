@@ -33,18 +33,20 @@
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" Margin="0,0,0,0" HeightRequest="20">
-                <Label x:Name="txt_saldo"
-                       Text="R$ 0,00" 
-                       FontAttributes="None"
-                       Style="{StaticResource FonteSaldo}"
-                       Margin="30,0,0,0"
-                       TextColor="black"/>
 
                 <ImageButton x:Name="btn_saldo"
                              WidthRequest="20"
                              BackgroundColor="Transparent" 
                              Clicked="ver_saldo"
-                             Margin="6,0,40,0"/>
+                             Margin="30,0,0,0"/>
+                
+                <Label x:Name="txt_saldo"
+                       Text="R$ " 
+                       FontAttributes="None"
+                       Style="{StaticResource FonteSaldo}"
+                       Margin="6,0,0,0"
+                       TextColor="black"/>
+
 
             </StackLayout>
 

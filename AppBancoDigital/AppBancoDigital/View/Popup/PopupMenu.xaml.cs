@@ -50,11 +50,8 @@ namespace AppBancoDigital.View.Popup
         private void btn_deslogar_Clicked(object sender, EventArgs e)
         {
             App.DadosCorrentista = null;
-
+            Application.Current.MainPage.Navigation.PopPopupAsync(true);
             Navigation.PushAsync(new Login());
-
-            //Navigation.RemovePopupPageAsync(PopupMenu);
-
         }
     }
 }

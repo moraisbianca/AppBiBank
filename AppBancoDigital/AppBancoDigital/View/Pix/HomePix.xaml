@@ -6,7 +6,7 @@
              Title="Pix">
     <ContentPage.Content>
         <StackLayout Style="{StaticResource StackStatusBar}">
-            
+
             <StackLayout  Orientation="Horizontal"
                           Style="{StaticResource StackTitulo}"
                           BackgroundColor="Transparent">
@@ -52,26 +52,27 @@
                                          Clicked="btn_pagar_pix_Clicked"
                                          HorizontalOptions="FillAndExpand"
                                          HeightRequest="50"
-                                         Margin="10,5,10,5"/>
+                                         Margin="10,6.5,10,5"/>
                         </StackLayout>
                     </Frame>
-                    
+
                     <Frame Margin="25,10,25,20"
                            BorderColor="LightGray"
                            CornerRadius="8"
                            HeightRequest="60"
                            BackgroundColor="Transparent"
                            Padding="0">
+                        
                         <StackLayout Margin="0" Padding="0">
                             <ImageButton x:Name="btn_receber_pix"
                                          BackgroundColor="Transparent"
-                                         Clicked="btn_pagar_pix_Clicked"
+                                         Clicked="btn_receber_pix_Clicked"
                                          HorizontalOptions="FillAndExpand"
                                          HeightRequest="50"
-                                         Margin="10,5,10,5"/>
+                                         Margin="10,7,10,5"/>
                         </StackLayout>
                     </Frame>
-                    
+
 
                     <Label Text="Mais ações"
                            TextColor="Black"
