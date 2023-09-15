@@ -15,8 +15,14 @@
          which is used to tint widgets -->
     <item name="colorAccent">#993399</item>
 	<item name="android:datePickerDialogTheme">@style/DatePickerStyle</item>
+	  <item name="android:datePickerDialogTheme">@style/EntryStyle</item>
   </style>
 
+	<style name="EntryStyle" parent="Entry">
+		<item name="android:colorAccent">#CCC</item>
+		<item name="android:colorControlActivated">#D3D3D3</item>
+	</style>
+	
 	<style name="DatePickerStyle" parent="ThemeOverlay.AppCompat.Dialog">
 		<!--header background-->
 		<item name="colorAccent">#642764</item>

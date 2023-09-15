@@ -8,7 +8,6 @@ namespace AppBancoDigital.Model
 {
     public class Correntista
     {
-        int id;
         string nome;
         string cpf;
 
