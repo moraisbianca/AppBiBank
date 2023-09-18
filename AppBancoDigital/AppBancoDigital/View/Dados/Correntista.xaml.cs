@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using static AppBancoDigital.App;
+using static ZXing.QrCode.Internal.Mode;
 
 namespace AppBancoDigital.View.Dados
 {
@@ -23,6 +24,7 @@ namespace AppBancoDigital.View.Dados
             dtpck_datanasc.MaximumDate = DateTime.Now.AddYears(-16);
             btn_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
             btn_confirme_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
+
         }
 
         private async void continuar(object sender, EventArgs e)

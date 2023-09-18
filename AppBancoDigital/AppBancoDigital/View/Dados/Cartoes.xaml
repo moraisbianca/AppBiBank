@@ -73,17 +73,17 @@
                                 <Label x:Name="nome_titular_fisico" 
                                    Text="NOME DO TITULAR"
                                    TextColor="White"
-                                   
+                                   Padding="0"
                                    FontSize="Micro"
                                    FontAttributes="Bold"
-                                   Margin="0,40,0,25"/>
+                                   Margin="0,30,0,0"/>
 
                                 <StackLayout Orientation="Horizontal">
 
                                     <Label x:Name="numero_cartao_fisico" Text=""/>
 
                                     <Image x:Name="bandeira_cartao_fisico"
-                                       Margin="60,0,0,0"
+                                       Margin="60,25,0,0"
                                        WidthRequest="30"/>
 
                                 </StackLayout>
@@ -102,19 +102,32 @@
 
 
                             <StackLayout Padding="0">
-                                <ImageButton x:Name="btn_config_cartao_digital" 
+                                <StackLayout Orientation="Horizontal">
+                                    <Image x:Name="codigo_qr"
+                                           WidthRequest="15"
+                                           HeightRequest="15"
+                                           BackgroundColor="Transparent"/>
+
+                                    <Label Text="VIRTUAL" TextColor="White" FontSize="Micro"
+                                           Style="{StaticResource LabelTituloCampo}"
+                                           VerticalTextAlignment="Center"
+                                           Margin="0,0,7,0"/>
+
+                                    <ImageButton x:Name="btn_config_cartao_digital" 
                                          Clicked="btn_config_cartao_digital_Clicked"
                                          HorizontalOptions="End"
                                          WidthRequest="25"
                                          BackgroundColor="Transparent"/>
+                                </StackLayout>
+                                
 
                                 <Label x:Name="nome_titular_digital" 
                                    Text="NOME DO TITULAR"
-                                   TextColor="White"
-                                   
+                                   TextColor="White"                                  
                                    FontSize="Micro"
                                    FontAttributes="Bold"
-                                   Margin="0,40,0,25"/>
+                                   Margin="0,30,0,25"
+                                   Padding="0"/>
 
                                 <StackLayout Orientation="Horizontal">
 
