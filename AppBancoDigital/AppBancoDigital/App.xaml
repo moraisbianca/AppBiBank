@@ -121,8 +121,8 @@
             
             <!-- Cartão -->
             <Style x:Key="Cartao" TargetType="Frame">
-                <Setter Property="WidthRequest" Value="90"/>
-                <Setter Property="HeightRequest" Value="130"/>
+                <Setter Property="WidthRequest" Value="100"/>
+                <Setter Property="HeightRequest" Value="140"/>
                 <Setter Property="BackgroundColor" Value="Purple"/>
                 <Setter Property="CornerRadius" Value="15"/>
                 <Setter Property="Padding" Value="10"/>
