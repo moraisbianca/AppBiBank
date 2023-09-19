@@ -22,6 +22,7 @@ namespace AppBancoDigital
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             btn_senha.Source = ImageSource.FromResource("AppBancoDigital.Images.visivel.png");
+            btn_biometria.Source = ImageSource.FromResource("AppBancoDigital.Images.biometria.png");
         }
         private void ver_senha(object sender, EventArgs e)
         {
@@ -43,7 +44,12 @@ namespace AppBancoDigital
 
             if (txt_cpf.Text == null || txt_senha.Text == null)
             {
-                lbl_erro.Text = "Insira o usuário e a senha!";
+                //throw new Exception("Insira o usuário e a senha!");
+
+                //var page = new PopupErro();
+                //page.BindingContext = Exception;
+
+                //await PopupNavigation.PushAsync(page, true);
                 carregando.IsRunning = false;
             }
             else
@@ -64,7 +70,7 @@ namespace AppBancoDigital
                     }
                     else
                     {
-                        lbl_erro.Text = "Usuário ou senha incorretos!";
+                        //lbl_erro.Text = "Usuário ou senha incorretos!";
                         carregando.IsRunning = false;
                     }
 

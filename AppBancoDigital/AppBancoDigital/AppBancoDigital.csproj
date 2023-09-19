@@ -11,8 +11,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="NovaPasta\**" />
     <Compile Remove="View\Images\**" />
+    <EmbeddedResource Remove="NovaPasta\**" />
     <EmbeddedResource Remove="View\Images\**" />
+    <None Remove="NovaPasta\**" />
     <None Remove="View\Images\**" />
   </ItemGroup>
 
@@ -24,6 +27,7 @@
     <None Remove="Images\atencao.png" />
     <None Remove="Images\avatar.png" />
     <None Remove="Images\barrinha.png" />
+    <None Remove="Images\biometria.png" />
     <None Remove="Images\cartao-de-credito %281%29.png" />
     <None Remove="Images\Cartoes.png" />
     <None Remove="Images\chave.png" />
@@ -63,6 +67,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\barrinha.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\biometria.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\cartao-de-credito (1).png">
@@ -211,9 +218,5 @@
     <EmbeddedResource Update="View\Popup\PopupSucesso.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="NovaPasta\" />
   </ItemGroup>
 </Project>

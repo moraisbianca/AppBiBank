@@ -6,11 +6,11 @@
              Style="{StaticResource BackgroundBar}">
 
     <ContentPage.Content>
-        
+
         <StackLayout Style="{StaticResource StackStatusBar}">
             <StackLayout  Orientation="Horizontal"
-    Style="{StaticResource StackTitulo}"
-              BackgroundColor="Transparent">
+                          Style="{StaticResource StackTitulo}"
+                          BackgroundColor="Transparent">
 
                 <ImageButton x:Name="btn_voltar" 
                              Clicked="btn_voltar_Clicked"
@@ -39,19 +39,83 @@
             <ScrollView>
 
                 <StackLayout>
-                    
+
+                    <!-- Limite de Credito -->
+                    <StackLayout BackgroundColor="Transparent">
+
+                        <Grid RowDefinitions="*" ColumnDefinitions="*,*" Margin="25,0,25,20" BackgroundColor="Transparent">
+                            <Label Grid.Row="0" Grid.Column="0" 
+                                   Text="Limite de crédito"
+                                   TextColor="Black"
+                                   Margin="0"
+                                   FontSize="16"
+                                   Style="{StaticResource LabelTituloCampo}"
+                                   HorizontalTextAlignment="Start"/>
+
+                            <Label Grid.Row="0" Grid.Column="1" Text="Mostrar detalhes" 
+                                   Style="{StaticResource LabelTituloCampo}"
+                                   Margin="0"
+                                   FontSize="12"
+                                   HorizontalTextAlignment="End"
+                                   VerticalTextAlignment="Center"
+                                   TextColor="#c63f7b"/>
+                        </Grid>
+
+                        <Grid RowDefinitions="*" ColumnDefinitions="*,*" Margin="25,-3,25,0" BackgroundColor="Transparent">
+                            <Label Grid.Row="0" Grid.Column="0" 
+                                   Text="Utilizado"
+                                   TextColor="Gray"
+                                   Margin="0"
+                                   FontSize="12"
+                                   HorizontalTextAlignment="Start"/>
+
+                            <Label Grid.Row="0" Grid.Column="1" 
+                                   Text="Disponível"
+                                   TextColor="Gray"
+                                   Margin="0"
+                                   FontSize="12"
+                                   HorizontalTextAlignment="End"/>
+                        </Grid>
+
+                        <Grid RowDefinitions="*" ColumnDefinitions="*,*" Margin="30,-3,30,0" BackgroundColor="Transparent">
+                            <Label Grid.Row="0" Grid.Column="0" 
+                                   Text="R$"
+                                   TextColor="Black"
+                                   Margin="0"
+                                   FontSize="12"
+                                   HorizontalTextAlignment="Start"
+                                   Style="{StaticResource FonteSaldo}"/>
+
+                            <Label Grid.Row="0" Grid.Column="1" 
+                                   Text="R$"
+                                   TextColor="Black"
+                                   Margin="0"
+                                   FontSize="12"
+                                   HorizontalTextAlignment="End"
+                                   Style="{StaticResource FonteSaldo}"/>
+
+
+                        </Grid>
+
+                        <Frame BackgroundColor="LightGray"
+                               Margin="25,0,25,10"
+                               Padding="0"
+                               HeightRequest="20"/>
+
+                    </StackLayout>
+
+                    <!-- Meus Cartões -->
                     <Label Text="Meus cartões"
                            TextColor="Black"
-                           Margin="30,5,0,-25"
+                           Margin="25,5,0,0"
                            FontSize="16"
                            Style="{StaticResource LabelTituloCampo}"/>
-
-
+                    
                     <StackLayout Orientation="Horizontal"
-                             Padding="30">
-
-
-
+                                 Margin="25,10,25,0"
+                                 BackgroundColor="Transparent">
+                        
+                        <!-- Cartão Fisico -->
                         <Frame x:Name="cartao_fisico" Style="{StaticResource Cartao}"
                            Margin="0,0,8,0"
                            HasShadow="True">
@@ -76,20 +140,22 @@
                                    Padding="0"
                                    FontSize="Micro"
                                    FontAttributes="Bold"
-                                   Margin="0,30,0,0"/>
+                                   Margin="0,30,0,25"/>
 
                                 <StackLayout Orientation="Horizontal">
 
                                     <Label x:Name="numero_cartao_fisico" Text=""/>
 
                                     <Image x:Name="bandeira_cartao_fisico"
-                                       Margin="60,25,0,0"
-                                       WidthRequest="30"/>
+                                           Margin="60,15,0,0"
+                                           WidthRequest="27"/>
 
                                 </StackLayout>
 
                             </StackLayout>
                         </Frame>
+                        
+                        <!-- Cartão Digital-->
                         <Frame x:Name="cartao_digital" Style="{StaticResource Cartao}"
                            Margin="0,0,8,0"
                            HasShadow="True">
@@ -104,14 +170,15 @@
                             <StackLayout Padding="0">
                                 <StackLayout Orientation="Horizontal">
                                     <Image x:Name="codigo_qr"
-                                           WidthRequest="15"
-                                           HeightRequest="15"
+                                           Margin="2,0,1,0"
+                                           WidthRequest="13"
+                                           HeightRequest="13"
                                            BackgroundColor="Transparent"/>
 
-                                    <Label Text="VIRTUAL" TextColor="White" FontSize="Micro"
+                                    <Label Text="VIRTUAL" TextColor="White" FontSize="9"
                                            Style="{StaticResource LabelTituloCampo}"
                                            VerticalTextAlignment="Center"
-                                           Margin="0,0,7,0"/>
+                                           Margin="0,0,13,0"/>
 
                                     <ImageButton x:Name="btn_config_cartao_digital" 
                                          Clicked="btn_config_cartao_digital_Clicked"
@@ -119,7 +186,7 @@
                                          WidthRequest="25"
                                          BackgroundColor="Transparent"/>
                                 </StackLayout>
-                                
+
 
                                 <Label x:Name="nome_titular_digital" 
                                    Text="NOME DO TITULAR"
@@ -134,8 +201,8 @@
                                     <Label x:Name="numero_cartao_digital" Text=""/>
 
                                     <Image x:Name="bandeira_cartao_digital"
-                                       Margin="60,0,0,0"
-                                       WidthRequest="30"/>
+                                       Margin="60,15,0,0"
+                                       WidthRequest="27"/>
 
                                 </StackLayout>
 

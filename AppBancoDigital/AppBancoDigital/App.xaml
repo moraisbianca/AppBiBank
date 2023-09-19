@@ -125,7 +125,7 @@
                 <Setter Property="HeightRequest" Value="140"/>
                 <Setter Property="BackgroundColor" Value="Purple"/>
                 <Setter Property="CornerRadius" Value="15"/>
-                <Setter Property="Padding" Value="10"/>
+                <Setter Property="Padding" Value="12"/>
             </Style>
             
             <!-- Estilo da imagem do popup menu -->
