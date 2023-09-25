@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Forms.Xaml;
 
 namespace AppBancoDigital.View.Pix
@@ -28,6 +29,11 @@ namespace AppBancoDigital.View.Pix
         }
 
         private void btn_interrogacao_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
         {
 
         }
