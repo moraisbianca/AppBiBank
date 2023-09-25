@@ -33,13 +33,7 @@
             </StackLayout>
 
 
-            <StackLayout>
-                <Button Text="Gerar QR CODE" Clicked="Button_Clicked" />
-
-                <Label Text="QR Code vai aparecer abaixo: " />
-
-                <Image x:Name="img_qrcode" />
-            </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

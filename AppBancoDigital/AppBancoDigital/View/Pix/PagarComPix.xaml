@@ -33,23 +33,59 @@
                             VerticalOptions="Center"/>
             </StackLayout>
 
-            <StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
+            <StackLayout BackgroundColor="Transparent">
+
+                <Grid RowDefinitions="*" ColumnDefinitions="*,*" Margin="25,0,25,20" BackgroundColor="Transparent">
+                    <Label Grid.Row="0" Grid.Column="0" 
+                            Text="Chave"
+                            TextColor="Black"
+                            Margin="0"
+                            FontSize="16"
+                            Style="{StaticResource LabelTituloCampo}"
+                            HorizontalTextAlignment="Start"/>
+
+                    <Label Grid.Row="0" Grid.Column="1" Text="Colar chave" 
+                            Style="{StaticResource LabelTituloCampo}"
+                            Margin="0"
+                            FontSize="12"
+                            HorizontalTextAlignment="End"
+                            VerticalTextAlignment="Center"
+                            TextColor="#c63f7b"/>
+                </Grid>
                 
-                <Label Text="Chave" 
+                
+                <!-- Entrada para colocar a chave -->
+
+
+                <Label Grid.Row="0" Grid.Column="0" 
+                       Text="Outros Pagamentos"
+                       TextColor="Black"
+                       Margin="25,0,0,0"
+                       FontSize="16"
                        Style="{StaticResource LabelTituloCampo}"
-                       Margin="25,0,225,0"
-                       FontSize="14"
-                       TextColor="Black"/>
-                
-                <Button Text="Colar chave"
-                        HeightRequest="20"
-                        BackgroundColor="Gray"
-                        Padding="0,0,0,0"
-                        Style="{StaticResource FonteBotão}"
-                        Margin="0,0,25,0"
-                        FontSize="10"
-                        TextTransform="None"
-                        TextColor="#c63f7b"/>
+                       HorizontalTextAlignment="Start"/>
+
+                <Grid RowDefinitions="*" ColumnDefinitions="*,*,*" Margin="35,0,35,20" BackgroundColor="Transparent"
+                      HeightRequest="90" WidthRequest="90">
+                    <Frame Grid.Row="0" Grid.Column="0"
+                           Margin="4"
+                           CornerRadius="8"
+                           HasShadow="False"
+                           BorderColor="LightGray"/>
+
+                    <Frame Grid.Row="0" Grid.Column="1"
+                           Margin="4"
+                           CornerRadius="8"
+                           HasShadow="False"
+                           BorderColor="LightGray"/>
+
+                    <Frame Grid.Row="0" Grid.Column="2"
+                           Margin="4"
+                           CornerRadius="8"
+                           HasShadow="False"
+                           BorderColor="LightGray"/>
+
+                </Grid>
             </StackLayout>
             
             
