@@ -4,12 +4,12 @@
              x:Class="AppBancoDigital.View.Pix.ReceberComPix"
              Style="{StaticResource BackgroundBar}">
     <ContentPage.Content>
-        <StackLayout Style="{StaticResource StackStatusBar}">
+        <StackLayout Style="{StaticResource StackStatusBar}" BackgroundColor="White">
             <StackLayout  Orientation="Horizontal"
                           Style="{StaticResource StackTitulo}"
-                          BackgroundColor="Transparent">
+                          BackgroundColor="White">
 
-                <Grid RowDefinitions="*" Margin="30,0,30,20" Padding="0">
+                <Grid RowDefinitions="*" Margin="30,0,30,20" Padding="0" BackgroundColor="Transparent">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
@@ -17,34 +17,34 @@
                     </Grid.ColumnDefinitions>
 
                     <ImageButton Grid.Row="0" Grid.Column="0"
-                                 x:Name="btn_voltar"
-                                 Clicked="btn_voltar_Clicked"
-                                 HorizontalOptions="StartAndExpand"
-                                 BackgroundColor="Transparent"
-                                 HeightRequest="20"
-                                 WidthRequest="20"/>
+                 x:Name="btn_voltar"
+                 Clicked="btn_voltar_Clicked"
+                 HorizontalOptions="StartAndExpand"
+                 BackgroundColor="Transparent"
+                 HeightRequest="20"
+                 WidthRequest="20"/>
 
                     <Label Grid.Row="0" Grid.Column="1" 
-                           Text="Receber com pix" 
-                           Style="{StaticResource LabelMenu}" 
-                           BackgroundColor="Transparent" 
-                           HorizontalOptions="CenterAndExpand"
-                           VerticalOptions="CenterAndExpand"/>
+           Text="Recebendo" 
+           Style="{StaticResource LabelMenu}" 
+           BackgroundColor="Transparent" 
+           HorizontalOptions="CenterAndExpand"
+           VerticalOptions="CenterAndExpand"/>
 
                     <ImageButton Grid.Row="0" Grid.Column="2" 
-                                 x:Name="btn_interrogacao"
-                                 Clicked="btn_interrogacao_Clicked"
-                                 BackgroundColor="Transparent"
-                                 HeightRequest="20"
-                                 WidthRequest="20"
-                                 HorizontalOptions="EndAndExpand"/>
+                 x:Name="btn_interrogacao"
+                 Clicked="btn_interrogacao_Clicked"
+                 BackgroundColor="Transparent"
+                 HeightRequest="20"
+                 WidthRequest="20"
+                 HorizontalOptions="EndAndExpand"/>
 
                 </Grid>
 
             </StackLayout>
 
             <Label Text="Quem for te pagar verá essas informações após escanear o QR Code!"
-                   FontSize="14"
+                   FontSize="15"
                    Margin="30,0,30,0"/>
 
             <!--<Entry />-->
@@ -63,8 +63,22 @@
             </Frame>
 
 
-            <Grid RowDefinitions="*,*,*,*,*,*,*" ColumnDefinitions="*,*"
-                  BackgroundColor="red" VerticalOptions="EndAndExpand" Margin="30,20,30,0">
+            <Grid ColumnDefinitions="*,*"
+                  BackgroundColor="Transparent" VerticalOptions="EndAndExpand" Margin="30,0,30,30">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="55"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="55"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="55"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="55"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="180"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
 
                 <Label Grid.Row="0" Grid.Column="0" 
                        Text="Chave Pix"
@@ -72,33 +86,41 @@
                        Style="{StaticResource LabelMenu}"
                        VerticalOptions="Center"/>
 
-                <!--<Line X1="360" BackgroundColor="Gray" Margin="25,0,30,0"/>-->
+                <Line Grid.ColumnSpan="2" Grid.Row="1" X1="360" BackgroundColor="LightGray" Margin="0"/>
 
-                <Label Grid.Row="1" Grid.Column="0" 
+                    <Label Grid.Row="2" Grid.Column="0" 
                        Text="CPF"
                        FontSize="16"
                        Style="{StaticResource LabelMenu}"
                        VerticalOptions="Center"/>
+
+                <Line Grid.ColumnSpan="2" Grid.Row="3" X1="360" BackgroundColor="LightGray" Margin="0"/>
                 
-                <Label Grid.Row="2" Grid.Column="0" 
+                <Label Grid.Row="4" Grid.Column="0" 
                        Text="Nome"
                        FontSize="16"
                        Style="{StaticResource LabelMenu}"
                        VerticalOptions="Center"/>
-                
-                <Label Grid.Row="3" Grid.Column="0" 
+
+                <Line Grid.ColumnSpan="2" Grid.Row="5" X1="360" BackgroundColor="LightGray" Margin="0"/>
+
+                <Label Grid.Row="6" Grid.Column="0" 
                        Text="Instituição"
                        FontSize="16"
                        Style="{StaticResource LabelMenu}"
                        VerticalOptions="Center"/>
-                
-                <Label Grid.Row="4" Grid.Column="0" 
+
+                <Line Grid.ColumnSpan="2" Grid.Row="7" X1="360" BackgroundColor="LightGray" Margin="0"/>
+
+                <Label Grid.Row="8" Grid.Column="0" 
                        Text="Identificador"
                        FontSize="16"
                        Style="{StaticResource LabelMenu}"
                        VerticalOptions="Center"/>
 
-                <Button Grid.Row="6" Grid.ColumnSpan="2"
+                <Line Grid.ColumnSpan="2" Grid.Row="9" X1="360" BackgroundColor="LightGray" Margin="0"/>
+
+                <Button Grid.Row="11" Grid.ColumnSpan="2"
                         Margin="20"
                         Text="Criar QR code" 
                         CornerRadius="35"

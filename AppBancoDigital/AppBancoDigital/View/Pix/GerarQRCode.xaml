@@ -25,7 +25,7 @@
                                  WidthRequest="20"/>
 
                     <Label Grid.Row="0" Grid.Column="1" 
-                           Text="Cobrança" 
+                           Text="QR Code gerado" 
                            Style="{StaticResource LabelMenu}" 
                            BackgroundColor="Transparent" 
                            HorizontalOptions="CenterAndExpand"
@@ -43,11 +43,19 @@
 
             </StackLayout>
 
-            <Button Text="Gerar QR CODE" x:Name="btn_gerarQRCode" Clicked="btn_gerarQRCode_Clicked"/>
+            <Label Text="Quem for te pagar verá essas informações após escanear o QR Code!"
+                   FontSize="15"
+                   Margin="30,0,30,0"/>
 
-                <Label Text="QR Code vai aparecer abaixo: " />
+            <Frame Margin="30"
+                   CornerRadius="20"
+                   WidthRequest="30" HeightRequest="55" 
+                   Style="{StaticResource FrameGradient}">
 
-                <Image x:Name="img_qrcode" />
+                <Image x:Name="img_qrcode" WidthRequest="55" HeightRequest="55" />
+            </Frame>
+
+                
 
             </StackLayout>
 

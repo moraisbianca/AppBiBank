@@ -15,7 +15,7 @@
             <Style x:Key="FonteSaldo" TargetType="Label">
                 <Setter Property="FontFamily" Value="{OnPlatform Android='made-tommy-extra.otf#made-tommy-extra'}" />
             </Style>
-            
+
             <!-- Fonte extrato-->
             <Style x:Key="FonteExtrato" TargetType="Button">
                 <Setter Property="FontFamily" Value="{OnPlatform Android='made-tommy-extra.otf#made-tommy-extra'}" />
@@ -29,12 +29,12 @@
             <Style x:Key="LabelPopup" TargetType="Label">
                 <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
             </Style>
-            
+
             <!-- Fonte Century gothic -->
             <Style x:Key="FonteEntry" TargetType="Entry">
-                 <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic.ttf#century-gothic'}" />
+                <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic.ttf#century-gothic'}" />
             </Style>
-                
+
             <!-- Fonte Botões-->
             <Style x:Key="FonteBotão" TargetType="Button">
                 <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
@@ -123,7 +123,7 @@
                 <Setter Property="HorizontalOptions" Value="Start"/>
                 <Setter Property="FontFamily" Value="{OnPlatform Android='century-gothic-bold.ttf#century-gothic-bold'}" />
             </Style>
-            
+
             <!-- Cartão -->
             <Style x:Key="Cartao" TargetType="Frame">
                 <Setter Property="WidthRequest" Value="100"/>
@@ -132,7 +132,7 @@
                 <Setter Property="CornerRadius" Value="15"/>
                 <Setter Property="Padding" Value="12"/>
             </Style>
-            
+
             <!-- Estilo da imagem do popup menu -->
             <Style x:Key="Imagem" TargetType="ImageButton">
                 <Setter Property="WidthRequest" Value="20"/>
@@ -149,9 +149,18 @@
                     </LinearGradientBrush>
                 </Setter>
             </Style>
-            
+
             <!-- Gradient do background-->
             <Style x:Key="BackgroundGradient" TargetType="ContentPage">
+                <Setter Property="Background">
+                    <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                        <GradientStop Color="#341933" Offset="0.3"/>
+                        <GradientStop Color="#993399" Offset="1.1"/>
+                    </LinearGradientBrush>
+                </Setter>
+            </Style>
+            
+            <Style x:Key="FrameGradient" TargetType="Frame">
                 <Setter Property="Background">
                     <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
                         <GradientStop Color="#341933" Offset="0.3"/>

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,13 +17,12 @@ namespace AppBancoDigital.View.Pix
 	{
 		public GerarQRCode ()
 		{
+            InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
             btn_voltar.Source = ImageSource.FromResource("AppBancoDigital.Images.seta-esquerda.png");
             btn_interrogacao.Source = ImageSource.FromResource("AppBancoDigital.Images.ponto-de-interrogacao.png");
-            InitializeComponent ();
-		}
 
-        private void btn_gerarQRCode_Clicked(object sender, EventArgs e)
-        {
+
             string teste = "Chave da Transferência: tiago@tiago.blog.br ";
 
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
@@ -30,6 +30,11 @@ namespace AppBancoDigital.View.Pix
             PngByteQRCode qRCode = new PngByteQRCode(qrCodeData);
             byte[] qrCodeBytes = qRCode.GetGraphic(20);
             img_qrcode.Source = ImageSource.FromStream(() => new MemoryStream(qrCodeBytes));
+        }
+
+        private void btn_gerarQRCode_Clicked(object sender, EventArgs e)
+        {
+            
         }
 
         private void btn_voltar_Clicked(object sender, EventArgs e)
