@@ -77,7 +77,7 @@
                   Margin="020,15,20,0">
                 
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="55" b/>
+                    <RowDefinition Height="55"/>
                     <RowDefinition Height="55"/>
                     <RowDefinition Height="55"/>
                 </Grid.RowDefinitions>

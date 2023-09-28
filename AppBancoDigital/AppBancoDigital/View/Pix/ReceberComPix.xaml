@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Pix.ReceberComPix"
+             xmlns:local="clr-namespace:AppBancoDigital.Custom"
              Style="{StaticResource BackgroundBar}">
     <ContentPage.Content>
         <StackLayout Style="{StaticResource StackStatusBar}" BackgroundColor="White">
@@ -44,26 +45,58 @@
 
             <Label Text="Quem for te pagar verá essas informações após escanear o QR Code!"
                    FontSize="15"
-                   Margin="30,0,30,0"/>
+                   Margin="30,0,30,10"/>
 
-            <!--<Entry />-->
+            <StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
 
-            <Frame BackgroundColor="LightGray" 
-                   Margin="60,0,60,0"
-                   HeightRequest="40"
-                   CornerRadius="30"
-                   Padding="0">
+                <Label Margin="25,0,0,0"
+                       Text="R$"
+                       FontSize="30"
+                       Style="{StaticResource FonteSaldo}"
+                       TextColor="Purple"
+                       VerticalTextAlignment="Start"/>
 
-                <!-- FAZER UM CUSTOM RENDERER QUE VAI TIRAR A LINHA DESSA ENTRY-->
-                <!--<Entry Placeholder="Escrever uma mensagem"
-                       Style="{StaticResource FonteEntry}"
-                       FontSize="12"
-                       Margin="0"/>-->
+                <local:MyEntry Placeholder="0,00" 
+                               x:Name="lbl_valorpix"
+                               Margin="0,-11,0,0"
+                               FontSize="30"
+                               Style="{StaticResource FonteSaldo}"
+                               Keyboard="Numeric"
+                               PlaceholderColor="LightGray"
+                               TextColor="Purple"/>
+
+            </StackLayout>
+
+
+            <!--<Grid Margin="20,0,20,0" Padding="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                <Frame BackgroundColor="red" 
+                   HorizontalOptions="Center"
+                   CornerRadius="15"
+                   Padding="0"
+                   Margin="0">
+
+                    <local:MyEntry Placeholder="Escrever uma mensagem"
+                               PlaceholderColor="Purple"
+                               Style="{StaticResource FonteEntryBold}"
+                               FontSize="14"
+                               Margin="0"/>
+
             </Frame>
+            </Grid>-->
+
 
 
             <Grid ColumnDefinitions="*,*"
-                  BackgroundColor="Transparent" VerticalOptions="EndAndExpand" Margin="30,0,30,30">
+                  BackgroundColor="Transparent" VerticalOptions="Center" Margin="30,0,30,30">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="55"/>
                     <RowDefinition Height="Auto"/>
@@ -75,8 +108,7 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="55"/>
                     <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="180"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="230"/>
                 </Grid.RowDefinitions>
 
                 <Label Grid.Row="0" Grid.Column="0" 
@@ -119,14 +151,16 @@
 
                 <Line Grid.ColumnSpan="2" Grid.Row="9" X1="360" BackgroundColor="LightGray" Margin="0"/>
 
-                <Button Grid.Row="11" Grid.ColumnSpan="2"
+                <Button Grid.Row="10" Grid.ColumnSpan="2"
                         Margin="20"
+                        HeightRequest="40"
                         Text="Criar QR code" 
                         CornerRadius="35"
                         BackgroundColor="#c63f7b"
                         TextTransform="None"
                         FontAttributes="Bold"
                         FontSize="15"
+                        VerticalOptions="End"
                         TextColor="White"
                         Clicked="Button_Clicked"/>
             </Grid>
