@@ -11,11 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="NovaPasta\**" />
     <Compile Remove="View\Images\**" />
-    <EmbeddedResource Remove="NovaPasta\**" />
     <EmbeddedResource Remove="View\Images\**" />
-    <None Remove="NovaPasta\**" />
     <None Remove="View\Images\**" />
   </ItemGroup>
 
