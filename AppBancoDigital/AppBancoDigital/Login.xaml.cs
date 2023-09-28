@@ -2,6 +2,8 @@
 using AppBancoDigital.Service;
 using AppBancoDigital.View;
 using AppBancoDigital.View.Popup;
+using Plugin.Fingerprint;
+using Plugin.Fingerprint.Abstractions;
 using Rg.Plugins.Popup.Pages;
 using Rg.Plugins.Popup.Services;
 using System;
@@ -98,6 +100,37 @@ namespace AppBancoDigital
         private void esqueci_senha(object sender, EventArgs e)
         {
 
+        }
+
+        private async void btn_biometria_Clicked(object sender, EventArgs e)
+        {
+            bool supported = await CrossFingerprint.Current.IsAvailableAsync(true);
+            if (supported)
+            {
+                AuthenticationRequestConfiguration conf = new AuthenticationRequestConfiguration("Bibank", "Acesse sua conta");
+                var result = await CrossFingerprint.Current.AuthenticateAsync(conf);
+
+                if (result.Authenticated)
+                {
+                    App.Current.MainPage = new NavigationPage(new Home());
+                }
+                else 
+                {
+                    string msg_erro = ("Biometria não reconhecida! Tente Novamente");
+                    var page = new PopupErro();
+                    page.BindingContext = msg_erro;
+
+                    await PopupNavigation.PushAsync(page, true);
+                }
+            }
+            else
+            {
+                string msg_erro = ("Desculpe! Este dispositivo não suporta esse método de autenticação");
+                var page = new PopupErro();
+                page.BindingContext = msg_erro;
+
+                await PopupNavigation.PushAsync(page, true);
+            }
         }
     }
 }

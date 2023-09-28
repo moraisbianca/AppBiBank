@@ -43,21 +43,57 @@
 
             </StackLayout>
 
-            <Label Text="Quem for te pagar verá essas informações após escanear o QR Code!"
+            <Label Text="Mostre o QR code na sua tela, copie o código ou envie um link com todos os dados para quem vai te pagar."
                    FontSize="15"
-                   Margin="30,0,30,0"/>
+                   Margin="30,10,30,0"/>
 
-            <Frame Margin="30"
+            <Frame Margin="25,-20,25,0"
                    CornerRadius="20"
-                   WidthRequest="30" HeightRequest="55" 
-                   Style="{StaticResource FrameGradient}">
+                   Padding="12"
+                   Scale="0.7"
+                   Style="{StaticResource FrameRosaGradient}">
 
-                <Image x:Name="img_qrcode" WidthRequest="55" HeightRequest="55" />
+                <Image x:Name="img_QRcode" Aspect="Fill"/>
             </Frame>
 
-                
+            <Label Margin="25,-30,0,8"
+                   Text="Valor a ser pago"
+                   FontSize="16"
+                   Style="{StaticResource LabelMenu}"/>
 
-            </StackLayout>
+            <Label x:Name="lbl_valorpix" 
+                   Margin="25,0,0,0"
+                   Text="R$"
+                   FontSize="30"
+                   Style="{StaticResource FonteSaldo}"
+                   TextColor="Black"/>
+            
+            <Label x:Name="lbl_nome_destinatario" Text="para "
+                   FontSize="15"
+                   Margin="25,0,0,0"/>
+
+            <Grid ColumnDefinitions="*,*"
+                  BackgroundColor="red" 
+                  Margin="020,15,20,0">
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55" b/>
+                    <RowDefinition Height="55"/>
+                    <RowDefinition Height="55"/>
+                </Grid.RowDefinitions>
+                
+                <StackLayout>
+
+                    <Label Grid.Row="0" Grid.Column="0" 
+                       Text="CPF"
+                       FontSize="16"
+                       Style="{StaticResource LabelMenu}"
+                       VerticalOptions="Center"/>
+
+                </StackLayout>
+            </Grid>
+
+        </StackLayout>
 
     </ContentPage.Content>
 </ContentPage>

@@ -16,36 +16,57 @@
             />
     </pages:PopupPage.Animation>
 
-    <Frame Style="{StaticResource Popups}"
-               HeightRequest="300"
-               Margin="0,700,0,-10">
+
+    <Grid ColumnDefinitions="*" VerticalOptions="EndAndExpand" Margin="0" Padding="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
         <StackLayout>
 
+            <Frame Grid.RowSpan="3" Grid.Column="0"
+                   Style="{StaticResource Popups}"
+                   MinimumHeightRequest="100"
+                   VerticalOptions="EndAndExpand"
+                   Padding="20,10,20,20"
+                   Margin="0,0,0,-40">
 
-            <ImageButton x:Name="Barrinha" 
-                             BackgroundColor="Transparent"
-                             HorizontalOptions="Center"
-                             Padding="0,10,0,0"/>
+                <StackLayout>
+                    
+                    <ImageButton Grid.Row="0" Grid.Column="0"
+                                 x:Name="Barrinha"
+                                 BackgroundColor="Transparent"
+                                 HorizontalOptions="Center"
+                                 Padding="0"
+                                 Margin="0,0,0,10"/>
 
-            <Label x:Name="Título" Text="Algo deu errado!"
+                    <Label Grid.Row="1" Grid.Column="0"
+                       x:Name="Título" Text="Algo deu errado!"
                        HorizontalTextAlignment="Start"
-                       VerticalTextAlignment="Start"
+                       VerticalTextAlignment="Center"
                        FontSize="20"
                        TextColor="Black"
-                       Margin="30,20,0,0"
-                       
+                       Margin="0"
+                       Padding="0"
                        Style="{StaticResource LabelTituloCampo}"/>
 
-            <Label Text="{Binding Message}"
+                    <Label Grid.Row="2" Grid.Column="0" 
+                       Text="{Binding Message}"
                        FontSize="Default"
-                       Margin="45,10,45,20"
+                       Margin="10,5,0,30"
+                       HorizontalTextAlignment="Start"
                        TextColor="Black"
-                    
                        Style="{StaticResource LabelPopup}"/>
+                    
+                </StackLayout>
+            </Frame>
 
         </StackLayout>
+    </Grid>
 
-    </Frame>
+
+
 
 </pages:PopupPage>

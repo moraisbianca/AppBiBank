@@ -149,6 +149,16 @@
                     </LinearGradientBrush>
                 </Setter>
             </Style>
+            
+            <!-- Gradient rosa frame -->
+            <Style x:Key="FrameRosaGradient" TargetType="Frame">
+                <Setter Property="Background">
+                    <LinearGradientBrush StartPoint="0,1" EndPoint="1,1">
+                        <GradientStop Color="#c63f7b" Offset="0"/>
+                        <GradientStop Color="#663177" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter>
+            </Style>
 
             <!-- Gradient do background-->
             <Style x:Key="BackgroundGradient" TargetType="ContentPage">

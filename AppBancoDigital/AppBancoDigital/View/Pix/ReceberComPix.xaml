@@ -16,28 +16,27 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
-                    <ImageButton Grid.Row="0" Grid.Column="0"
-                 x:Name="btn_voltar"
-                 Clicked="btn_voltar_Clicked"
-                 HorizontalOptions="StartAndExpand"
-                 BackgroundColor="Transparent"
-                 HeightRequest="20"
-                 WidthRequest="20"/>
+                    <ImageButton Grid.Row="0" Grid.Column="0" 
+                                 x:Name="btn_voltar"
+                                 Clicked="btn_voltar_Clicked"
+                                 HorizontalOptions="StartAndExpand"
+                                 BackgroundColor="Transparent"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
 
                     <Label Grid.Row="0" Grid.Column="1" 
-           Text="Recebendo" 
-           Style="{StaticResource LabelMenu}" 
-           BackgroundColor="Transparent" 
-           HorizontalOptions="CenterAndExpand"
-           VerticalOptions="CenterAndExpand"/>
+                           Text="Recebendo" Style="{StaticResource LabelMenu}" 
+                           BackgroundColor="Transparent" 
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand"/>
 
                     <ImageButton Grid.Row="0" Grid.Column="2" 
-                 x:Name="btn_interrogacao"
-                 Clicked="btn_interrogacao_Clicked"
-                 BackgroundColor="Transparent"
-                 HeightRequest="20"
-                 WidthRequest="20"
-                 HorizontalOptions="EndAndExpand"/>
+                                 x:Name="btn_interrogacao"
+                                 Clicked="btn_interrogacao_Clicked"
+                                 BackgroundColor="Transparent"
+                                 HeightRequest="20"
+                                 WidthRequest="20"
+                                 HorizontalOptions="EndAndExpand"/>
 
                 </Grid>
 

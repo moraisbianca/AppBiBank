@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace AppBancoDigital.View.Pix
 {
@@ -29,7 +30,7 @@ namespace AppBancoDigital.View.Pix
             QRCodeData qrCodeData = qrGenerator.CreateQrCode(teste, QRCodeGenerator.ECCLevel.Q);
             PngByteQRCode qRCode = new PngByteQRCode(qrCodeData);
             byte[] qrCodeBytes = qRCode.GetGraphic(20);
-            img_qrcode.Source = ImageSource.FromStream(() => new MemoryStream(qrCodeBytes));
+            img_QRcode.Source = ImageSource.FromStream(() => new MemoryStream(qrCodeBytes));
         }
 
         private void btn_gerarQRCode_Clicked(object sender, EventArgs e)

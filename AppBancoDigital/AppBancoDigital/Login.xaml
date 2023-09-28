@@ -60,7 +60,8 @@
                                  HorizontalOptions="Center"
                                  WidthRequest="45"
                                  HeightRequest="45"
-                                 Margin="0,15,0,0"/>
+                                 Margin="0,15,0,0"
+                                 Clicked="btn_biometria_Clicked"/>
 
                     <Label Text="Toque e entre com sensor digital" 
                            FontSize="11"
