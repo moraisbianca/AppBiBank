@@ -45,7 +45,8 @@
                     <Label Text="DATA DE NASCIMENTO:" Style="{StaticResource LabelTituloCampo}"/>
                     <DatePicker x:Name="dtpck_datanasc"
                                 Margin="0,0,0,10"
-                                TabIndex="2"/>
+                                TabIndex="2"
+                                Format="dd/MM/yyyy"/>
 
 
                     <Label Text="SENHA:" Style="{StaticResource LabelTituloCampo}"/>
