@@ -9,7 +9,7 @@ namespace AppBancoDigital.Model
         public int Id { get; set; }
         public string Tipo { get; set; }
         public string Chave { get; set; }
-        public int Id_Conta { get; set;}
+        public int? Id_Conta { get; set;}
 
     }
 }

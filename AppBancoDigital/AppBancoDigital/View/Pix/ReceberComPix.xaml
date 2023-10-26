@@ -58,7 +58,7 @@
 
                 <local:MyEntry Placeholder="0,00" 
                                x:Name="lbl_valorpix"
-                               Margin="0,-11,0,0"
+                               Margin="-8,-11,0,0"
                                FontSize="30"
                                Style="{StaticResource FonteSaldo}"
                                Keyboard="Numeric"
@@ -117,6 +117,16 @@
                        Style="{StaticResource LabelMenu}"
                        VerticalOptions="Center"/>
 
+                <Label BackgroundColor="Red"
+                       Grid.Row="0" Grid.Column="1"
+                       Text="oi teste"
+                       x:Name="txt_chave_pix"
+                       FontSize="16"
+                       TextColor="Gray"
+                       Style="{StaticResource LabelMenu}"
+                       HorizontalOptions="End"
+                       VerticalTextAlignment="Center"/>
+
                 <Line Grid.ColumnSpan="2" Grid.Row="1" X1="360" BackgroundColor="LightGray" Margin="0"/>
 
                     <Label Grid.Row="2" Grid.Column="0" 
@@ -124,6 +134,16 @@
                        FontSize="16"
                        Style="{StaticResource LabelMenu}"
                        VerticalOptions="Center"/>
+
+                <Label BackgroundColor="Red"
+                       Grid.Row="2" Grid.Column="1"
+                       Text="oi teste"
+                       x:Name="txt_cpf"
+                       FontSize="16"
+                       TextColor="Gray"
+                       Style="{StaticResource LabelMenu}"
+                       HorizontalOptions="End"
+                       VerticalTextAlignment="Center"/>
 
                 <Line Grid.ColumnSpan="2" Grid.Row="3" X1="360" BackgroundColor="LightGray" Margin="0"/>
                 
@@ -133,6 +153,15 @@
                        Style="{StaticResource LabelMenu}"
                        VerticalOptions="Center"/>
 
+                <Label BackgroundColor="Transparent"
+                       Grid.Row="4" Grid.Column="1"
+                       x:Name="txt_nome"
+                       FontSize="16"
+                       TextColor="Gray"
+                       Style="{StaticResource LabelMenu}"
+                       HorizontalOptions="End"
+                       VerticalTextAlignment="Center"/>
+
                 <Line Grid.ColumnSpan="2" Grid.Row="5" X1="360" BackgroundColor="LightGray" Margin="0"/>
 
                 <Label Grid.Row="6" Grid.Column="0" 
@@ -141,15 +170,17 @@
                        Style="{StaticResource LabelMenu}"
                        VerticalOptions="Center"/>
 
-                <Line Grid.ColumnSpan="2" Grid.Row="7" X1="360" BackgroundColor="LightGray" Margin="0"/>
-
-                <Label Grid.Row="8" Grid.Column="0" 
-                       Text="Identificador"
+                <Label BackgroundColor="Transparent"
+                       Grid.Row="6" Grid.Column="1"
+                       Text="Bibank"
+                       x:Name="txt_instituição"
                        FontSize="16"
+                       TextColor="Gray"
                        Style="{StaticResource LabelMenu}"
-                       VerticalOptions="Center"/>
+                       HorizontalOptions="End"
+                       VerticalTextAlignment="Center"/>
 
-                <Line Grid.ColumnSpan="2" Grid.Row="9" X1="360" BackgroundColor="LightGray" Margin="0"/>
+                <Line Grid.ColumnSpan="2" Grid.Row="7" X1="360" BackgroundColor="LightGray" Margin="0"/>
 
                 <Button Grid.Row="10" Grid.ColumnSpan="2"
                         Margin="20"

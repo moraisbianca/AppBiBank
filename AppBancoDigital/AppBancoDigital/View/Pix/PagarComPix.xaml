@@ -71,19 +71,50 @@
                            Margin="4"
                            CornerRadius="8"
                            HasShadow="False"
-                           BorderColor="LightGray"/>
+                           BorderColor="LightGray"
+                           Padding="0">
+                        <StackLayout>
+                            <ImageButton x:Name="btn_qrcode"
+                                         Padding="0"
+                                         Clicked="btn_qrcode_Clicked"
+                                         BackgroundColor="Transparent"
+                                         Aspect="AspectFill"
+                                         Scale="0.40"
+                                         Margin="0,0,0,20"/>
+                        </StackLayout>
+                    </Frame>
 
                     <Frame Grid.Row="0" Grid.Column="1"
                            Margin="4"
                            CornerRadius="8"
                            HasShadow="False"
-                           BorderColor="LightGray"/>
+                           BorderColor="LightGray"
+                           Padding="0">
+                        <StackLayout>
+                            <ImageButton x:Name="btn_pix_copia_cola"
+                                         Clicked="btn_pix_copia_cola_Clicked"
+                                         BackgroundColor="Transparent"
+                                         Aspect="AspectFill"
+                                         Scale="0.40"
+                                         Margin="0,0,0,20"/>
+                        </StackLayout>
+                    </Frame>
 
                     <Frame Grid.Row="0" Grid.Column="2"
                            Margin="4"
                            CornerRadius="8"
                            HasShadow="False"
-                           BorderColor="LightGray"/>
+                           BorderColor="LightGray"
+                           Padding="0">
+                        <StackLayout>
+                            <ImageButton x:Name="btn_agencia_conta"
+                                         Clicked="btn_agencia_conta_Clicked"
+                                         BackgroundColor="Transparent"
+                                         Aspect="AspectFill"
+                                         Scale="0.45"
+                                         Margin="0,0,0,20"/>
+                        </StackLayout>
+                    </Frame>
 
                 </Grid>
             </StackLayout>
