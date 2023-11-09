@@ -6,7 +6,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-
+using AppBancoDigital.View.Pix;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using static System.Net.Mime.MediaTypeNames;
@@ -40,7 +40,7 @@ namespace AppBancoDigital.View.Pix
 
         private void btn_voltar_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new View.Pix.ReceberComPix());
         }
 
         private void btn_interrogacao_Clicked(object sender, EventArgs e)

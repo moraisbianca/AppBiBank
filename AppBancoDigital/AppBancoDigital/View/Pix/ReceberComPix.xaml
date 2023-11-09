@@ -67,34 +67,6 @@
 
             </StackLayout>
 
-
-            <!--<Grid Margin="20,0,20,0" Padding="0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="200"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                
-                <Frame BackgroundColor="red" 
-                   HorizontalOptions="Center"
-                   CornerRadius="15"
-                   Padding="0"
-                   Margin="0">
-
-                    <local:MyEntry Placeholder="Escrever uma mensagem"
-                               PlaceholderColor="Purple"
-                               Style="{StaticResource FonteEntryBold}"
-                               FontSize="14"
-                               Margin="0"/>
-
-            </Frame>
-            </Grid>-->
-
-
-
             <Grid ColumnDefinitions="*,*"
                   BackgroundColor="Transparent" VerticalOptions="Center" Margin="30,0,30,30">
                 <Grid.RowDefinitions>
@@ -135,7 +107,7 @@
                        Style="{StaticResource LabelMenu}"
                        VerticalOptions="Center"/>
 
-                <Label BackgroundColor="Red"
+                <Label BackgroundColor="Transparent"
                        Grid.Row="2" Grid.Column="1"
                        Text="oi teste"
                        x:Name="txt_cpf"

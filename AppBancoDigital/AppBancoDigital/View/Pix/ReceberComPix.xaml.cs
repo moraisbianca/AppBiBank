@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -21,6 +22,11 @@ namespace AppBancoDigital.View.Pix
             btn_voltar.Source = ImageSource.FromResource("AppBancoDigital.Images.seta-esquerda.png");
             btn_interrogacao.Source = ImageSource.FromResource("AppBancoDigital.Images.ponto-de-interrogacao.png");
             NavigationPage.SetHasNavigationBar(this, false);
+
+
+            string CpfOculto = Regex.Replace(App.DadosCorrentista.Cpf, "([0-9]{3}).([0-9]{3}).([0-9]{3})-([0-9]{2})", "$1.*.*.*-$4");
+            txt_cpf.Text = FormatCPF(CpfOculto);
+
 
             string[] resultsArray = explode(" ", App.DadosCorrentista.Nome);
             string primeiro_nome = resultsArray[0];
@@ -46,6 +52,19 @@ namespace AppBancoDigital.View.Pix
         public static string[] explode(string separator, string source)
         {
             return source.Split(new string[] { separator }, StringSplitOptions.None);
+        }
+
+        public string FormatCPF(string sender)
+        {
+            string response = sender.Trim();
+            if (response.Length == 11)
+            {
+                response = response.Insert(9, "-");
+                response = response.Insert(6, ".");
+                response = response.Insert(3, ".");
+            }
+            return response;
+
         }
 
         private void btn_voltar_Clicked(object sender, EventArgs e)

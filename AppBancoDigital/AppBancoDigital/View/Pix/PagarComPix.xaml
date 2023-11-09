@@ -78,9 +78,11 @@
                                          Padding="0"
                                          Clicked="btn_qrcode_Clicked"
                                          BackgroundColor="Transparent"
-                                         Aspect="AspectFill"
-                                         Scale="0.40"
-                                         Margin="0,0,0,20"/>
+                                         HeightRequest="35"
+                                         WidthRequest="35"
+                                         HorizontalOptions="CenterAndExpand"
+                                         VerticalOptions="CenterAndExpand"
+                                         Margin="0"/>
                         </StackLayout>
                     </Frame>
 
@@ -89,14 +91,17 @@
                            CornerRadius="8"
                            HasShadow="False"
                            BorderColor="LightGray"
-                           Padding="0">
+                           Padding="-10">
                         <StackLayout>
                             <ImageButton x:Name="btn_pix_copia_cola"
                                          Clicked="btn_pix_copia_cola_Clicked"
                                          BackgroundColor="Transparent"
-                                         Aspect="AspectFill"
-                                         Scale="0.40"
-                                         Margin="0,0,0,20"/>
+                                         HeightRequest="40"
+                                         WidthRequest="40"
+                                         HorizontalOptions="CenterAndExpand"
+                                         VerticalOptions="CenterAndExpand"
+                                         Margin="0"
+                                         />
                         </StackLayout>
                     </Frame>
 
@@ -110,9 +115,11 @@
                             <ImageButton x:Name="btn_agencia_conta"
                                          Clicked="btn_agencia_conta_Clicked"
                                          BackgroundColor="Transparent"
-                                         Aspect="AspectFill"
-                                         Scale="0.45"
-                                         Margin="0,0,0,20"/>
+                                         HeightRequest="40"
+                                         WidthRequest="40"
+                                         HorizontalOptions="CenterAndExpand"
+                                         VerticalOptions="CenterAndExpand"
+                                         Margin="0"/>
                         </StackLayout>
                     </Frame>
 
