@@ -41,5 +41,10 @@ namespace AppBancoDigital.View.Pix
         {
             Navigation.PushAsync(new View.Pix.ReceberComPix());
         }
+
+        private void btn_cadastrar_pix_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

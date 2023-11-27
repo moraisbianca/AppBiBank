@@ -32,6 +32,12 @@
                  VerticalOptions="Center"/>
 
             </StackLayout>
+
+            <Label Text="Essa função está em andamento..."
+                   HorizontalTextAlignment="Center"
+                   FontSize="15"
+                   Margin="40,10,40,10"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Pix.PagarComPix"
+             xmlns:local="clr-namespace:AppBancoDigital.Custom"
              Style="{StaticResource BackgroundBar}"
              Title="Pagar com Pix">
     <ContentPage.Content>
@@ -35,7 +36,7 @@
 
             <StackLayout BackgroundColor="Transparent">
 
-                <Grid RowDefinitions="*" ColumnDefinitions="*,*" Margin="25,0,25,20" BackgroundColor="Transparent">
+                <Grid RowDefinitions="*" ColumnDefinitions="*,*" Margin="25,0,25,5" BackgroundColor="Transparent">
                     <Label Grid.Row="0" Grid.Column="0" 
                             Text="Chave"
                             TextColor="Black"
@@ -52,10 +53,19 @@
                             VerticalTextAlignment="Center"
                             TextColor="#c63f7b"/>
                 </Grid>
-                
-                
-                <!-- Entrada para colocar a chave -->
 
+                <Frame BackgroundColor="#c0c0c0"
+                       HeightRequest="40"
+                       WidthRequest="100"
+                       Margin="30,0,30,20"
+                       Padding="15,0,15,0"
+                       CornerRadius="10">
+                    <local:MyEntry Placeholder="CPF/CNPJ ou chave pix" 
+                                   x:Name="lbl_chavepix_destinatario"
+                                   FontSize="15"
+                                   Style="{StaticResource FonteEntryBold}"/>
+                </Frame>
+                
 
                 <Label Grid.Row="0" Grid.Column="0" 
                        Text="Outros Pagamentos"

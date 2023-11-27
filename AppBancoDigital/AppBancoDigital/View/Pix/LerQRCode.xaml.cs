@@ -15,6 +15,7 @@ namespace AppBancoDigital.View.Pix
 	{
 		public LerQRCode ()
 		{
+            NavigationPage.SetHasNavigationBar(this, false);
             /**
              * https://www.c-sharpcorner.com/article/embedding-qr-code-scanner-in-xamarin-forms/
              * https://github.com/androidmads/ZxingScreenScanner

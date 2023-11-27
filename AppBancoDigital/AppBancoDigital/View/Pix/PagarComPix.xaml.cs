@@ -37,7 +37,7 @@ namespace AppBancoDigital.View.Pix
 
         private void btn_qrcode_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new LerQRCode());
         }
 
         private void btn_pix_copia_cola_Clicked(object sender, EventArgs e)

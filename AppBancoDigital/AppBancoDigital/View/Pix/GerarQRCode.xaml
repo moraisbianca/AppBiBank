@@ -56,7 +56,12 @@
                 <Image x:Name="img_QRcode" Aspect="Fill"/>
             </Frame>
 
-            <Label Margin="25,-30,0,8"
+            <Label Text="A função abaixo está em andamento."
+                   HorizontalTextAlignment="Center"
+                   FontSize="15"
+                   Margin="40,-20,40,20"/>
+            
+            <Label Margin="25,0,0,8"
                    Text="Valor a ser pago"
                    FontSize="16"
                    Style="{StaticResource LabelMenu}"/>
@@ -73,8 +78,8 @@
                    Margin="25,0,0,0"/>
 
             <Grid ColumnDefinitions="*,*"
-                  BackgroundColor="red" 
-                  Margin="020,15,20,0">
+                  BackgroundColor="Transparent" 
+                  Margin="20,15,20,0">
                 
                 <Grid.RowDefinitions>
                     <RowDefinition Height="55"/>

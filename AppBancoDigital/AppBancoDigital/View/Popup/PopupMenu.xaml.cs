@@ -39,7 +39,8 @@ namespace AppBancoDigital.View.Popup
 
         private void btn_avatar_Clicked(object sender, EventArgs e)
         {
-
+            Application.Current.MainPage.Navigation.PopPopupAsync(true);
+            Navigation.PushAsync(new Menu());
         }
 
         private void btn_notificacoes_Clicked(object sender, EventArgs e)

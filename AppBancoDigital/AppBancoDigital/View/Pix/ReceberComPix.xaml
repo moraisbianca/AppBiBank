@@ -89,9 +89,9 @@
                        Style="{StaticResource LabelMenu}"
                        VerticalOptions="Center"/>
 
-                <Label BackgroundColor="Red"
+                <Label BackgroundColor="Transparent"
                        Grid.Row="0" Grid.Column="1"
-                       Text="oi teste"
+                       Text="Em andamento..."
                        x:Name="txt_chave_pix"
                        FontSize="16"
                        TextColor="Gray"
